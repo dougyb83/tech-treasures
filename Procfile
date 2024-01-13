@@ -1,0 +1,1 @@
+web: gunicorn tech_treasures.wsgi:application
