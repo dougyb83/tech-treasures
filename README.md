@@ -163,84 +163,60 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ### Mobile Wireframes
 
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
+<details>
+<summary>Home</summary>
+![screenshot](c/wireframes/home.png)
+</details>
 
-Home
+<details>
+<summary>Log In</summary>
+![screenshot](documentation/wireframes/log-in.png)
+</details>
 
-- ![screenshot](documentation/wireframes/mobile-home.png)
+<details>
+<summary>Sign Up</summary>
+![screenshot](documentation/wireframes/sign-up.png)
+</details>
 
-About
+<details>
+<summary>Products</summary>
+![screenshot](documentation/wireframes/products.png)
+</details>
 
-- ![screenshot](documentation/wireframes/mobile-about.png)
+<details>
+<summary>Product Details</summary>
+![screenshot](documentation/wireframes/product-details.png)
+</details>
 
-Contact
+<details>
+<summary>Basket</summary>
+![screenshot](documentation/wireframes/basket.png)
+</details>
 
-- ![screenshot](documentation/wireframes/mobile-contact.png)
+<details>
+<summary>Product Management</summary>
+![screenshot](documentation/wireframes/product-management.png)
+</details>
 
-Gallery
+<details>
+<summary>Checkout</summary>
+![screenshot](documentation/wireframes/checkout.png)
+</details>
 
-- ![screenshot](documentation/wireframes/mobile-gallery.png)
+<details>
+<summary>Checkout Success</summary>
+![screenshot](documentation/wireframes/checkout-success.png)
+</details>
 
-etc.
+<details>
+<summary>Profile</summary>
+![screenshot](documentation/wireframes/profile.png)
+</details>
 
-- repeat for any remaining mobile wireframes
-
-< / details >
-
-### Tablet Wireframes
-
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
-
-Home
-
-- ![screenshot](documentation/wireframes/tablet-home.png)
-
-About
-
-- ![screenshot](documentation/wireframes/tablet-about.png)
-
-Contact
-
-- ![screenshot](documentation/wireframes/tablet-contact.png)
-
-Gallery
-
-- ![screenshot](documentation/wireframes/tablet-gallery.png)
-
-etc.
-
-- repeat for any remaining tablet wireframes
-
-< / details >
-
-### Desktop Wireframes
-
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
-
-Home
-
-- ![screenshot](documentation/wireframes/desktop-home.png)
-
-About
-
-- ![screenshot](documentation/wireframes/desktop-about.png)
-
-Contact
-
-- ![screenshot](documentation/wireframes/desktop-contact.png)
-
-Gallery
-
-- ![screenshot](documentation/wireframes/desktop-gallery.png)
-
-etc.
-
-- repeat for any remaining desktop wireframes
-
-< / details >
+<details>
+<summary>Order History</summary>
+![screenshot](documentation/wireframes/order-history.png)
+</details>
 
 ## Features
 
@@ -387,8 +363,7 @@ Using Markdown formatting to represent an example ERD table using the Product mo
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-- Table: **Product**
-  | **PK** | **id** (unique) | Type         | Notes                         |
+- Table: **Product**| **PK** | **id** (unique) | Type         | Notes                         |
   | ------------ | --------------------- | ------------ | ----------------------------- |
   | **FK** | category              | ForeignKey   | FK to**Category** model |
   |              | sku                   | CharField    |                               |
