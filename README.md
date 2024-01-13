@@ -36,11 +36,7 @@ https://pandao.github.io/editor.md/en.html
 
 ## UX
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+At Tech Treasures, the UX design process begins with understanding the core needs and expectations of its target audience—tech enthusiasts, professionals, and innovators. The platform emphasizes simplicity and clarity in its interface, focusing on intuitive navigation and clear categorization of tech components and resources. Design prototypes are crafted to visualize user interactions, ensuring ease of use and accessibility across devices. Through iterative design and feedback loops, the platform refines its features, emphasizing secure and streamlined transaction flows. Continuous testing and refinement post-implementation allow Tech Treasures to adapt and enhance the user journey, prioritizing usability, convenience, and engagement without extensive prior research.
 
 ### Colour Scheme
 
@@ -165,57 +161,79 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 <details>
 <summary>Home</summary>
-![screenshot](c/wireframes/home.png)
+
+![screenshot](documentation/wireframes/home.png)
+
 </details>
 
 <details>
 <summary>Log In</summary>
+
 ![screenshot](documentation/wireframes/log-in.png)
+
 </details>
 
 <details>
 <summary>Sign Up</summary>
+
 ![screenshot](documentation/wireframes/sign-up.png)
+
 </details>
 
 <details>
 <summary>Products</summary>
+
 ![screenshot](documentation/wireframes/products.png)
+
 </details>
 
 <details>
 <summary>Product Details</summary>
+
 ![screenshot](documentation/wireframes/product-details.png)
+
 </details>
 
 <details>
 <summary>Basket</summary>
+
 ![screenshot](documentation/wireframes/basket.png)
+
 </details>
 
 <details>
 <summary>Product Management</summary>
+
 ![screenshot](documentation/wireframes/product-management.png)
+
 </details>
 
 <details>
 <summary>Checkout</summary>
+
 ![screenshot](documentation/wireframes/checkout.png)
+
 </details>
 
 <details>
 <summary>Checkout Success</summary>
+
 ![screenshot](documentation/wireframes/checkout-success.png)
+
 </details>
 
 <details>
 <summary>Profile</summary>
+
 ![screenshot](documentation/wireframes/profile.png)
+
 </details>
 
 <details>
 <summary>Order History</summary>
+
 ![screenshot](documentation/wireframes/order-history.png)
+
 </details>
 
 ## Features
