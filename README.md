@@ -8,15 +8,8 @@ At its core, Tech Treasures prioritizes user experience by offering a user-frien
 
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
-
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
 Consider adding a mockup image using the "Am I Responsive" website.
+
 Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://tech-treasures-f953ccb89af8.herokuapp.com
 
@@ -27,11 +20,6 @@ To add the image into your README, use this format:
 (assuming you have a new folder called `documentation` with an image called "mockup.png")
 
 ![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## UX
@@ -104,55 +92,41 @@ Example:
 
 ## User Stories
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to easily navigate to the main categories of products, so that I can quickly identify what the site offers.
+
+- As a new site user, I would like a responsive site layout that adjusts to my device's screen size, so that I can have a consistent experience whether on desktop, tablet, or mobile.
+
+- As a new site user, I would like to see my purchase total at all times, so that I don't overspend.
+
+- As a new site user, I would like to see social media icons prominently displayed, so that I can follow the company on my preferred platforms for updates.
+
+- As a new site user, I would like a clear and straightforward checkout process, so that I can finalize my purchase smoothly.
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like a secure login and registration process, so that I can protect my personal information.
+
+- As a returning site user, I would like a dashboard where I can view and manage my orders, so that I can track my purchases and manage my account effectively.
+
+- As a returning site user, I would like to easily edit my personal information, so that I can update my details as needed.
+
+- As a returning site user, I would like to have access to my order history, so that I can review past purchases and track order statuses.
+
+- As a returning site user, I would like to receive email confirmation when I register, so that I can verify my account easily.
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to add new products.
+
+- As a site administrator, I should be able to edit existing products.
+
+- As a site administrator, I should be able to remove items from sale as necessary.
+
+- As a site administrator, I should be able to easily access the sites admin pages.
 
 ## Wireframes
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
-
-**IMPORTANT**! **IMPORTANT**! **IMPORTANT**!
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
-
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
@@ -381,17 +355,19 @@ Using Markdown formatting to represent an example ERD table using the Product mo
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-- Table: **Product**| **PK** | **id** (unique) | Type         | Notes                         |
-  | ------------ | --------------------- | ------------ | ----------------------------- |
-  | **FK** | category              | ForeignKey   | FK to**Category** model |
-  |              | sku                   | CharField    |                               |
-  |              | name                  | CharField    |                               |
-  |              | description           | TextField    |                               |
-  |              | has_sizes             | BooleanField |                               |
-  |              | price                 | DecimalField |                               |
-  |              | rating                | DecimalField |                               |
-  |              | image_url             | URLField     |                               |
-  |              | image                 | ImageField   |                               |
+- Table: **Product**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | category | ForeignKey | FK to **Category** model |
+    | | sku | CharField | |
+    | | name | CharField | |
+    | | description | TextField | |
+    | | has_sizes | BooleanField | |
+    | | price | DecimalField | |
+    | | rating | DecimalField | |
+    | | image_url | URLField | |
+    | | image | ImageField | |
 
 ## Testing
 
