@@ -1,5 +1,11 @@
 # [TECH TREASURES](https://tech-treasures-f953ccb89af8.herokuapp.com)
 
+Tech Treasures is a specialized platform tailored for tech enthusiasts, hobbyists, professionals, and innovators seeking access to high-quality tech components, gadgets, resources, and educational materials. Serving as a comprehensive marketplace, Tech Treasures streamlines the process of discovering and acquiring essential tools while fostering collaboration, knowledge-sharing, and growth within the technology and electronics realm.
+
+At its core, Tech Treasures prioritizes user experience by offering a user-friendly interface, secure transactions, fast shipping, and exceptional customer support. The platform focuses on providing access to essential tech tools and resources, enabling individuals to explore, learn, innovate, and grow within their respective fields, making Tech Treasures a valuable resource for individuals passionate about technology and electronics.
+
+[View the live site here.](https://tech-treasures-f953ccb89af8.herokuapp.com/)
+
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 In this section, you will include a few paragraphs providing an overview of your project.
@@ -97,9 +103,7 @@ Example:
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-
 - [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
-
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
@@ -163,19 +167,24 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 < summary > Click here to see the Mobile Wireframes < / summary >
 
 Home
-  - ![screenshot](documentation/wireframes/mobile-home.png)
+
+- ![screenshot](documentation/wireframes/mobile-home.png)
 
 About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
+
+- ![screenshot](documentation/wireframes/mobile-about.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
+
+- ![screenshot](documentation/wireframes/mobile-contact.png)
 
 Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
+
+- ![screenshot](documentation/wireframes/mobile-gallery.png)
 
 etc.
-  - repeat for any remaining mobile wireframes
+
+- repeat for any remaining mobile wireframes
 
 < / details >
 
@@ -185,19 +194,24 @@ etc.
 < summary > Click here to see the Tablet Wireframes < / summary >
 
 Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
+
+- ![screenshot](documentation/wireframes/tablet-home.png)
 
 About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
+
+- ![screenshot](documentation/wireframes/tablet-about.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
+
+- ![screenshot](documentation/wireframes/tablet-contact.png)
 
 Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
+
+- ![screenshot](documentation/wireframes/tablet-gallery.png)
 
 etc.
-  - repeat for any remaining tablet wireframes
+
+- repeat for any remaining tablet wireframes
 
 < / details >
 
@@ -207,19 +221,24 @@ etc.
 < summary > Click here to see the Desktop Wireframes < / summary >
 
 Home
-  - ![screenshot](documentation/wireframes/desktop-home.png)
+
+- ![screenshot](documentation/wireframes/desktop-home.png)
 
 About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
+
+- ![screenshot](documentation/wireframes/desktop-about.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
+
+- ![screenshot](documentation/wireframes/desktop-contact.png)
 
 Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
+
+- ![screenshot](documentation/wireframes/desktop-gallery.png)
 
 etc.
-  - repeat for any remaining desktop wireframes
+
+- repeat for any remaining desktop wireframes
 
 < / details >
 
@@ -244,19 +263,19 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 - **Title for feature #1**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature01.png)
 
 - **Title for feature #2**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature02.png)
 
 - **Title for feature #3**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
 
@@ -280,11 +299,11 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - Title for future feature #1
-    - Any additional notes about this feature.
+  - Any additional notes about this feature.
 - Title for future feature #2
-    - Any additional notes about this feature.
+  - Any additional notes about this feature.
 - Title for future feature #3
-    - Any additional notes about this feature.
+  - Any additional notes about this feature.
 
 ## Tools & Technologies Used
 
@@ -354,6 +373,7 @@ class Product(models.Model):
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 A couple recommendations for building free ERDs:
+
 - [Draw.io](https://draw.io)
 - [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 
@@ -368,18 +388,17 @@ Using Markdown formatting to represent an example ERD table using the Product mo
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - Table: **Product**
-
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
+  | **PK** | **id** (unique) | Type         | Notes                         |
+  | ------------ | --------------------- | ------------ | ----------------------------- |
+  | **FK** | category              | ForeignKey   | FK to**Category** model |
+  |              | sku                   | CharField    |                               |
+  |              | name                  | CharField    |                               |
+  |              | description           | TextField    |                               |
+  |              | has_sizes             | BooleanField |                               |
+  |              | price                 | DecimalField |                               |
+  |              | rating                | DecimalField |                               |
+  |              | image_url             | URLField     |                               |
+  |              | image                 | ImageField   |                               |
 
 ## Testing
 
@@ -428,56 +447,56 @@ Make sure you're on the **AWS Management Console** page.
 - From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
 - From the **Permissions** tab, paste in the following CORS configuration:
 
-	```shell
-	[
-		{
-			"AllowedHeaders": [
-				"Authorization"
-			],
-			"AllowedMethods": [
-				"GET"
-			],
-			"AllowedOrigins": [
-				"*"
-			],
-			"ExposeHeaders": []
-		}
-	]
-	```
-
+  ```shell
+  [
+  	{
+  		"AllowedHeaders": [
+  			"Authorization"
+  		],
+  		"AllowedMethods": [
+  			"GET"
+  		],
+  		"AllowedOrigins": [
+  			"*"
+  		],
+  		"ExposeHeaders": []
+  	}
+  ]
+  ```
 - Copy your **ARN** string.
 - From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
-	- Policy Type: **S3 Bucket Policy**
-	- Effect: **Allow**
-	- Principal: `*`
-	- Actions: **GetObject**
-	- Amazon Resource Name (ARN): **paste-your-ARN-here**
-	- Click **Add Statement**
-	- Click **Generate Policy**
-	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
 
-		```shell
-		{
-			"Id": "Policy1234567890",
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Sid": "Stmt1234567890",
-					"Action": [
-						"s3:GetObject"
-					],
-					"Effect": "Allow",
-					"Resource": "arn:aws:s3:::your-bucket-name/*"
-					"Principal": "*",
-				}
-			]
-		}
-		```
+  - Policy Type: **S3 Bucket Policy**
+  - Effect: **Allow**
+  - Principal: `*`
+  - Actions: **GetObject**
+  - Amazon Resource Name (ARN): **paste-your-ARN-here**
+  - Click **Add Statement**
+  - Click **Generate Policy**
+  - Copy the entire Policy, and paste it into the **Bucket Policy Editor**
 
-	- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
-	- Click **Save**.
+    ```shell
+    {
+    	"Id": "Policy1234567890",
+    	"Version": "2012-10-17",
+    	"Statement": [
+    		{
+    			"Sid": "Stmt1234567890",
+    			"Action": [
+    				"s3:GetObject"
+    			],
+    			"Effect": "Allow",
+    			"Resource": "arn:aws:s3:::your-bucket-name/*"
+    			"Principal": "*",
+    		}
+    	]
+    }
+    ```
+  - Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
+  - Click **Save**.
 - From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
-	- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
+
+  - If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
 
 #### IAM
 
@@ -485,50 +504,50 @@ Back on the AWS Services Menu, search for and open **IAM** (Identity and Access 
 Once on the IAM page, follow these steps:
 
 - From **User Groups**, click **Create New Group**.
-	- Suggested Name: `group-tech-treasures` (group + the project name)
+  - Suggested Name: `group-tech-treasures` (group + the project name)
 - Tags are optional, but you must click it to get to the **review policy** page.
 - From **User Groups**, select your newly created group, and go to the **Permissions** tab.
 - Open the **Add Permissions** dropdown, and click **Attach Policies**.
 - Select the policy, then click **Add Permissions** at the bottom when finished.
 - From the **JSON** tab, select the **Import Managed Policy** link.
-	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
-	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+  - Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+  - You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
 
-		```shell
-		{
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Effect": "Allow",
-					"Action": "s3:*",
-					"Resource": [
-						"arn:aws:s3:::your-bucket-name",
-						"arn:aws:s3:::your-bucket-name/*"
-					]
-				}
-			]
-		}
-		```
-	
-	- Click **Review Policy**.
-	- Suggested Name: `policy-tech-treasures` (policy + the project name)
-	- Provide a description:
-		- "Access to S3 Bucket for tech-treasures static files."
-	- Click **Create Policy**.
+    ```shell
+    {
+    	"Version": "2012-10-17",
+    	"Statement": [
+    		{
+    			"Effect": "Allow",
+    			"Action": "s3:*",
+    			"Resource": [
+    				"arn:aws:s3:::your-bucket-name",
+    				"arn:aws:s3:::your-bucket-name/*"
+    			]
+    		}
+    	]
+    }
+    ```
+  - Click **Review Policy**.
+  - Suggested Name: `policy-tech-treasures` (policy + the project name)
+  - Provide a description:
+
+    - "Access to S3 Bucket for tech-treasures static files."
+  - Click **Create Policy**.
 - From **User Groups**, click your "group-tech-treasures".
 - Click **Attach Policy**.
 - Search for the policy you've just created ("policy-tech-treasures") and select it, then **Attach Policy**.
 - From **User Groups**, click **Add User**.
-	- Suggested Name: `user-tech-treasures` (user + the project name)
+  - Suggested Name: `user-tech-treasures` (user + the project name)
 - For "Select AWS Access Type", select **Programmatic Access**.
 - Select the group to add your new user to: `group-tech-treasures`
 - Tags are optional, but you must click it to get to the **review user** page.
 - Click **Create User** once done.
 - You should see a button to **Download .csv**, so click it to save a copy on your system.
-	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
-	- This contains the user's **Access key ID** and **Secret access key**.
-	- `AWS_ACCESS_KEY_ID` = **Access key ID**
-	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+  - **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
+  - This contains the user's **Access key ID** and **Secret access key**.
+  - `AWS_ACCESS_KEY_ID` = **Access key ID**
+  - `AWS_SECRET_ACCESS_KEY` = **Secret access key**
 
 #### Final AWS Setup
 
@@ -546,18 +565,18 @@ Once you've created a Stripe account and logged-in, follow these series of steps
 
 - From your Stripe dashboard, click to expand the "Get your test API keys".
 - You'll have two keys here:
-	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
-	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+  - `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+  - `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
 
 As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
-	- `https://tech-treasures-f953ccb89af8.herokuapp.com/checkout/wh/`
+  - `https://tech-treasures-f953ccb89af8.herokuapp.com/checkout/wh/`
 - Click **receive all events**.
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
-	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+  - `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
 
 ### Gmail API
 
@@ -575,11 +594,11 @@ Once you've created a Gmail (Google) account and logged-in, follow these series 
 - This might prompt you once again to confirm your password and account.
 - Select **Mail** for the app type.
 - Select **Other (Custom name)** for the device type.
-	- Any custom name, such as "Django" or tech-treasures
+  - Any custom name, such as "Django" or tech-treasures
 - You'll be provided with a 16-character password (API key).
-	- Save this somewhere locally, as you cannot access this key again later!
-	- `EMAIL_HOST_PASS` = user's 16-character API key
-	- `EMAIL_HOST_USER` = user's own personal Gmail email address
+  - Save this somewhere locally, as you cannot access this key again later!
+  - `EMAIL_HOST_PASS` = user's 16-character API key
+  - `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 ### Heroku Deployment
 
@@ -591,19 +610,19 @@ Deployment steps are as follows, after account setup:
 - Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
 - From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
 
-| Key | Value |
-| --- | --- |
-| `AWS_ACCESS_KEY_ID` | user's own value |
-| `AWS_SECRET_ACCESS_KEY` | user's own value |
-| `DATABASE_URL` | user's own value |
+| Key                       | Value                                                                  |
+| ------------------------- | ---------------------------------------------------------------------- |
+| `AWS_ACCESS_KEY_ID`     | user's own value                                                       |
+| `AWS_SECRET_ACCESS_KEY` | user's own value                                                       |
+| `DATABASE_URL`          | user's own value                                                       |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
-| `EMAIL_HOST_PASS` | user's own value |
-| `EMAIL_HOST_USER` | user's own value |
-| `SECRET_KEY` | user's own value |
-| `STRIPE_PUBLIC_KEY` | user's own value |
-| `STRIPE_SECRET_KEY` | user's own value |
-| `STRIPE_WH_SECRET` | user's own value |
-| `USE_AWS` | True |
+| `EMAIL_HOST_PASS`       | user's own value                                                       |
+| `EMAIL_HOST_USER`       | user's own value                                                       |
+| `SECRET_KEY`            | user's own value                                                       |
+| `STRIPE_PUBLIC_KEY`     | user's own value                                                       |
+| `STRIPE_SECRET_KEY`     | user's own value                                                       |
+| `STRIPE_WH_SECRET`      | user's own value                                                       |
+| `USE_AWS`               | True                                                                   |
 
 Heroku needs two additional files in order to deploy properly.
 
@@ -634,7 +653,7 @@ Or:
 - In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
 - Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
 - After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
-	- `git push heroku main`
+  - `git push heroku main`
 
 The project should now be connected and deployed to Heroku!
 
@@ -687,13 +706,13 @@ If you'd like to backup your database models, use the following command for each
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/dougyb83/tech-treasures) 
-2. Locate the Code button above the list of files and click it 
+1. Go to the [GitHub repository](https://github.com/dougyb83/tech-treasures)
+2. Locate the Code button above the list of files and click it
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/dougyb83/tech-treasures.git`
+   - `git clone https://github.com/dougyb83/tech-treasures.git`
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
@@ -741,20 +760,20 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-| Source | Location | Notes |
-| --- | --- | --- |
-| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| Source                                                                   | Location           | Notes                                            |
+| ------------------------------------------------------------------------ | ------------------ | ------------------------------------------------ |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder)                    | README and TESTING | tool to help generate the Markdown files         |
+| [Chris Beams](https://chris.beams.io/posts/git-commit)                      | version control    | "How to Write a Git Commit Message"              |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site        | responsive HTML/CSS/JS navbar                    |
+| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)           | contact page       | interactive pop-up (modal)                       |
+| [W3Schools](https://www.w3schools.com/css/css3_variables.asp)               | entire site        | how to use CSS :root variables                   |
+| [Flexbox Froggy](https://flexboxfroggy.com/)                                | entire site        | modern responsive layouts                        |
+| [Grid Garden](https://cssgridgarden.com)                                    | entire site        | modern responsive layouts                        |
+| [StackOverflow](https://stackoverflow.com/a/2450976)                        | quiz page          | Fisher-Yates/Knuth shuffle in JS                 |
+| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc)                      | leaderboard        | using `localStorage()` in JS for high scores   |
+| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y)                      | PP3 terminal       | tutorial for adding color to the Python terminal |
+| [strftime](https://strftime.org)                                            | CRUD functionality | helpful tool to format date/time from string     |
+| [WhiteNoise](http://whitenoise.evans.io)                                    | entire site        | hosting static files on Heroku temporarily       |
 
 ### Media
 
@@ -772,17 +791,17 @@ by sending yourself the following command: `!freemedia`.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| Source                                                        | Location     | Type  | Notes                                        |
+| ------------------------------------------------------------- | ------------ | ----- | -------------------------------------------- |
+| [Pexels](https://www.pexels.com)                                 | entire site  | image | favicon on all pages                         |
+| [Lorem Picsum](https://picsum.photos)                            | home page    | image | hero image background                        |
+| [Unsplash](https://unsplash.com)                                 | product page | image | sample of fake products                      |
+| [Pixabay](https://pixabay.com)                                   | gallery page | image | group of photos for gallery                  |
+| [Wallhere](https://wallhere.com)                                 | footer       | image | background wallpaper image in the footer     |
+| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images         |
+| [Audio Micro](https://www.audiomicro.com/free-sound-effects)     | game page    | audio | free audio files to generate the game sounds |
+| [Videvo](https://www.videvo.net/)                                | home page    | video | background video on the hero section         |
+| [TinyPNG](https://tinypng.com)                                   | entire site  | image | tool for image compression                   |
 
 ### Acknowledgements
 
