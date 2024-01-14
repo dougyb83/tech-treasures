@@ -3,11 +3,16 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(200vh - 164px);    
     color: #555;
     font-family: 'Share Tech Mono', monospace;
+    margin: 0; /* Remove default body margin */
+}
+
+.hero-image {
+    background: url('/media/hero-image.webp') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
 }
 
 /* from Bulma */
@@ -75,7 +80,7 @@ body {
         z-index: 1030;
     }
 
-    .header-container {
+    /* .header-container {
         padding-top: 164px;
-    }
+    } */
 }
