@@ -15,6 +15,11 @@ body {
     height: 70vh;
 }
 
+.hero-title {
+    justify-content: flex-end;
+    text-align: right;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -66,7 +71,7 @@ body {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
