@@ -10,7 +10,7 @@ body {
 }
 
 .hero-image {
-    background: url('/media/hero-image.webp') no-repeat center center;
+    background: url('../../media/hero-image.webp') no-repeat center center;
     background-size: cover;
     height: 70vh;
 }

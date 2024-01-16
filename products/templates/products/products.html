@@ -74,5 +74,53 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="pagination">
+                    {% if products.has_previous %}
+                    <!-- display pagination 'back' buttons -->
+                    <li>
+                        <a href="?page=1{{ get_args }}">
+                            <i class="fas fa-angle-double-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="?page={{ products.previous_page_number }}{{ get_args }}">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                    </li>
+                    {% endif %}
+                
+                    {% for num in products.paginator.page_range %}
+                        <!-- loop through pagination 'page' numbers -->
+                        {% if products.number == num %}
+                            <!-- set 'active' class but disable the 'current page -->
+                            <li class="active disabled">
+                                <a class="text-dark">{{ num }}</a>
+                            </li>
+                        {% elif num > products.number|add:'-3' and num < products.number|add:'3' %}
+                            <!-- get the previous 2 and next 2 page numbers -->
+                            <li>
+                                <a href="?page={{ num }}{{ get_args }}" class="text-dark">{{ num }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                
+                    {% if products.has_next %}
+                    <!-- display pagination 'next' buttons -->
+                    <li>
+                        <a href="?page={{ products.next_page_number }}{{ get_args }}">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="?page={{ products.paginator.num_pages }}{{ get_args }}">
+                            <i class="fas fa-angle-double-right"></i>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
     </div>
 {% endblock %}
