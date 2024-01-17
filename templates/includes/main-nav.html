@@ -17,10 +17,10 @@
                 Microcontrolers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Arduino</a>
-                <a href="" class="dropdown-item">Raspberry Pi</a>
-                <a href="" class="dropdown-item">micro:bit</a>
-                <a href="" class="dropdown-item">All Microcontrollers</a>
+                <a href="{% url 'products' %}?category=arduino" class="dropdown-item">Arduino</a>
+                <a href="{% url 'products' %}?category=raspberry_pi" class="dropdown-item">Raspberry Pi</a>
+                <a href="{% url 'products' %}?category=micro_bit" class="dropdown-item">micro:bit</a>
+                <a href="{% url 'products' %}?category=arduino,raspberry_pi,micro_bit" class="dropdown-item">All Microcontrollers</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Robots & Kits
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Inventors Kits</a>
-                <a href="" class="dropdown-item">Robots</a>
-                <a href="" class="dropdown-item">All Robots & Kits</a>
+                <a href="{% url 'products' %}?category=inventors_kits" class="dropdown-item">Inventors Kits</a>
+                <a href="{% url 'products' %}?category=robots" class="dropdown-item">Robots</a>
+                <a href="{% url 'products' %}?category=inventors_kits,robots" class="dropdown-item">All Robots & Kits</a>
             </div>
         </li>
 
@@ -40,9 +40,9 @@
                 Tools & Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Accessories</a>
-                <a href="" class="dropdown-item">Tool</a>
-                <a href="" class="dropdown-item">All Tools & Equipment</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tool</a>
+                <a href="{% url 'products' %}?category=tools,accessories" class="dropdown-item">All Tools & Equipment</a>
             </div>
         </li>
     </ul>
