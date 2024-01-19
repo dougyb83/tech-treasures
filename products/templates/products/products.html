@@ -41,13 +41,27 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
-                        <p class="text-muted mt-3 text-center text-md-left">
-                            {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                        <p class="text-muted mt-3 text-center text-md-left">                 
+                            {% with products.has_previous as has_previous %}
+                                {% with products.has_next as has_next %}
+                                    {% if products.paginator.num_pages > 1 %}
+                                        {% if has_previous %}
+                                            {% if has_next %}
+                                                Showing {{ products.start_index }} - {{ products.end_index }} of {{ products.paginator.count }} products
+                                            {% else %}
+                                                Showing {{ products.start_index }} - {{ products.paginator.count }} of {{ products.paginator.count }} products
+                                            {% endif %}
+                                        {% else %}
+                                            Showing 1 - {{ products.end_index }} of {{ products.paginator.count }} products
+                                        {% endif %}
+                                    {% endif %}
+                                {% endwith %}
+                            {% endwith %}                    
+                            {% if search_term %}
+                                found for <strong>"{{ search_term }}"</strong>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="row">
                     {% for product in products %}
@@ -112,4 +126,41 @@
         </div>
         {% include 'includes/pagination.html' %}
     </div>
+    <div class="btt-button shadow-sm rounded-circle border border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}  
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
 {% endblock %}
