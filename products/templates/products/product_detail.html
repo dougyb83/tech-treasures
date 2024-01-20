@@ -49,7 +49,7 @@
                             {% if o %}
                                 <div class="col-12">
                                     <p><strong>{{ product.option_details.option_title }}</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_option" id='id_product_option'>
+                                    <select class="form-control rounded-0 w-50" name="product_options" id='id_product_options'>
                                         {% for option in product.option_details.options %}
                                             <option value="{{ option }}">{{ option }}</option>
                                         {% endfor %}                                        
