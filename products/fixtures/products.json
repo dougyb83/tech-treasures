@@ -290,7 +290,12 @@
       "category": 2,
       "rating": 5.0,
       "image_url": "//thepihut.com/cdn/shop/files/raspberry-pi-5-raspberry-pi-40958498898115_1000x.jpg",
-      "image": "raspberry-pi-5-raspberry-pi-40958498898115_1000x.jpg"
+      "image": "raspberry-pi-5-raspberry-pi-40958498898115_1000x.jpg",
+      "has_options": "True",
+      "option_details": {
+        "option_title": "Memory:",
+        "options": ["4GB","8GB"]
+      }
     }
   },
   {
