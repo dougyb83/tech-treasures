@@ -71,7 +71,8 @@ def adjust_basket(request, item_id):
             messages.success(request,
                              (f'Updated {options.upper()} '
                               f'{product.name} quantity to '
-                              f'{basket[item_id]["items_by_options"][options]}'))
+                              f'{basket[item_id]["items_by_options"][options]}'
+                              ))
         else:
             del basket[item_id]['items_by_options'][options]
             if not basket[item_id]['items_by_options']:
@@ -114,7 +115,8 @@ def remove_from_basket(request, item_id):
                               f'{product.name} from your basket'))
         else:
             basket.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your basket')
+            messages.success(
+                request, f'Removed {product.name} from your basket')
 
         request.session['basket'] = basket
         return HttpResponse(status=200)
