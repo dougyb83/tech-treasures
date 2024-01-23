@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Product, Category
 from django.db.models.functions import Lower
+from urllib.parse import urlparse, parse_qs
 
 
 def all_products(request):
@@ -15,6 +16,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    current_args = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -49,6 +51,20 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    # get current args for pagination
+    current_url = request.build_absolute_uri()
+    parsed_url = urlparse(current_url)
+    query_params = parse_qs(parsed_url.query)
+
+    for key, value in query_params.items():
+        param = f"&{key}={value[0]}"
+        if "page" in param:
+            continue
+        if not current_args:
+            current_args = param
+        else:
+            current_args = f"{current_args}{param}"
+
     paginator = Paginator(products, 12)
     try:
         products = paginator.page(page)
@@ -62,6 +78,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'get_args': current_args,
     }
 
     return render(request, 'products/products.html', context)

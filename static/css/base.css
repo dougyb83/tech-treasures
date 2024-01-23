@@ -90,6 +90,10 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.pagination {
+    justify-content: center;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
