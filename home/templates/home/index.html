@@ -22,4 +22,91 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card category-card text-white">
+                <a href="{% url 'products' %}?category=arduino">
+                    <img src="{{ MEDIA_URL }}card-background-1.png" class="img-fluid card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card inner-card bg-light"></div>
+                        <div class="inner-card-overlay text-black">
+                            <h2 class="card-title">Arduino</h2>
+                            <img src="{{ MEDIA_URL }}arduino-logo.png" class="img-fluid category-logo" alt="...">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card category-card text-white">
+                <a href="{% url 'products' %}?category=raspberry_pi">
+                    <img src="{{ MEDIA_URL }}card-background-1.png" class="img-fluid card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card inner-card bg-light"></div>
+                        <div class="inner-card-overlay text-black">
+                            <h2 class="card-title">Raspberry Pi</h2>
+                            <img src="{{ MEDIA_URL }}raspberry-pi-logo.png" class="img-fluid category-logo" alt="...">                    
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card category-card text-white">
+                <a href="{% url 'products' %}?category=micro_bit">
+                    <img src="{{ MEDIA_URL }}card-background-1.png" class="img-fluid card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card inner-card bg-light"></div>
+                        <div class="inner-card-overlay text-black">
+                            <h2 class="card-title">Micro:bit</h2>
+                            <img src="{{ MEDIA_URL }}microbit-logo.png" class="img-fluid category-logo" alt="...">                    
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card category-card text-white">
+                <a href="{% url 'products' %}?category=inventors_kits">
+                    <img src="{{ MEDIA_URL }}card-background-1.png" class="img-fluid card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card inner-card bg-light"></div>
+                        <div class="inner-card-overlay text-black">
+                            <h2 class="card-title">Inventors Kits</h2>
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card category-card text-white">
+                <a href="{% url 'products' %}?category=robots">
+                    <img src="{{ MEDIA_URL }}card-background-1.png" class="img-fluid card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card inner-card bg-light"></div>
+                        <div class="inner-card-overlay text-black">
+                            <h2 class="card-title">Robots</h2>
+                            <img src="{{ MEDIA_URL }}robot-logo.png" class="img-fluid category-logo" alt="...">                    
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="card category-card text-white">
+                <a href="{% url 'products' %}?category=tools,accessories">
+                    <img src="{{ MEDIA_URL }}card-background-1.png" class="img-fluid card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card inner-card bg-light"></div>
+                        <div class="inner-card-overlay text-black">
+                            <h2 class="card-title">Tools & Acc.</h2>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
