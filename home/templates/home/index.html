@@ -25,26 +25,22 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-            <div class="card category-card text-white">
+            <div class="card category-card text-white" style="background: url('{{ MEDIA_URL }}card-background-1.png') center/cover no-repeat;">
                 <a href="{% url 'products' %}?category=arduino">
-                    <img src="{{ MEDIA_URL }}card-background-1.png" class="img-fluid card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card inner-card bg-light"></div>
-                        <div class="inner-card-overlay text-black">
-                            <h2 class="card-title">Arduino</h2>
+                    <div class="row card inner-card">
+                        <div class="col-12">
+                            <h2 class="card-title text-black">Arduino</h2>
                             <img src="{{ MEDIA_URL }}arduino-logo.png" class="img-fluid category-logo" alt="...">
                         </div>
                     </div>
                 </a>
             </div>
         </div>        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-            <div class="card category-card text-white">
+            <div class="card category-card text-white" style="background: url('{{ MEDIA_URL }}card-background-2.png') center/cover no-repeat;">
                 <a href="{% url 'products' %}?category=raspberry_pi">
-                    <img src="{{ MEDIA_URL }}card-background-2.png" class="img-fluid card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card inner-card bg-light"></div>
-                        <div class="inner-card-overlay text-black">
-                            <h2 class="card-title">Raspberry Pi</h2>
+                    <div class="row card inner-card">
+                        <div class="col-12">
+                            <h2 class="card-title text-black">Raspberry Pi</h2>
                             <img src="{{ MEDIA_URL }}raspberry-pi-logo.png" class="img-fluid category-logo" alt="...">                    
                         </div>
                     </div>
@@ -52,13 +48,11 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-            <div class="card category-card text-white">
+            <div class="card category-card text-white" style="background: url('{{ MEDIA_URL }}card-background-3.png') center/cover no-repeat;">
                 <a href="{% url 'products' %}?category=micro_bit">
-                    <img src="{{ MEDIA_URL }}card-background-3.png" class="img-fluid card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card inner-card bg-light"></div>
-                        <div class="inner-card-overlay text-black">
-                            <h2 class="card-title">Micro:bit</h2>
+                    <div class="row card inner-card">
+                        <div class="col-12">
+                            <h2 class="card-title text-black">Micro:bit</h2>
                             <img src="{{ MEDIA_URL }}microbit-logo.png" class="img-fluid category-logo" alt="...">                    
                         </div>
                     </div>
@@ -66,27 +60,23 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-            <div class="card category-card text-white">
+            <div class="card category-card text-white" style="background: url('{{ MEDIA_URL }}card-background-4.png') center/cover no-repeat;">
                 <a href="{% url 'products' %}?category=inventors_kits">
-                    <img src="{{ MEDIA_URL }}card-background-4.png" class="img-fluid card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card inner-card bg-light"></div>
-                        <div class="inner-card-overlay text-black">
-                            <h2 class="card-title">Inventors Kits</h2>
-                            <i class="fa-regular fa-lightbulb"></i>
+                    <div class="row card inner-card">
+                        <div class="col-12">
+                            <h2 class="card-title text-black">Inventors Kits</h2>
+                            <img src="{{ MEDIA_URL }}inventor-logo.png" class="img-fluid category-logo" alt="...">   
                         </div>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-            <div class="card category-card text-white">
+            <div class="card category-card text-white" style="background: url('{{ MEDIA_URL }}card-background-5.png') center/cover no-repeat;">
                 <a href="{% url 'products' %}?category=robots">
-                    <img src="{{ MEDIA_URL }}card-background-5.png" class="img-fluid card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card inner-card bg-light"></div>
-                        <div class="inner-card-overlay text-black">
-                            <h2 class="card-title">Robots</h2>
+                    <div class="row card inner-card">
+                        <div class="col-12">
+                            <h2 class="card-title text-black">Robots</h2>
                             <img src="{{ MEDIA_URL }}robot-logo.png" class="img-fluid category-logo" alt="...">                    
                         </div>
                     </div>
@@ -94,14 +84,12 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-            <div class="card category-card text-white">
+            <div class="card category-card text-white" style="background: url('{{ MEDIA_URL }}card-background-6.png') center/cover no-repeat;">
                 <a href="{% url 'products' %}?category=tools,accessories">
-                    <img src="{{ MEDIA_URL }}card-background-6.png" class="img-fluid card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card inner-card bg-light"></div>
-                        <div class="inner-card-overlay text-black">
-                            <h2 class="card-title">Tools & Acc.</h2>
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <div class="row card inner-card">
+                        <div class="col-12">
+                            <h2 class="card-title text-black">Tools & Acc.</h2>
+                            <img src="{{ MEDIA_URL }}tools-logo.png" class="img-fluid category-logo" alt="...">   
                         </div>
                     </div>
                 </a>
