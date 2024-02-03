@@ -61,10 +61,6 @@ body {
     width: fit-content;
 }
 
-.form-check-input {
-    display: none;
-}
-
 .btt-button {
     height: 42px;
     width: 42px;
