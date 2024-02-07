@@ -1,0 +1,29 @@
+Hi {{ order.full_name }}!
+
+Confirmation of your Tech Treasures order. 
+
+Order Details.
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+
+Delivery Address.
+
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+{{ order.country }}
+
+Your contact number - {{ order.phone_number }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+Tech Treasures
