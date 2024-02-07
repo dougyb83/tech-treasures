@@ -2,7 +2,7 @@ from django.http import HttpResponse
 
 from .models import Order, OrderLineItem
 from products.models import Product
-# from profiles.models import UserProfile
+from profiles.models import UserProfile
 
 import json
 import time

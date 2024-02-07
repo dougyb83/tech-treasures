@@ -44,6 +44,10 @@ body {
     mix-blend-mode: darken;
 }
 
+.product-check-input {
+    display: none;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;

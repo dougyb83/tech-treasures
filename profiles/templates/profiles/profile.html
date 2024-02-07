@@ -58,10 +58,11 @@
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
-                                                    {{ item.product.name }} x{{ item.quantity }}
+                                                    {{ item.product.name }}
                                                     {% if item.product.has_options %}
-                                                        <p class="my-0"><strong>{{ item.product.option_details.option_title }}</strong>{{ item.product.option_details }}</p>
-                                                    {% endif %}                                                    
+                                                        - {{ item.product_options|upper }}
+                                                    {% endif %}
+                                                    x{{ item.quantity }}                                                 
                                                 </li>
                                             {% endfor %}
                                         </ul>
