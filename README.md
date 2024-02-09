@@ -1,17 +1,17 @@
-# [TECH TREASURES](https://tech-treasures-f953ccb89af8.herokuapp.com)
+# [TECH TREASURES](https://tech-treasures-7e2b33714eb6.herokuapp.com)
 
 Tech Treasures is a specialized platform tailored for tech enthusiasts, hobbyists, professionals, and innovators seeking access to high-quality tech components, gadgets, resources, and educational materials. Serving as a comprehensive marketplace, Tech Treasures streamlines the process of discovering and acquiring essential tools while fostering collaboration, knowledge-sharing, and growth within the technology and electronics realm.
 
 At its core, Tech Treasures prioritizes user experience by offering a user-friendly interface, secure transactions, fast shipping, and exceptional customer support. The platform focuses on providing access to essential tech tools and resources, enabling individuals to explore, learn, innovate, and grow within their respective fields, making Tech Treasures a valuable resource for individuals passionate about technology and electronics.
 
-[View the live site here.](https://tech-treasures-f953ccb89af8.herokuapp.com/)
+[View the live site here.](https://tech-treasures-7e2b33714eb6.herokuapp.com/)
 
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 Consider adding a mockup image using the "Am I Responsive" website.
 
 Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://tech-treasures-f953ccb89af8.herokuapp.com
+https://ui.dev/amiresponsive?url=https://tech-treasures-7e2b33714eb6.herokuapp.com
 
 Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
 (reminder: `assets/` and `static/` are for files used on the live site, not documentation)
@@ -385,7 +385,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-The live deployed application can be found deployed on [Heroku](https://tech-treasures-f953ccb89af8.herokuapp.com).
+The live deployed application can be found deployed on [Heroku](https://tech-treasures-7e2b33714eb6.herokuapp.com).
 
 ### ElephantSQL Database
 
@@ -541,7 +541,7 @@ As a backup, in case users prematurely close the purchase-order page during paym
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
-  - `https://tech-treasures-f953ccb89af8.herokuapp.com/checkout/wh/`
+  - `https://tech-treasures-7e2b33714eb6.herokuapp.com/checkout/wh/`
 - Click **receive all events**.
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
