@@ -8,8 +8,8 @@
       "description": "The Arduino UNO R4 WiFi merges the RA4M1 microprocessor from Renesas with the ESP32-S3 from Espressif, creating an all-in-one tool for makers with enhanced processing power and a diverse array of new peripherals.",
       "price": 25.9,
       "category": 1,
-      "rating": 3.9,
-      "image": "arduino-uno-r4-wifi-arduino-abx00087-40630939353283_1000x.jpg"
+      "rating": 4.0,
+      "image": "arduino-uno-r4-wifi.jpg"
     }
   },
   {
@@ -18,11 +18,11 @@
     "fields": {
       "sku": "techtre002",
       "name": "Arduino Giga R1 WiFi",
-      "description": "A new board joins the Arduino family, and it's the most powerful ever designed for makers, engineers and creators: the GIGA R1 WiFi! Bridging you from great fun to amazing performance, it opens the door to infinite possibilities in robotics, IoT, music, computer vision, digital fabrication, and any kind of projects involving machines, interfaces, and real-time processing - in the same form factor as the popular Mega and Due boards.",
+      "description": "A new board joins the Arduino family, and it\u2019s the most powerful ever designed for makers, engineers and creators: the GIGA R1 WiFi! Bridging you from great fun to amazing performance, it opens the door to infinite possibilities in robotics, IoT, music, computer vision, digital fabrication, and any kind of projects involving machines, interfaces, and real-time processing - in the same form factor as the popular Mega and Due boards.",
       "price": 75.0,
       "category": 1,
-      "rating": 3.8,
-      "image": "arduino-giga-r1-wifi-arduino-abx00063-40243261669571_1000x.jpg"
+      "rating": 3.3,
+      "image": "arduino-giga-r1-wifi.jpg"
     }
   },
   {
@@ -34,8 +34,8 @@
       "description": "The Arduino UNO is one of the best boards to get started with electronics and coding. If this is your first experience tinkering with the platform, the UNO is the most robust board you can start playing with. The UNO is the most used and documented board of the whole Arduino family.",
       "price": 24.5,
       "category": 1,
-      "rating": 4.7,
-      "image": "arduino-uno-rev3-arduino-a000066-30394855981251_1000x.jpg"
+      "rating": 3.4,
+      "image": "arduino-uno-rev3.jpg"
     }
   },
   {
@@ -47,8 +47,8 @@
       "description": "The new member of our iconic Arduino Nano family, the Nano ESP32. This board brings all the power of the well-known ESP32-S3 with the full support of the Arduino ecosystem, allowing makers to explore the world of Arduino and MicroPython without any blocker. Just unleash your creativity and start building for the next IoT project.",
       "price": 19.8,
       "category": 1,
-      "rating": 4.7,
-      "image": "arduino-nano-esp32-with-headers-arduino-abx00083-40681010954435_1000x.jpg"
+      "rating": 3.3,
+      "image": "arduino-nano-esp32-(with-headers).jpg"
     }
   },
   {
@@ -60,8 +60,8 @@
       "description": "Turn your ideas into a reality quickly with the new Arduino Nano Every. This version has headers pre-soldered.",
       "price": 14.5,
       "category": 1,
-      "rating": 4.5,
-      "image": "arduino-nano-every-with-headers-arduino-abx00033-40769881964739_1000x.jpg"
+      "rating": 4.6,
+      "image": "arduino-nano-every-(with-headers).jpg"
     }
   },
   {
@@ -73,8 +73,8 @@
       "description": "Introducing the Arduino UNO R4 Minima! This board boasts the RA4M1 microprocessor from Renesas, delivering increased processing power, expanded memory, and additional peripherals. And the best part? It stays true to the reliable UNO form factor and operates at a practical 5V voltage.",
       "price": 18.5,
       "category": 1,
-      "rating": 3.4,
-      "image": "arduino-uno-r4-minima-arduino-abx00080-40630872309955_1000x.jpg"
+      "rating": 3.8,
+      "image": "arduino-uno-r4-minima.jpg"
     }
   },
   {
@@ -86,8 +86,8 @@
       "description": "The 8-bit Arduino board with 54 digital pins, 16 analogue inputs and 4 serial ports.",
       "price": 43.7,
       "category": 1,
-      "rating": 3.6,
-      "image": "arduino-mega-2560-rev3-arduino-a000067-40770344157379_1000x.jpg"
+      "rating": 4.4,
+      "image": "arduino-mega-2560-rev3.jpg"
     }
   },
   {
@@ -99,8 +99,8 @@
       "description": "You're probably using an Arduino Mega because you have a LOT of devices to hook up to your project, and this shield is just itching to help you with that!",
       "price": 23.8,
       "category": 1,
-      "rating": 4.5,
-      "image": "terminal-shield-for-arduino-mega-the-pi-hut-ep-0166-40637765157059_1000x.jpg"
+      "rating": 4.4,
+      "image": "terminal-shield-for-arduino-mega.jpg"
     }
   },
   {
@@ -112,8 +112,8 @@
       "description": "The classic Arduino Nano is the smallest Arduino board to build your projects with.",
       "price": 22.0,
       "category": 1,
-      "rating": 3.1,
-      "image": "arduino-nano-with-headers-arduino-a000005-39963588264131_1000x.jpg"
+      "rating": 5.0,
+      "image": "arduino-nano-(with-headers).jpg"
     }
   },
   {
@@ -125,8 +125,8 @@
       "description": "This is a screw terminal shield specifically designed for the Arduino UNO or UNO compatible boards. The board allows you to quickly build and prototype your own circuit.",
       "price": 13.5,
       "category": 1,
-      "rating": 3.9,
-      "image": "screw-terminal-shield-for-arduino-uno-52pi-ep-0142-29779408421059_1000x.jpg"
+      "rating": 3.6,
+      "image": "screw-terminal-shield-for-arduino-uno.jpg"
     }
   },
   {
@@ -138,8 +138,8 @@
       "description": "This USB to Mini-B USB Cable is available in\u00a0in a range of lengths and has been tested with some of our favourite microcontrollers to ensure it reliably passes both data and power.",
       "price": 2.2,
       "category": 1,
-      "rating": 3.5,
-      "image": "usb-a-to-usb-mini-b-cable-black-the-pi-hut-40881698799811_1000x.jpg",
+      "rating": 3.3,
+      "image": "usb-a-to-usb-mini-b-cable---black.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Length:",
@@ -162,8 +162,8 @@
       "description": "This protective case has been designed specifically for the Arduino Uno and is available in a range of different colours - this is the clear version!",
       "price": 5.0,
       "category": 1,
-      "rating": 3.3,
-      "image": "clear-protective-case-for-arduino-uno-the-pi-hut-104672-29781042593987_700x.jpg"
+      "rating": 3.2,
+      "image": "clear-protective-case-for-arduino-uno.jpg"
     }
   },
   {
@@ -175,8 +175,8 @@
       "description": "The Arduino Motor Shield allows your Arduino to drive DC and stepper motors, relays and solenoids.",
       "price": 24.7,
       "category": 1,
-      "rating": 4.3,
-      "image": "arduino-motor-shield-rev3-arduino-a000079-15994392182846_1000x.jpg"
+      "rating": 3.1,
+      "image": "arduino-motor-shield-rev3.jpg"
     }
   },
   {
@@ -188,8 +188,8 @@
       "description": "Aww yeah, it's the Feather you have been waiting for! The HUZZAH32 is our ESP32-based Feather, made with the official WROOM32 module. We packed everything you love about Feathers: built in USB-to-Serial converter, automatic bootloader reset, Lithium Ion/Polymer charger, and just about all of the GPIOs brought out so you can use it with any of our Feather Wings. We have other boards in the Feather family, check'em out here.",
       "price": 19.5,
       "category": 1,
-      "rating": 3.5,
-      "image": "adafruit-huzzah32-esp32-feather-board-adafruit-ada3405-28610376990915_1000x.jpg"
+      "rating": 4.2,
+      "image": "adafruit-huzzah32-\u2013-esp32-feather-board.jpg"
     }
   },
   {
@@ -201,8 +201,8 @@
       "description": "The Arduino Ethernet Shield 2 connects your Arduino to the internet in mere minutes. Just plug this module onto your Arduino Board, connect it to your network with an RJ45 cable (not included) and follow a few simple steps to start controlling your world through the internet.",
       "price": 26.5,
       "category": 1,
-      "rating": 3.9,
-      "image": "arduino-ethernet-shield-2-arduino-a000024-15258009960510_500x.jpg"
+      "rating": 3.4,
+      "image": "arduino-ethernet-shield-2.jpg"
     }
   },
   {
@@ -214,8 +214,8 @@
       "description": "MKR ZERO has an on-board SD connector with dedicated SPI interfaces (SPI1) that allows you to play with MUSIC files with no extra hardware!",
       "price": 30.0,
       "category": 1,
-      "rating": 4.0,
-      "image": "arduino-mkr-zero-arduino-abx00012-40770749399235_700x.jpg"
+      "rating": 3.7,
+      "image": "arduino-mkr-zero.jpg"
     }
   },
   {
@@ -227,8 +227,8 @@
       "description": "This camera module is based on the OmniVision 0.3MP OV7675 image sensor, which excels in image capture with its advanced features and exceptional performance. Its pixel array captures intricate details with precision and clarity, while its low-light imaging capabilities reveal hidden elements in challenging lighting conditions.",
       "price": 5.6,
       "category": 1,
-      "rating": 4.5,
-      "image": "0-3mp-ov7675-20-pin-dvp-camera-module-for-arduino-giga-r1-wifi-arducam-b0070-40587948490947_1000x.jpg"
+      "rating": 4.6,
+      "image": "0.3mp-ov7675-20-pin-dvp-camera-module-for-arduino-giga-r1-wifi.jpg"
     }
   },
   {
@@ -240,8 +240,8 @@
       "description": "The Maker UNO is an Arduino compatible board specially designed to simplify building projects. Coding & electronics is made easy and affordable with 12 built in LEDs, a built-in buzzer and a button. ",
       "price": 8.9,
       "category": 1,
-      "rating": 3.0,
-      "image": "maker-uno-cytron-102561-14690017280062_600x.jpg"
+      "rating": 5.0,
+      "image": "maker-uno.jpg"
     }
   },
   {
@@ -253,8 +253,8 @@
       "description": "Make your projects rock solid with the Prototyping Shield. It makes it easy for you to design custom circuits and solder electronics directly to it.",
       "price": 12.2,
       "category": 1,
-      "rating": 4.7,
-      "image": "arduino-proto-shield-rev3-uno-size-arduino-tsx00083-30396168798403_1000x.jpg"
+      "rating": 3.2,
+      "image": "arduino-proto-shield-rev3-(uno-size).jpg"
     }
   },
   {
@@ -266,8 +266,8 @@
       "description": "This is a very popular LCD Keypad shield for Arduino and other variants. It includes a 2x16 LCD display and 6 momentary push buttons. Pins 4, 5, 6, 7, 8, 9 and 10 are used to interface with the LCD. Just one Analog Pin 0 is used to read the five push buttons. The LCD shield supports contrast adjustment and back-lit on/off functions. It also exposes five analog pins with DFRobot color code for easy analog sensor plugging and display. The on board LED indicates power on.",
       "price": 9.5,
       "category": 1,
-      "rating": 4.6,
-      "image": "gravity-1602-lcd-keypad-shield-for-arduino-dfrobot-dfr0009-40864088457411_800x.jpg"
+      "rating": 4.5,
+      "image": "gravity-1602-lcd-keypad-shield-for-arduino.jpg"
     }
   },
   {
@@ -277,10 +277,10 @@
       "sku": "techtre0021",
       "name": "Raspberry Pi 5",
       "description": "Featuring a 64-bit quad-core Arm Cortex-A76 processor running at 2.4GHz, Raspberry Pi 5 delivers a 2-3x increase in CPU performance relative to Raspberry Pi 4! Raspberry Pi 5 also brings with it a huge list of great new features and improvements, making this the best Raspberry Pi yet!",
-      "price": 59.3,
+      "price": 56.34,
       "category": 2,
-      "rating": 4.1,
-      "image": "raspberry-pi-5-raspberry-pi-40958498898115_1000x.jpg",
+      "rating": 3.5,
+      "image": "raspberry-pi-5.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Memory:",
@@ -300,8 +300,8 @@
       "description": "The Raspberry Pi Active Cooler provides an alternative cooling solution for users who wish to use their Raspberry Pi 5 under sustained heavy load without a case (but you might want to add one of our fancy Active Cooler covers for protection!)",
       "price": 4.9,
       "category": 2,
-      "rating": 4.1,
-      "image": "active-cooler-for-raspberry-pi-5-raspberry-pi-sc1148-40958504632515_1000x.jpg"
+      "rating": 4.0,
+      "image": "active-cooler-for-raspberry-pi-5.jpg"
     }
   },
   {
@@ -310,11 +310,11 @@
     "fields": {
       "sku": "techtre0023",
       "name": "Raspberry Pi Pico",
-      "description": "The Raspberry Pi Pico is an entirely new type of microcontroller from Raspberry Pi. Small, affordable and flexible - it's great for learning to code with MicroPython!",
+      "description": "The Raspberry Pi Pico is an entirely new type of microcontroller from Raspberry Pi. Small, affordable and flexible - it\u2019s great for learning to code with MicroPython!",
       "price": 3.9,
       "category": 2,
-      "rating": 3.4,
-      "image": "raspberry-pi-pico-raspberry-pi-sc0915-23240164475075_1000x.jpg",
+      "rating": 3.3,
+      "image": "raspberry-pi-pico.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Option:",
@@ -334,8 +334,8 @@
       "description": "The official Raspberry Pi 5 case is a refinement of the Raspberry Pi 4 case, with a number of improvements and thermal features to accommodate the footprint and peak power consumption of Raspberry Pi 5.",
       "price": 9.9,
       "category": 2,
-      "rating": 4.3,
-      "image": "raspberry-pi-5-case-raspberry-pi-40958514626755_1000x.jpg",
+      "rating": 4.0,
+      "image": "raspberry-pi-5-case.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Colour:",
@@ -352,8 +352,8 @@
       "description": "The Three 40A/240V Relays RS485 Daisy-channable HAT is designed for use with the Raspberry Pi. It features three heavy-duty relays that can handle up to 40A and 240V each, suitable for controlling three-phase industrial loads. The card can be daisy-chained up to 32 units through an RS485 port and is equipped with pluggable connectors, an on-board processor, and LED indicators",
       "price": 47.3,
       "category": 2,
-      "rating": 4.1,
-      "image": "three-40a-240v-relays-rs485-daisy-chainable-hat-for-raspberry-pi-sequent-105527-41409147666627_1000x.jpg"
+      "rating": 3.9,
+      "image": "three-40a240v-relays-rs485-daisy-chainable-hat-for-raspberry-pi.jpg"
     }
   },
   {
@@ -365,8 +365,8 @@
       "description": "The Air Monitoring Expansion for Raspberry Pi Pico is an open-source, portable sensor that measures suspended particulate quantity by mass. It operates at 5V and features a digital laser dust sensor (PMSA003) and a built-in 0.91\" OLED display providing information on air particulate matter (PM1.0, PM2.5, PM10) via digital output. Communication is done through UART (serial), and it offers external GPIO Breakout Pins for connecting sensors.",
       "price": 38.0,
       "category": 2,
-      "rating": 4.4,
-      "image": "pico-air-monitoring-expansion-the-pi-hut-105088-41419669799107_1000x.jpg"
+      "rating": 3.5,
+      "image": "pico-air-monitoring-expansion.jpg"
     }
   },
   {
@@ -378,8 +378,8 @@
       "description": "Designed to integrate with Raspberry Pi series boards, this HAT has a 2\" IPS LCD main screen with a built-in ST7789VW driver chip. It offers a clear display with a resolution of 240 x 320. The screen uses an SPI interface for communication and boasts a wide viewing angle. It features a 262K colour display, making it ideal for vibrant and detailed visuals. Included with the main screen are two 0.96\" OLED screens, each powered by an SSD1315 driver chip. These screens communicate via the I2C interface and feature a lovely blue display colour. With a resolution of 128 x 64, they are perfect for displaying key information, status indicators, or small graphics.\u00a0",
       "price": 16.1,
       "category": 2,
-      "rating": 4.9,
-      "image": "oled-lcd-triple-screen-hat-for-raspberry-pi-waveshare-wav-25587-41413185994947_1000x.jpg"
+      "rating": 3.7,
+      "image": "oledlcd-triple-screen-hat-for-raspberry-pi.jpg"
     }
   },
   {
@@ -391,8 +391,8 @@
       "description": "This PoE HAT has been designed specifically for Raspberry Pi 5 (the new PoE pin position) and is compliant with IEEE 802.3af/at standards, enabling you to power your Raspberry Pi 5 directly through a power-injected ethernet cable.",
       "price": 20.8,
       "category": 2,
-      "rating": 3.1,
-      "image": "poe-hat-for-raspberry-pi-5-with-cooling-fan-waveshare-wav-26399-41410155643075_1000x.jpg"
+      "rating": 3.4,
+      "image": "poe-hat-for-raspberry-pi-5-with-cooling-fan-(5v-and-12v-outputs).jpg"
     }
   },
   {
@@ -405,7 +405,7 @@
       "price": 9.0,
       "category": 2,
       "rating": 3.6,
-      "image": "official-uk-raspberry-pi-4-power-supply-5-1v-3a-raspberry-pi-sc0212-7009471070270_1000x.jpg",
+      "image": "official-uk-raspberry-pi-4-power-supply-(5.1v-3a).jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Colour:",
@@ -423,7 +423,7 @@
       "price": 17.0,
       "category": 2,
       "rating": 4.5,
-      "image": "raspberry-pi-zero-2-raspberry-pi-sc0510-30511732785347_1000x.jpg",
+      "image": "raspberry-pi-zero-2-w.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Option:",
@@ -443,8 +443,8 @@
       "description": "The Raspberry Pi 4 is a\u00a0powerful and feature-rich Raspberry Pi, an incredible improvement on previous boards.",
       "price": 35.0,
       "category": 2,
-      "rating": 4.2,
-      "image": "raspberry-pi-4-model-b-raspberry-pi-sc0192-30134882107587_1000x.jpg",
+      "rating": 3.1,
+      "image": "raspberry-pi-4-model-b.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Memory:",
@@ -466,8 +466,8 @@
       "description": "The Raspberry Pi Camera Module 3 is the latest entry in the\u00a0Official Raspberry Pi range of camera modules, offering a new\u00a012 Megapixel Sony IMX708 image sensor,\u00a0powered autofocus,\u00a0improved low-light sensitivity\u00a0and\u00a0HDR\u00a0(High Dynamic Range) support for your Raspberry Pi projects!",
       "price": 26.0,
       "category": 2,
-      "rating": 3.4,
-      "image": "raspberry-pi-camera-module-3-raspberry-pi-sc0872-40039005159619_1000x.jpg",
+      "rating": 3.3,
+      "image": "raspberry-pi-camera-module-3.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Version:",
@@ -487,8 +487,8 @@
       "description": "After a lot of testing, we finally found an SSD (SATA) to USB 3.0 cable that works really well with the Raspberry Pi 4! Great for USB Booting or even just adding fast SSD storage for your media, documents and files.",
       "price": 6.0,
       "category": 2,
-      "rating": 4.7,
-      "image": "ssd-to-usb-3-0-cable-for-raspberry-pi-the-pi-hut-103222-29384323498179_1000x.jpg"
+      "rating": 3.9,
+      "image": "ssd-to-usb-3.0-cable-for-raspberry-pi.jpg"
     }
   },
   {
@@ -500,8 +500,8 @@
       "description": "The Raspberry Pi PoE+ HAT is a new version of the original Raspberry Pi PoE HAT, now with 5V 4A output for the most demanding Raspberry Pi applications! It is designed to replace the original PoE HAT in all new and existing designs and meets all requirements of the IEEE 802.3af (802.3at Type 1) specifications.",
       "price": 23.0,
       "category": 2,
-      "rating": 3.2,
-      "image": "raspberry-pi-poe-hat-raspberry-pi-sc0468-28628186235075_1000x.jpg"
+      "rating": 4.5,
+      "image": "raspberry-pi-poe+-hat.jpg"
     }
   },
   {
@@ -513,8 +513,8 @@
       "description": "Your Raspberry Pi 5 is now cold n' chilly thanks to your Active Cooler - but does it look cool? No, because you haven't got one of our snazzy covers yet!",
       "price": 3.0,
       "category": 2,
-      "rating": 3.7,
-      "image": "cover-for-raspberry-pi-active-cooler-the-pi-hut-tph-071-41038799962307_1000x.jpg",
+      "rating": 3.0,
+      "image": "cover-for-raspberry-pi-active-cooler.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Colour:",
@@ -531,8 +531,8 @@
       "description": "The Official Raspberry Pi MicroSD card adapter!",
       "price": 0.5,
       "category": 2,
-      "rating": 3.3,
-      "image": "official-raspberry-pi-microsd-adapter-raspberry-pi-sc0041-32536394268867_1000x.jpg"
+      "rating": 4.0,
+      "image": "official-raspberry-pi-microsd-adapter.jpg"
     }
   },
   {
@@ -544,8 +544,8 @@
       "description": "The Raspberry Pi Camera Module 3 NoIR is the latest entry in the Official Raspberry Pi range of camera modules, offering a new 12 Megapixel Sony IMX708 image sensor, powered autofocus, improved low-light sensitivity and HDR (High Dynamic Range) support for your Raspberry Pi projects!",
       "price": 26.0,
       "category": 2,
-      "rating": 3.8,
-      "image": "raspberry-pi-camera-module-3-noir-raspberry-pi-sc0873-40038907019459_1000x.jpg",
+      "rating": 3.5,
+      "image": "raspberry-pi-camera-module-3-noir.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Version:",
@@ -565,8 +565,8 @@
       "description": "The Raspberry Pi 3 Model A+ is a compact yet powerful Raspberry Pi, part of the Raspberry Pi 3 range of boards.",
       "price": 25.0,
       "category": 2,
-      "rating": 4.6,
-      "image": "raspberry-pi-3-model-a-raspberry-pi-sc0130-14879232852030_1000x.jpg"
+      "rating": 3.4,
+      "image": "raspberry-pi-3-model-a+.jpg"
     }
   },
   {
@@ -578,8 +578,8 @@
       "description": "This cute little GPIO reference board from ModMyPi allows you to quickly and easily distinguish between the 40 different pins of the Raspberry Pi!",
       "price": 1.0,
       "category": 2,
-      "rating": 3.6,
-      "image": "gpio-reference-board-40-pin-modmypi-mmp-0046-7008563626046_1000x.jpg"
+      "rating": 4.7,
+      "image": "gpio-reference-board-(40-pin).jpg"
     }
   },
   {
@@ -591,8 +591,8 @@
       "description": "This cable allows you to use the 3-pin JST-SH debug port on the Raspberry Pi Pico H for SWD (Serial Wire Debug) debugging.",
       "price": 1.5,
       "category": 2,
-      "rating": 4.3,
-      "image": "debug-cable-for-raspberry-pi-pico-the-pi-hut-105268-39805452026051_1000x.jpg",
+      "rating": 3.7,
+      "image": "debug-cable-for-raspberry-pi-pico.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Version:",
@@ -612,8 +612,8 @@
       "description": "Meet the new micro:bit V2.2 - an improved version of the original micro:bit featuring a built-in speaker, microphone, touch sensor and more computing power! This listing is for the single micro:bit V2.2 board.",
       "price": 16.1,
       "category": 3,
-      "rating": 4.4,
-      "image": "micro-bit-v2-2-bbc-103378-22774717186243_1000x.jpg"
+      "rating": 3.3,
+      "image": "microbit-v2.2.jpg"
     }
   },
   {
@@ -625,8 +625,8 @@
       "description": "This affordable micro:bit silicone case is compatible with the brand new micro:bit V2 board and comes in three fun colours (select colour above).",
       "price": 3.8,
       "category": 3,
-      "rating": 4.9,
-      "image": "silicon-protective-case-for-micro-bit-v2-the-pi-hut-23314234769603_650x.jpg",
+      "rating": 3.0,
+      "image": "silicon-protective-case-for-microbit-v2.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Colour:",
@@ -643,8 +643,8 @@
       "description": "This black frosted case is a great home for your shiny new micro:bit V2!",
       "price": 3.0,
       "category": 3,
-      "rating": 3.2,
-      "image": "black-frosted-case-for-micro-bit-v2-elecfreaks-103523-23181277167811_600x.jpg"
+      "rating": 4.8,
+      "image": "black-frosted-case-for-microbit-v2.jpg"
     }
   },
   {
@@ -656,8 +656,8 @@
       "description": "The micro:bit can be powered with a micro-USB cable when loading code, or you can use a battery holder for projects on the move (or maybe just the sofa!).",
       "price": 2.0,
       "category": 3,
-      "rating": 5.0,
-      "image": "micro-bit-2xaa-battery-holder-with-on-off-switch-the-pi-hut-102567-14690556870718_600x.jpg"
+      "rating": 4.0,
+      "image": "microbit-2xaa-battery-holder-with-onoff-switch.jpg"
     }
   },
   {
@@ -669,8 +669,8 @@
       "description": "By popular demand, we now have a handy extension cord for all of our JST-terminated battery packs (such as our LiIon/LiPoly and 3xAAA holders). One end has a JST-PH socket, and the other end has a matching plug. Between the two, 500mm of color coded wire. Handy for wearable projects where you may want the battery pack far from your Flora but useful in many other situations where you need a little more space.",
       "price": 1.7,
       "category": 3,
-      "rating": 4.3,
-      "image": "jst-ph-battery-extension-cable-500mm-the-pi-hut-103553-13723997798462_970x.jpg"
+      "rating": 3.0,
+      "image": "jst-ph-battery-extension-cable---500mm.jpg"
     }
   },
   {
@@ -682,8 +682,8 @@
       "description": "This green frosted case is a great home for your shiny new micro:bit V2!",
       "price": 3.0,
       "category": 3,
-      "rating": 4.8,
-      "image": "green-frosted-case-for-micro-bit-v2-elecfreaks-104343-28832854048963_1000x.jpg"
+      "rating": 3.7,
+      "image": "green-frosted-case-for-microbit-v2.jpg"
     }
   },
   {
@@ -695,8 +695,8 @@
       "description": "The Ring:bit Car (v2) is a small DIY smart car driven by the BBC micro:bit (not included) and Ring:bit board (included)! Play and programming come together with this cute servo-driven robot, which can be programmed with simple drag-and-drop blocks within the MakeCode Editor.",
       "price": 22.0,
       "category": 3,
-      "rating": 3.9,
-      "image": "ring-bit-car-v2-for-micro-bit-elecfreaks-102710-15748942463038_600x.jpg"
+      "rating": 3.0,
+      "image": "ringbit-car-v2-for-microbit.jpg"
     }
   },
   {
@@ -708,8 +708,8 @@
       "description": "This Kitronik MI:pro Protector Case for the BBC micro:bit has been designed to work with both the original micro:bit V1 and the new micro:bit V2. The case continues in the traditions of Kitronik's earlier cases - designed to keep the micro:bit safe, fully useable, and to offer the freedom of not being tethered to a computer.",
       "price": 3.8,
       "category": 3,
-      "rating": 4.5,
-      "image": "mi-pro-protector-case-for-the-bbc-micro-bit-v1-v2-kitronik-kit56102-22979689545923_800x.jpg",
+      "rating": 4.1,
+      "image": "mipro-protector-case-for-the-bbc-microbit-v1-&-v2.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Colour:",
@@ -726,8 +726,8 @@
       "description": "Develop your coding skills with the Kitronik :MOVE Motor for micro:bit, a fun introduction to buggies and robotics.",
       "price": 32.4,
       "category": 3,
-      "rating": 4.0,
-      "image": "move-motor-for-the-bbc-micro-bit-kitronik-kit5683-15749481463870_800x.jpg"
+      "rating": 4.3,
+      "image": "move-motor-for-the-bbc-microbit.jpg"
     }
   },
   {
@@ -739,8 +739,8 @@
       "description": "The Grove WiFi 8266 module is designed to enable your micro:bit\u00a0(when combined with an EDU:BIT), Raspberry Pi Pico and Maker Pi RP2040 (and other controllers too!) to send and receive data over the internet through a Wi-Fi network.",
       "price": 6.5,
       "category": 3,
-      "rating": 3.9,
-      "image": "grove-wifi-8266-iot-for-micro-bit-pico-more-cytron-104873-33016533811395_800x.jpg"
+      "rating": 3.2,
+      "image": "grove-wifi-8266---iot-for-microbit,-pico-&-more.jpg"
     }
   },
   {
@@ -752,8 +752,8 @@
       "description": "Learn how to bend sound to your will with the Noise Pack add-on for the Kitronik Inventors Kit for the BBC micro:bit!",
       "price": 15.0,
       "category": 3,
-      "rating": 4.4,
-      "image": "noise-add-on-pack-for-kitronik-inventor-s-kit-for-micro-bit-kitronik-kit5603-noise-28467115458755_800x.jpg"
+      "rating": 3.5,
+      "image": "noise-add-on-pack-for-kitronik-inventor's-kit-for-microbit.jpg"
     }
   },
   {
@@ -765,8 +765,8 @@
       "description": "The Prong soil moisture sensor for BBC microbit is a sensor board that can be directly mounted to a BBC micro:bit to monitor the moisture present in soil. The two conductive tines are placed into the soil. Any water or moisture in the soil will conduct to give an analogue voltage that can be read by the BBC micro:bit.",
       "price": 3.2,
       "category": 3,
-      "rating": 4.2,
-      "image": "prong-soil-moisture-sensor-for-bbc-micro-bit-kitronik-kit5647-14691853074494_800x.jpg"
+      "rating": 4.4,
+      "image": "prong-soil-moisture-sensor-for-bbc-microbit.jpg"
     }
   },
   {
@@ -778,8 +778,8 @@
       "description": "Adding glowy color to your projects has never been easier: no more soldering or stripping wires, clip 'em on and glow! This Adafruit NeoPixel LED Strip with Alligator Clips has 30 total LEDs in a \"30 LED per meter\" spacing, and is 1 meter long, in classy Adafruit Black. It's not too long, but has lots of glowing action. Perfect for use with a Circuit Playground, Circuit Playground Express, micro:bit or any other microcontroller board where you don't want to noodle with a breadboard and wires.",
       "price": 14.9,
       "category": 3,
-      "rating": 4.2,
-      "image": "adafruit-neopixel-led-strip-w-alligator-clips-30-leds-meter-1-meter-black-adafruit-ada3812-28610288517315_1000x.jpg"
+      "rating": 5.0,
+      "image": "adafruit-neopixel-led-strip-w-alligator-clips---30-ledsmeter-(1-meter---black).jpg"
     }
   },
   {
@@ -791,8 +791,8 @@
       "description": "The REKA:BIT is a compact robotics expansion board for your BBC micro:bit (not included), providing a huge range of useful features, ports and onboard protection to help you make awesome micro:bit robotics projects. It's the smaller sibling of the popular EDU:BIT.",
       "price": 17.5,
       "category": 3,
-      "rating": 3.2,
-      "image": "reka-bit-robotics-board-for-micro-bit-cytron-105273-40292433658051_800x.jpg"
+      "rating": 4.3,
+      "image": "rekabit-robotics-board-for-microbit.jpg"
     }
   },
   {
@@ -804,8 +804,8 @@
       "description": "Get more from the micro:bit with Kitronik's incredible inventor's kit! The simple way to learn about creating circuits and code.",
       "price": 25.2,
       "category": 4,
-      "rating": 4.1,
-      "image": "inventor-s-kit-for-the-micro-bit-kitronik-kit5603-2131985793086_750x.jpg"
+      "rating": 3.1,
+      "image": "inventor's-kit-for-the-microbit.jpg"
     }
   },
   {
@@ -817,8 +817,8 @@
       "description": "The Kitronik Inventor's Kit for the Raspberry Pi Pico provides a fantastic way of learning how to construct and control electronic circuits with the Pico and MicroPython.",
       "price": 30.0,
       "category": 4,
-      "rating": 4.1,
-      "image": "inventor-s-kit-for-the-raspberry-pi-pico-kitronik-kit5342-38484462174403_1000x.jpg"
+      "rating": 4.6,
+      "image": "inventor's-kit-for-the-raspberry-pi-pico.jpg"
     }
   },
   {
@@ -830,8 +830,8 @@
       "description": "The Kitronik Inventor's Kit for Arduino is a great way to get started with programming and hardware interaction with the Arduino. This Inventor's Kit contains everything you need to complete 10 experiments including using LEDs, motors, Phototransistors and capacitors.",
       "price": 27.6,
       "category": 4,
-      "rating": 4.2,
-      "image": "inventor-s-kit-for-the-arduino-kitronik-kit5313-14952181628990_800x.jpg"
+      "rating": 4.8,
+      "image": "inventor's-kit-for-the-arduino.jpg"
     }
   },
   {
@@ -843,8 +843,8 @@
       "description": "Learn how to bend sound to your will with the Noise Pack add-on for the Kitronik Inventors Kit for the BBC micro:bit!",
       "price": 15.0,
       "category": 4,
-      "rating": 3.7,
-      "image": "noise-add-on-pack-for-kitronik-inventor-s-kit-for-micro-bit-kitronik-kit5603-noise-28467115458755_800x.jpg"
+      "rating": 3.9,
+      "image": "noise-add-on-pack-for-kitronik-inventor's-kit-for-microbit.jpg"
     }
   },
   {
@@ -856,8 +856,8 @@
       "description": "Learn to think logically with the Digital Logic Add-On for the Kitronik Inventor's kit for micro:bit!",
       "price": 10.5,
       "category": 4,
-      "rating": 3.8,
-      "image": "digital-logic-add-on-pack-for-kitronik-inventor-s-kit-for-micro-bit-kitronik-kit5653-28467115393219_800x.jpg"
+      "rating": 3.7,
+      "image": "digital-logic-add-on-pack-for-kitronik-inventor's-kit-for-microbit.jpg"
     }
   },
   {
@@ -869,8 +869,8 @@
       "description": "The Inventor HAT Mini helps transform a Raspberry Pi computer into a robot, prop, kinetic sculpture, creepy automaton or other exciting moving things. Want to drive a couple of fancy motors with encoders (or hook up standard motors with jumper wires)? Yep! Add up to four servos? Sure? Attach a little speaker so you can make noise? No problem!",
       "price": 24.0,
       "category": 4,
-      "rating": 3.3,
-      "image": "inventor-hat-mini-pimoroni-pim672-40671923273923_1000x.jpg"
+      "rating": 3.6,
+      "image": "inventor-hat-mini.jpg"
     }
   },
   {
@@ -882,8 +882,8 @@
       "description": "This add-on pack for the Kitronik Inventors Kit for the BBC micro:bit provides the perfect way to learn about the wonderful world of ZIP LEDs. These LEDs are simple to control and can be used to produce a whole range of fantastic colours.",
       "price": 15.0,
       "category": 4,
-      "rating": 3.5,
-      "image": "zip-led-add-on-pack-for-kitronik-inventor-s-kit-for-micro-bit-kitronik-kit5603-zip-28467115524291_800x.jpg"
+      "rating": 3.0,
+      "image": "zip-led-add-on-pack-for-kitronik-inventor's-kit-for-microbit.jpg"
     }
   },
   {
@@ -895,8 +895,8 @@
       "description": "An all-in-one board for making battery-powered contraptions that can move, (optionally) make noise, and talk to the internet, with a Raspberry Pi Pico W built-in!",
       "price": 34.5,
       "category": 4,
-      "rating": 4.2,
-      "image": "inventor-2040-w-pico-w-aboard-pimoroni-pim633-39629892485315_1000x.jpg"
+      "rating": 4.7,
+      "image": "inventor-2040-w-(pico-w-aboard).jpg"
     }
   },
   {
@@ -905,11 +905,11 @@
     "fields": {
       "sku": "techtre0063",
       "name": "SparkFun Inventor's Kit for RedBot",
-      "description": "The SparkFun Inventor's Kit for RedBot is a great way to get started with two motor robotics and sensor integration using the Arduino programming language. The SIK for RedBot includes everything you need to complete nine circuits that will teach you how to drive your RedBot, have it follow lines, control it remotely, and more. This kit doesn't require previous programming or electronics experience but it is recommended that you possess an understanding of or desire to learn about robotics.",
+      "description": "The SparkFun Inventor\u2019s Kit for RedBot is a great way to get started with two motor robotics and sensor integration using the Arduino programming language. The SIK for RedBot includes everything you need to complete nine circuits that will teach you how to drive your RedBot, have it follow lines, control it remotely, and more. This kit doesn't require previous programming or electronics experience but it is recommended that you possess an understanding of or desire to learn about robotics.",
       "price": 148.8,
       "category": 4,
-      "rating": 3.5,
-      "image": "sparkfun-inventor-s-kit-for-redbot-sparkfun-rob-12649-28908092162243_600x.jpg"
+      "rating": 4.5,
+      "image": "sparkfun-inventor's-kit-for-redbot.jpg"
     }
   },
   {
@@ -921,8 +921,8 @@
       "description": "The Arduino microcontroller makes it easy to learn about electronics, but it can be hard to know where to start. The 10 projects in this book will teach you to build, code, and invent with the super-smart Arduino and a handful of parts.",
       "price": 22.9,
       "category": 4,
-      "rating": 4.6,
-      "image": "arduino-inventor-s-guide-no-starch-press-103780-28225085636803_1000x.jpg"
+      "rating": 4.9,
+      "image": "arduino-inventor's-guide.jpg"
     }
   },
   {
@@ -934,8 +934,8 @@
       "description": "The Grove Inventor Kit for Micro:bit is an accessible addition to your micro:bit, offering a variety of new possibilities. It features the Grove shield for micro:bit v2.0, which allows you to connect different Grove modules like sensors and displays to your micro:bit easily, without needing to solder or use jump wires.",
       "price": 62.1,
       "category": 4,
-      "rating": 4.1,
-      "image": "grove-inventor-kit-for-micro-bit-seeed-105818-41450954227907_800x.jpg"
+      "rating": 4.2,
+      "image": "grove-inventor-kit-for-microbit.jpg"
     }
   },
   {
@@ -947,8 +947,8 @@
       "description": "The BBC Doctor Who HiFive Inventor (\u201cHiFive\u201d) is a pocket-sized Internet of Things (IoT) computer, designed for makers, students, and educators who want to learn computer programming, a vital 21st-century skill that uses artificial intelligence, robotics, and more!",
       "price": 61.28,
       "category": 4,
-      "rating": 4.5,
-      "image": "bbc-doctor-who-highfive-inventor-coding-kit-premium-version-highfive-inventor-103496-23364430659779_1000x.jpg"
+      "rating": 3.9,
+      "image": "bbc-doctor-who-highfive-inventor-coding-kit---premium-version.jpg"
     }
   },
   {
@@ -960,8 +960,8 @@
       "description": "The Kitronik Inventor's Kit - Python version for the BBC micro:bit (not included) is a great way to get started with programming and hardware interaction with the micro:bit.",
       "price": 25.2,
       "category": 4,
-      "rating": 3.9,
-      "image": "inventors-kit-for-the-bbc-micro-bit-python-version-kitronik-kit5669-28142731329731_800x.jpg"
+      "rating": 4.2,
+      "image": "inventors-kit-for-the-bbc-microbit---python-version.jpg"
     }
   },
   {
@@ -973,8 +973,8 @@
       "description": "Add smart technology to your home and workplace with the first open programmable IoT platform that allows you to build custom IoT devices!",
       "price": 120.8,
       "category": 4,
-      "rating": 3.2,
-      "image": "arduino-opla-iot-kit-arduino-akx00026-22843251392707_1000x.jpg"
+      "rating": 3.6,
+      "image": "arduino-opl\u00e0-iot-kit.jpg"
     }
   },
   {
@@ -986,8 +986,8 @@
       "description": "This is the Maqueen Plus V2, the latest version of the STEM educational robot from DFRobot for the BBC micro:bit (not included). Now optimised with more expansion ports, a larger capacity power supply and a larger body.",
       "price": 47.9,
       "category": 5,
-      "rating": 5.0,
-      "image": "micro-maqueen-plus-v2-18650-advanced-stem-education-robot-for-micro-bit-dfrobot-mbt0021-en-18650-33876242071747_800x.jpg"
+      "rating": 4.4,
+      "image": "micromaqueen-plus-v2-(18650)---advanced-stem-education-robot-for-microbit.jpg"
     }
   },
   {
@@ -999,8 +999,8 @@
       "description": "The Bit:Bot XL takes the much-loved BitBot to the next level! 4Tronix have made several changes, some subtle, some not so subtle, to give a much-improved experience of using and working with the BitBot.",
       "price": 44.1,
       "category": 5,
-      "rating": 3.1,
-      "image": "bit-bot-xl-robot-kit-for-the-micro-bit-4tronix-102764-15745520402494_1000x.jpg"
+      "rating": 5.0,
+      "image": "bitbot-xl-robot-kit-for-the-microbit.jpg"
     }
   },
   {
@@ -1012,8 +1012,8 @@
       "description": "The TPBot is a smart car robot kit for the BBC micro:bit with a premium building brick compatible ABS chassis, RGB programmable headlights, ultrasonic distance (object avoidance) and line tracking sensors.",
       "price": 40.9,
       "category": 5,
-      "rating": 3.0,
-      "image": "tpbot-smart-car-robot-kit-for-bbc-micro-bit-elecfreaks-103520-23149223215299_600x.jpg"
+      "rating": 3.6,
+      "image": "tpbot---smart-car-robot-kit-for-bbc-microbit.jpg"
     }
   },
   {
@@ -1025,8 +1025,8 @@
       "description": "The :MOVE mat line is an accessory for the :MOVE Motor and :MOVE mini robots. It can be used just for fun, or as part of a project in the classroom. The mat is double-sided, with a line following track on one side and a mock-up of a town on the other.",
       "price": 5.0,
       "category": 5,
-      "rating": 4.4,
-      "image": "move-mat-robot-line-following-and-activity-maps-a1-size-kitronik-kit46165-16320333512766_800x.jpg"
+      "rating": 3.8,
+      "image": "move-mat---robot-line-following-and-activity-maps-(a1-size).jpg"
     }
   },
   {
@@ -1038,8 +1038,8 @@
       "description": "An easy, simple and ready-to-go robot for your BBC micro:bit.",
       "price": 28.8,
       "category": 5,
-      "rating": 3.0,
-      "image": "minibit-robot-for-the-micro-bit-4tronix-minibit-16451735257150_1000x.jpg"
+      "rating": 3.6,
+      "image": "minibit-robot-for-the-microbit.jpg"
     }
   },
   {
@@ -1051,8 +1051,8 @@
       "description": "2WD miniQ robotic platform is especially designed for students and hobbyists. It's versatile and small, suitable for most indoors applications. It features high quality and powerful metal gear motors which make it a speedy robot. It is ideal for maze competition and educational courses, and is very easy to assemble, check out our assembly video below. Only requires 8 screws to get the job done and you can use our sample codes on our Wiki pages.  If you are planning to get started building a robot, as a proof of concept, its small body and light weight makes it a great choice. This robot can easily be used and tested on a desk or small area, easily assembled and expanded. An extra set of stand off and screws might come handy. It's round shape helps when moving around objects, avoiding obstruction. The platform has convenient drillings that helps placing sensors or other screwable parts like custom designed casing.",
       "price": 32.6,
       "category": 5,
-      "rating": 3.7,
-      "image": "2wd-miniq-robot-chassis-dfrobot-rob0049-28601811763395_900x.jpg"
+      "rating": 4.6,
+      "image": "2wd-miniq-robot-chassis.jpg"
     }
   },
   {
@@ -1064,8 +1064,8 @@
       "description": "The AlphaBot2 robot kit is designed to use with the BBC micro:bit (not included) and features a great list of popular robot features including line tracking, obstacle avoiding, ultrasonic ranging, Bluetooth remote control (via Android app), RGB LEDs, a buzzer and more!",
       "price": 80.0,
       "category": 5,
-      "rating": 4.7,
-      "image": "alphabot2-robot-kit-for-bbc-micro-bit-waveshare-wav-15402-28081736483011_800x.jpg"
+      "rating": 3.4,
+      "image": "alphabot2-robot-kit-for-bbc-microbit.jpg"
     }
   },
   {
@@ -1077,8 +1077,8 @@
       "description": "With the DIY Spider Robot, you can design and manufacture your own\u00a0robotic creature!",
       "price": 5.7,
       "category": 5,
-      "rating": 4.6,
-      "image": "diy-spider-robot-dfrobot-rob0103-34766151450819_1000x.jpg"
+      "rating": 3.5,
+      "image": "diy-spider-robot.jpg"
     }
   },
   {
@@ -1090,8 +1090,8 @@
       "description": "The KitiBot is a fun full-metal tracked robot kit for the BBC micro:bit (not included). Using the micro:bit as the brains of the robot along with the chassis, controller board (with LEDs and Buzzer!), tracks, sensors and accessories provided in this kit, you can create an awesome micro:bit robot!",
       "price": 91.8,
       "category": 5,
-      "rating": 4.7,
-      "image": "kitibot-tracked-robot-kit-for-bbc-micro-bit-waveshare-wav-14983-29113492406467_800x.jpg"
+      "rating": 3.7,
+      "image": "kitibot-tracked-robot-kit-for-bbc-microbit.jpg"
     }
   },
   {
@@ -1103,8 +1103,8 @@
       "description": "The Pololu Zumo 32U4 robot is a versatile tracked robot based on the Arduino-compatible ATmega32U4 MCU. It includes two 75:1 HP micro metal gearmotors along with integrated dual motor drivers, an LCD, quadrature encoders, line sensors, side and front proximity sensors for detecting objects, and a full IMU for detecting impacts and tracking orientation.",
       "price": 149.9,
       "category": 5,
-      "rating": 3.0,
-      "image": "zumo-32u4-robot-assembled-with-75-1-hp-motors-pololu-pol-3126-40267462901955_1000x.jpg"
+      "rating": 4.4,
+      "image": "zumo-32u4-robot-(assembled-with-751-hp-motors).jpg"
     }
   },
   {
@@ -1116,8 +1116,8 @@
       "description": "",
       "price": 81.5,
       "category": 5,
-      "rating": 4.4,
-      "image": "devastator-tank-mobile-robot-platform-metal-dc-gear-motor-dfrobot-rob0128-28601637175491_900x.jpg"
+      "rating": 4.5,
+      "image": "devastator-tank-mobile-robot-platform-(metal-dc-gear-motor).jpg"
     }
   },
   {
@@ -1129,8 +1129,8 @@
       "description": "The MeArm Maker Kit V3 is an easy-to-build robot arm kit that's designed to get children (and adults!) learning about technology, engineering and programming. It's been expressly designed to be easy to build (age 11+) and use.",
       "price": 47.0,
       "category": 5,
-      "rating": 3.6,
-      "image": "mearm-maker-kit-v3-0-mime-industries-105625-40703517491395_1000x.jpg"
+      "rating": 4.8,
+      "image": "mearm-maker-kit-v3.jpg"
     }
   },
   {
@@ -1142,8 +1142,8 @@
       "description": "Please ensure you select the correct option (above). Only the full kit comes complete with servos.",
       "price": 36.9,
       "category": 5,
-      "rating": 3.6,
-      "image": "pan-tilt-hat-pimoroni-pim183-508326543377_1000x.jpg",
+      "rating": 4.8,
+      "image": "pan-tilt-hat.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Kit:",
@@ -1163,8 +1163,8 @@
       "description": "If you're planning to push your Raspberry Pi Zero 2 to the max, you may want to keep an eye on CPU temperatures as the new RP3A0 system-in-package runs a little warmer than the previous generation of Raspberry Pi Zero CPUs.",
       "price": 1.0,
       "category": 6,
-      "rating": 4.4,
-      "image": "heatsink-for-raspberry-pi-zero-2-the-pi-hut-104662-30207135023299_1000x.jpg",
+      "rating": 3.5,
+      "image": "heatsink-for-raspberry-pi-zero-2.jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Colour:",
@@ -1181,8 +1181,8 @@
       "description": "This cable will let you swap out the stock 150mm long flex cable from a Raspberry Pi Camera, HQ camera or Raspberry Pi Display, for a different size. Works great, just carefully open the connector\u00a0on\u00a0your Raspberry Pi 4/3/2 and slip this one in.",
       "price": 1.5,
       "category": 6,
-      "rating": 4.2,
-      "image": "flex-cable-for-raspberry-pi-camera-or-display-300mm-12-the-pi-hut-102795-15521100202046_1000x.jpg"
+      "rating": 4.6,
+      "image": "flex-cable-for-raspberry-pi-camera-or-display---300mm.jpg"
     }
   },
   {
@@ -1194,8 +1194,8 @@
       "description": "This 4-wire cable is 50mm long and comes complete with JST-SH female 4-pin connectors on both ends which are compatible with Adaruit STEMMA QT and SparkFun Qwiic connectors and modules.",
       "price": 0.8,
       "category": 6,
-      "rating": 3.0,
-      "image": "stemma-qt-qwiic-compatible-jst-sh-4-pin-cable-50mm-the-pi-hut-104220-33679624405187_1000x.jpg"
+      "rating": 4.7,
+      "image": "stemma-qt--qwiic-compatible-jst-sh-4-pin-cable-(50mm).jpg"
     }
   },
   {
@@ -1207,8 +1207,8 @@
       "description": "Gaming on the Raspberry Pi has never felt so nostalgic!",
       "price": 6.0,
       "category": 6,
-      "rating": 4.7,
-      "image": "raspberry-pi-compatible-usb-gamepad-controller-snes-style-the-pi-hut-102151-17456922568_1000x.jpg"
+      "rating": 4.3,
+      "image": "snes-style-raspberry-pi-compatible-usb-gamepad-controller.jpg"
     }
   },
   {
@@ -1220,8 +1220,8 @@
       "description": "If you're going REALLY retro with your Raspberry Pi retro gaming project, our SNES style USB controllers may be way too modern for you old schoolers. If you'd rather keep things a bit more 1983 than 1990, these white NES-style USB controllers might be a good option for you.",
       "price": 4.0,
       "category": 6,
-      "rating": 3.4,
-      "image": "nes-style-raspberry-pi-compatible-usb-gamepad-controller-the-pi-hut-103583-35211486298307_1000x.jpg"
+      "rating": 4.0,
+      "image": "nes-style-raspberry-pi-compatible-usb-gamepad--controller.jpg"
     }
   },
   {
@@ -1233,8 +1233,8 @@
       "description": "The ultimate jumper cable ('dupont' wire) kit, containing 120pcs of rainbow-coloured jumper wires in all the formats you could possibly need for breadboard prototyping!",
       "price": 6.0,
       "category": 6,
-      "rating": 3.2,
-      "image": "120-piece-ultimate-jumper-bumper-pack-dupont-wire-the-pi-hut-102394-4105918021694_1000x.jpg"
+      "rating": 4.0,
+      "image": "120-piece-ultimate-jumper-bumper-pack-(dupont-wire).jpg"
     }
   },
   {
@@ -1246,8 +1246,8 @@
       "description": "This is a 'full-size' white breadboard with 830 tie points. Good for small and medium projects.",
       "price": 5.0,
       "category": 6,
-      "rating": 4.1,
-      "image": "full-size-breadboard-white-the-pi-hut-102817-33680409952451_1000x.jpg"
+      "rating": 4.5,
+      "image": "full-size-breadboard---white.jpg"
     }
   },
   {
@@ -1259,8 +1259,8 @@
       "description": "Half-size breadboards are handy for most projects, and these versions include interlocking sections meaning you can join lots of these together\u00a0to scale up for\u00a0larger projects.",
       "price": 3.0,
       "category": 6,
-      "rating": 3.3,
-      "image": "raspberry-pi-breadboard-half-size-the-pi-hut-100058-295638371_600x.jpg"
+      "rating": 3.0,
+      "image": "half-size-breadboard---white.jpg"
     }
   },
   {
@@ -1272,8 +1272,8 @@
       "description": "We've upgraded our basic 'adjustable' wire strippers to these multi-sized wire strippers.",
       "price": 6.0,
       "category": 7,
-      "rating": 4.8,
-      "image": "multifunction-wire-strippers-the-pi-hut-103121-874030229_640x.jpg"
+      "rating": 5.0,
+      "image": "multifunction-wire-strippers.jpg"
     }
   },
   {
@@ -1285,8 +1285,8 @@
       "description": "Engineer has been manufacturing high-quality Japanese precision tools since 1948. If you're looking for the very best precision hand tools for your projects - look no further. Check out our range of Engineer tools here!",
       "price": 26.1,
       "category": 7,
-      "rating": 4.5,
-      "image": "engineer-pa-06-pro-wire-strippers-awg16-awg30-engineer-pa-06-28404990542019_1000x.jpg"
+      "rating": 4.0,
+      "image": "engineer-pa-06-pro-wire-strippers-(awg16-awg30).jpg"
     }
   },
   {
@@ -1298,8 +1298,8 @@
       "description": "The classic 'third hand tool,' as seen on every desk! We have one next to our Panavise jr, they complement each other well. This tool is good for holding small PCBs and wires for tinning or soldering to parts.",
       "price": 5.2,
       "category": 7,
-      "rating": 3.7,
-      "image": "helping-third-hand-magnifier-w-magnifying-glass-tool-mz101-the-pi-hut-103072-28609796014275_1000x.jpg"
+      "rating": 4.2,
+      "image": "helping-third-hand-magnifier-wmagnifying-glass-tool-(mz101).jpg"
     }
   },
   {
@@ -1311,8 +1311,8 @@
       "description": "Is there something missing from your tool kit or workstation? Are you having trouble figuring out which elusive tool it is that you're lacking? Perhaps it's a spudger! \"A what?\" A s-p-u-d-g-e-r! It's a prying tool that has a wide flat-head screwdriver-like end that extends as a wedge, used to separate pressure-fit plastic components without causing damage during separation.",
       "price": 5.5,
       "category": 7,
-      "rating": 3.0,
-      "image": "spudger-double-sided-prying-tool-the-pi-hut-ada3434-28609709932739_1000x.jpg"
+      "rating": 4.6,
+      "image": "spudger---double-sided-prying-tool.jpg"
     }
   },
   {
@@ -1325,7 +1325,7 @@
       "price": 10.0,
       "category": 7,
       "rating": 4.4,
-      "image": "38-in-1-interchangeable-precise-tool-set-seeed-100285-667930001_800x.jpg"
+      "image": "38-in-1-interchangeable-precise-tool-set.jpg"
     }
   },
   {
@@ -1337,8 +1337,8 @@
       "description": "Look, over there at that thing! Take it apart! You can now attack just about every kind of box or enclosure that needs undoing with this ratchet screwdriver set. This set is fine quality and excels at disassembling and assembling larger hardware and makes a good companion to our smaller 38-piece set.What drew us to this tool box is its comprehensive selection of bits, the two rubber screwdriver handles (one small and one large, neither are thin or slippery), that the large screwdriver has a built in ratchet, the magnetic bit holder (which is not hollow so you don't have to get annoyed when bits fall through into the handle, tough CR-V alloy steel bits, and the very nice box to hold it all! Each bit is also stamped with the name/size. Both handles come with an extension so you can get into nooks & crannies.",
       "price": 29.8,
       "category": 7,
-      "rating": 3.6,
-      "image": "65-piece-ratchet-screwdriver-and-tool-bit-set-the-pi-hut-ada829-28610631991491_1000x.jpg"
+      "rating": 3.3,
+      "image": "65-piece-ratchet-screwdriver-and-tool-bit-set.jpg"
     }
   },
   {
@@ -1350,8 +1350,8 @@
       "description": "These precision diagonal micro cutters are a popular choice for makers thanks to their versatility and small size.",
       "price": 3.5,
       "category": 7,
-      "rating": 4.1,
-      "image": "precision-diagonal-cutters-the-pi-hut-105113-37041916182723_1000x.jpg"
+      "rating": 3.9,
+      "image": "precision-diagonal-cutters.jpg"
     }
   },
   {
@@ -1363,8 +1363,8 @@
       "description": "The TS101 Smart Soldering Iron is the next generation of soldering iron from Miniware, the same folks who brought us the popular TS100 and TS80P.",
       "price": 75.0,
       "category": 7,
-      "rating": 4.5,
-      "image": "miniware-ts101-smart-soldering-iron-miniware-105410-40631140548803_1000x.jpg"
+      "rating": 4.0,
+      "image": "miniware-ts101-smart-soldering-iron.jpg"
     }
   },
   {
@@ -1376,8 +1376,8 @@
       "description": "Engineer has been manufacturing high-quality Japanese precision tools since 1948. If you're looking for the very best precision hand tools for your projects - look no further. Check out our full range of Engineer tools here!",
       "price": 18.0,
       "category": 7,
-      "rating": 4.2,
-      "image": "engineer-ss-02-professional-silicone-tip-solder-sucker-engineer-eng-010-28226325414083_1000x.jpg"
+      "rating": 3.6,
+      "image": "engineer-ss-02-professional-silicone-tip-solder-sucker.jpg"
     }
   },
   {
@@ -1389,8 +1389,8 @@
       "description": "This tool is a must-have for any anyone looking to clean up rough edges on their 3D prints.",
       "price": 7.9,
       "category": 7,
-      "rating": 3.7,
-      "image": "3d-print-deburring-tool-10x-blades-the-pi-hut-105012-35150852030659_1000x.jpg"
+      "rating": 3.3,
+      "image": "3d-print-deburring-tool-+-10x-blades.jpg"
     }
   },
   {
@@ -1400,10 +1400,10 @@
       "sku": "techtre00100",
       "name": "Engineer Neji-Saurus Screw Removal Pliers (PZ-57/PZ-58)",
       "description": "Engineer has been manufacturing high-quality Japanese precision tools since 1948. If you're looking for the very best precision hand tools for your projects - look no further. Check out our range of Engineer tools here!",
-      "price": 17.0,
+      "price": 15.0,
       "category": 7,
-      "rating": 4.1,
-      "image": "engineer-neji-saurus-screw-removal-pliers-pz-57-pz-58-engineer-eng-008-431239364625_1000x.jpg",
+      "rating": 4.7,
+      "image": "engineer-neji-saurus-screw-removal-pliers-(pz-57pz-58).jpg",
       "has_options": true,
       "option_details": {
         "option_title": "Size:",
@@ -1423,8 +1423,8 @@
       "description": "Useful for bending wire and working in tight spaces that regular pliers couldn't access, these long nose pliers feature a flat tip (no grip) making them a gentler option when used with softer materials and wire insulation over the more traditional gripped versions. No more tearing up your cables!",
       "price": 3.5,
       "category": 7,
-      "rating": 3.8,
-      "image": "long-nose-flat-tip-pliers-the-pi-hut-105105-37041897210051_1000x.jpg"
+      "rating": 4.0,
+      "image": "long-nose-flat-tip-pliers.jpg"
     }
   },
   {
@@ -1436,8 +1436,8 @@
       "description": "Everyone needs a good soldering iron and this quality Antex model is perfect for all levels of maker!",
       "price": 34.3,
       "category": 7,
-      "rating": 3.3,
-      "image": "antex-xs25-soldering-iron-uk-plug-antex-100325-731895829_800x.jpg"
+      "rating": 3.5,
+      "image": "antex-xs25-soldering-iron-(uk-plug).jpg"
     }
   },
   {
@@ -1449,8 +1449,8 @@
       "description": "Lead Free Solder!",
       "price": 4.5,
       "category": 7,
-      "rating": 5.0,
-      "image": "antex-lead-free-solder-4m-tube-antex-100327-14552166858814_1000x.png"
+      "rating": 4.3,
+      "image": "antex-lead-free-solder---4m-tube.png"
     }
   }
 ]
