@@ -33,6 +33,10 @@ body {
     border: unset;
 }
 
+.category-card a:hover{
+    text-decoration: none;
+}
+
 .inner-card {
     text-align: center;
     border-radius: 0.25rem;
