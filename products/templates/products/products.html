@@ -55,6 +55,8 @@
                                         {% else %}
                                             Showing 1 - {{ products.end_index }} of {{ products.paginator.count }} products
                                         {% endif %}
+                                    {% else %}
+                                        Showing 1 - {{ products.paginator.count }} of {{ products.paginator.count }} products
                                     {% endif %}
                                 {% endwith %}
                             {% endwith %}                    
