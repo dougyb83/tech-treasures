@@ -17,7 +17,11 @@ body {
 
 .hero-title {
     justify-content: flex-end;
-    text-align: right;
+}
+
+.hero-title h1, .hero-title h3 {
+    display: flex;
+    justify-content: center;
 }
 
 .card {
@@ -63,6 +67,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .main-logo-link {
@@ -294,10 +299,60 @@ input[name='q']::placeholder {
     .card-title {
         font-size: 3vw;
     }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
 }
 
 @media (max-width: 577px) {
     .card-title {
         font-size: 6vw;
+    }
+
+    .hero-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-title h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-title h1 {
+        font-size: 2rem;
+    }
+
+    .hero-title h3 {
+        font-size: 1rem;
     }
 }
