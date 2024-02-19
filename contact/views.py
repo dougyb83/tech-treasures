@@ -25,6 +25,7 @@ def contact(request):
 
             # send email with data to admin
             send_mail(
+                "Tech Treasures has recieved your message",
                 render_to_string(
                     "contact/emails/contact-email-notifiaction.txt",
                     {"form_context": form_context}
