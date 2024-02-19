@@ -131,6 +131,14 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.clickable-row {
+    cursor: pointer;
+}
+
+.hidden-row {
+    display: none;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

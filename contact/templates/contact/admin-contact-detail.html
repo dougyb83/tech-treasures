@@ -1,0 +1,11 @@
+<div class="row" style="justify-content: center;">
+    <div class="col-9">
+        <p><strong>User Message:</strong> {{ email.message }}</p>
+        <form method="post" action="{% url 'reply-email' email.id %}">
+            {% csrf_token %}
+            <label for="reply">Reply:</label>
+            <textarea name="reply" id="reply" class="form-control" rows="3"></textarea>
+            <button type="submit" class="btn btn-primary mt-2">Send Reply</button>
+        </form>
+    </div>
+</div>

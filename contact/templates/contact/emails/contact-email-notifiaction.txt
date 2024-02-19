@@ -1,0 +1,17 @@
+!! DO NOT REPLY !!
+This is an automated email sent from the Tech Treasures website.
+
+------------
+
+A new email has arrived. Please see details below:
+
+Full Name: {{ form_context.full_name }}
+Email Address: {{ form_context.email }}
+
+Additional notes from {{ form_context.full_name }}:
+{{ form_context.message }}
+
+------------
+
+Kind Regards,
+Tech Treasures

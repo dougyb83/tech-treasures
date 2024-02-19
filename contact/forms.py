@@ -1,7 +1,10 @@
 from django import forms
+from .models import Contact
 
 
-class ContactForm(forms.Form):
-    full_name = forms.CharField(max_length=255)
-    email = forms.EmailField()
-    message = forms.CharField(widget=forms.Textarea())
+class ContactForm(forms.ModelForm):
+    """ Form to allow users to submit a contact to site admins. """
+
+    class Meta:
+        model = Contact
+        fields = ["full_name", "email", "message"]

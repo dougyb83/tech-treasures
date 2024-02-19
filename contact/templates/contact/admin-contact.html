@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">Admin Contact Page</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 table-responsive">
+            <table id="admin-contact-table" class="table table-striped text-center">
+                <thead class="bg-primary">
+                    <tr>
+                        <th scope="col">Sent</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Replied?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- loop through all contact messages -->
+                    {% for email in emails|dictsortreversed:"date_sent" %}
+                        <tr class="clickable-row">
+                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.date_sent }}</td>
+                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.full_name }}</td>
+                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.email }}</td>
+                            <td>
+                                {% if email.have_replied %}
+                                    <i class="fas fa-check-circle fa-fw fa-lg text-success"></i>
+                                {% else %}
+                                    <i class="fas fa-times-circle fa-fw fa-lg text-danger"></i>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr class="hidden-row" data-email-id="{{ email.id }}">
+                            <td colspan="4">
+                                {% include 'contact/admin-contact-detail.html' %}
+                            </td>
+                        </tr>
+                    {% empty %}
+                        <!-- only display if no emails are found -->
+                        <tr>
+                            <td colspan="4"><h3>No matching records found</h3></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> 
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}  
+    <script>
+        $(document).ready(function () {
+            $('.clickable-row').click(function () {
+                $('.hidden-row:visible').not($(this).next('.hidden-row')).hide();                
+                $(this).next('.hidden-row').toggle();
+            });
+        });
+    </script>
+{% endblock %}
