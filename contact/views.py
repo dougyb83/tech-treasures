@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.http import HttpResponseBadRequest
 from django.contrib import messages
 from django.conf import settings
-from django.core.mail import send_mail
+from django.core.mail import send_mail, send_mass_mail
 from django.template.loader import render_to_string
 from .models import Contact
 from .forms import ContactForm
@@ -23,16 +23,30 @@ def contact(request):
                 "message": request.POST.get("message"),
             }
 
-            # send email with data to admin
-            send_mail(
+            # create email to customer
+            customer_email = (
                 "Tech Treasures has recieved your message",
                 render_to_string(
                     "contact/emails/contact-email-notifiaction.txt",
                     {"form_context": form_context}
                 ),
-                form_context["email"],  # IF ERROR, TRY THIS: request.POST.get("email"),
+                settings.DEFAULT_FROM_EMAIL,
+                [form_context["email"]],
+            )
+
+            # create email to admin
+            admin_email = (
+                "New message from Customer",
+                render_to_string(
+                    "contact/emails/admin-contact-notifiaction.txt",
+                    {"form_context": form_context}
+                ),
+                settings.DEFAULT_FROM_EMAIL,
                 [settings.DEFAULT_FROM_EMAIL],
             )
+
+            # send emails
+            send_mass_mail((customer_email, admin_email))
 
             # take the user back to home page
             return redirect(reverse('home'))
@@ -89,8 +103,8 @@ def reply_email(request, email_id):
                     "contact/emails/customer-email-reply.txt",
                     {"form_context": form_context}
                 ),
-                form_context["email"],  # IF ERROR, TRY THIS: request.POST.get("email"),
-                [settings.DEFAULT_FROM_EMAIL],
+                settings.DEFAULT_FROM_EMAIL,
+                [form_context["email"]]
             )
 
             # You can handle sending the reply email to the user here

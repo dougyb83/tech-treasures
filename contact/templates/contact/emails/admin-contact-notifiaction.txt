@@ -1,0 +1,16 @@
+!! DO NOT REPLY !!
+This is a new message Admin notification! Log into your Admin account to handle message.
+
+------------
+
+New message recieved.
+
+
+Message From:
+Full Name: {{ form_context.full_name }}
+Email Address: {{ form_context.email }}
+
+Message content:
+{{ form_context.message }}
+
+------------

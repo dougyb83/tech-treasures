@@ -3,15 +3,20 @@ This is an automated email sent from the Tech Treasures website.
 
 ------------
 
-A new email has arrived. Please see details below:
+We have recieved your message.
 
+
+Message details below:
 Full Name: {{ form_context.full_name }}
 Email Address: {{ form_context.email }}
 
-Additional notes from {{ form_context.full_name }}:
+Message content:
 {{ form_context.message }}
 
 ------------
+
+Thanky you for your message,
+We will be in touch soon.
 
 Kind Regards,
 Tech Treasures
