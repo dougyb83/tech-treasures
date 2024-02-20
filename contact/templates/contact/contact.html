@@ -12,14 +12,14 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col text-center">
             <hr>
             <h2 class="logo-font mb-4">Contact Us</h2>
             <hr>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row center-form">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
             <form method="post" action="{% url 'contact' %}">
                 {% csrf_token %}

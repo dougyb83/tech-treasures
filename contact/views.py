@@ -88,6 +88,7 @@ def reply_email(request, email_id):
         if reply_text:
             # Update the database to set have_replied to True
             email.have_replied = True
+            email.have_read = True
             email.save()
 
             # form data collection

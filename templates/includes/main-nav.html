@@ -9,7 +9,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 shadow" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -21,7 +21,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Microcontrolers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0 shadow" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=arduino" class="dropdown-item">Arduino</a>
                 <a href="{% url 'products' %}?category=raspberry_pi" class="dropdown-item">Raspberry Pi</a>
                 <a href="{% url 'products' %}?category=micro_bit" class="dropdown-item">micro:bit</a>
@@ -33,7 +33,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Robots & Kits
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0 shadow" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=inventors_kits" class="dropdown-item">Inventors Kits</a>
                 <a href="{% url 'products' %}?category=robots" class="dropdown-item">Robots</a>
                 <a href="{% url 'products' %}?category=inventors_kits,robots" class="dropdown-item">All Robots & Kits</a>
@@ -44,7 +44,7 @@
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Tools & Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0 shadow" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
                 <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tool</a>
                 <a href="{% url 'products' %}?category=tools,accessories" class="dropdown-item">All Tools & Accessories</a>

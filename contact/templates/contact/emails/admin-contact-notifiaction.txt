@@ -5,8 +5,8 @@ This is a new message Admin notification! Log into your Admin account to handle 
 
 New message recieved.
 
-
 Message From:
+
 Full Name: {{ form_context.full_name }}
 Email Address: {{ form_context.email }}
 
