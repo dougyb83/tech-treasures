@@ -24,25 +24,31 @@
             <table id="admin-contact-table" class="table table-striped text-center">
                 <thead class="bg-head">
                     <tr>
+                        <th scope="col">Replied?</th>
                         <th scope="col">Sent</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Replied?</th>
+                        <th scope="col" class="d-none">Email</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- loop through all contact messages -->
                     {% for email in emails|dictsortreversed:"date_sent" %}
                         <tr class="clickable-row">
-                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.date_sent }}</td>
-                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.full_name }}</td>
-                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.email }}</td>
                             <td>
                                 {% if email.have_replied %}
                                     <i class="fas fa-check-circle fa-fw fa-lg text-success"></i>
                                 {% else %}
                                     <i class="fas fa-times-circle fa-fw fa-lg text-danger"></i>
                                 {% endif %}
+                            </td>
+                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.date_sent|date:"j M Y" }}<br>{{ email.date_sent|time:"H:i" }}</td>
+                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.full_name }}</td>
+                            <td {% if not email.have_read %}class="d-none font-weight-bold"{% else %}class="d-none"{% endif %}>{{ email.email }}</td>
+                            <td>
+                                <a href="{% url 'delete_email' email.id %}" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash fa-fw"></i>
+                                </a>
                             </td>
                         </tr>
                         <tr class="hidden-row" data-email-id="{{ email.id }}">
@@ -65,7 +71,7 @@
 
 {% block postloadjs %}
     {{ block.super }}  
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
             $('.clickable-row').click(function () {
                 $('.hidden-row:visible').not($(this).next('.hidden-row')).hide();                

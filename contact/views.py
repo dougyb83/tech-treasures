@@ -70,6 +70,8 @@ def admin_contact_page(request, email_id=None):
 
     # is superuser; can proceed
     emails = Contact.objects.all()
+    for email in emails:
+        print(email.date_sent)
 
     template = 'contact/admin-contact.html'
     context = {
@@ -117,3 +119,11 @@ def reply_email(request, email_id):
             messages.error(request, 'Reply cannot be empty.')
 
     return HttpResponseBadRequest('Invalid request.')
+
+
+def delete_email(request, email_id):
+    email = get_object_or_404(Contact, id=email_id)
+    email.delete()
+
+    messages.success(request, 'Message deleted successfully!')
+    return redirect(reverse('admin-contact'))
