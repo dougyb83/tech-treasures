@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="row table-responsive">
-        <table class="table table-striped" id="myTable" style="width:100%">
+        <table class="table table-striped" id="admin-contact-table" style="width:100%">
             <thead class="bg-head">
                 <tr>
                     <th>Sent</th>
@@ -66,7 +66,7 @@
     {{ block.super }}  
     <script type="text/javascript">
     $(document).ready(function(){
-        $('#myTable').dataTable({
+        $('#admin-contact-table').dataTable({
         responsive: true,
         order: [[0, 'desc']],
         columnDefs: [

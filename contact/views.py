@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.http import HttpResponseBadRequest
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail, send_mass_mail
@@ -128,15 +127,17 @@ def reply_email(request, email_id):
                 [form_context["email"]]
             )
 
-            # You can handle sending the reply email to the user here
-            # For example, use the send_mail function similar to what you did in the contact function.
-
             messages.success(request, 'Reply sent successfully!')
             return redirect(reverse('admin-contact'))
         else:
             messages.error(request, 'Reply cannot be empty.')
+            
+    template = 'contact/admin-contact-reply.html'
+    context = {
+        'email': email,
+    }
 
-    return HttpResponseBadRequest('Invalid request.')
+    return render(request, template, context)
 
 
 def delete_email(request, email_id):
