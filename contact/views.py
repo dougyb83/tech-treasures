@@ -70,12 +70,31 @@ def admin_contact_page(request, email_id=None):
 
     # is superuser; can proceed
     emails = Contact.objects.all()
-    for email in emails:
-        print(email.date_sent)
 
     template = 'contact/admin-contact.html'
     context = {
         'emails': emails,
+    }
+
+    return render(request, template, context)
+
+
+def admin_contact_reply(request, email_id=None):
+    """ returns the admin contact page """
+    if not request.user.is_superuser:
+        # user is not superuser; take them to home page
+        messages.error(request, "Access denied. Invalid permissions.")
+        return redirect(reverse("home"))
+
+    # is superuser; can proceed
+    email = get_object_or_404(Contact, id=email_id)
+
+    email.have_read = True
+    email.save()
+
+    template = 'contact/admin-contact-reply.html'
+    context = {
+        'email': email,
     }
 
     return render(request, template, context)
@@ -90,7 +109,6 @@ def reply_email(request, email_id):
         if reply_text:
             # Update the database to set have_replied to True
             email.have_replied = True
-            email.have_read = True
             email.save()
 
             # form data collection

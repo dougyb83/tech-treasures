@@ -18,53 +18,46 @@
             <hr>
         </div>
     </div>
-
-    <div class="row center-form">
-        <div class="col-12 table-responsive">
-            <table id="admin-contact-table" class="table table-striped text-center">
-                <thead class="bg-head">
-                    <tr>
-                        <th scope="col">Replied?</th>
-                        <th scope="col">Sent</th>
-                        <th scope="col">Name</th>
-                        <th scope="col" class="d-none">Email</th>
-                        <th scope="col">Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- loop through all contact messages -->
-                    {% for email in emails|dictsortreversed:"date_sent" %}
-                        <tr class="clickable-row">
-                            <td>
-                                {% if email.have_replied %}
-                                    <i class="fas fa-check-circle fa-fw fa-lg text-success"></i>
-                                {% else %}
-                                    <i class="fas fa-times-circle fa-fw fa-lg text-danger"></i>
-                                {% endif %}
-                            </td>
-                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.date_sent|date:"j M Y" }}<br>{{ email.date_sent|time:"H:i" }}</td>
-                            <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.full_name }}</td>
-                            <td {% if not email.have_read %}class="d-none font-weight-bold"{% else %}class="d-none"{% endif %}>{{ email.email }}</td>
-                            <td>
-                                <a href="{% url 'delete_email' email.id %}" class="btn btn-danger btn-sm">
-                                    <i class="fas fa-trash fa-fw"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="hidden-row" data-email-id="{{ email.id }}">
-                            <td colspan="4">
-                                {% include 'contact/admin-contact-detail.html' %}
-                            </td>
-                        </tr>
-                    {% empty %}
-                        <!-- only display if no emails are found -->
-                        <tr>
-                            <td colspan="4"><h3>No matching records found</h3></td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
+    <div class="row table-responsive">
+        <table class="table table-striped" id="myTable" style="width:100%">
+            <thead class="bg-head">
+                <tr>
+                    <th>Sent</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th class="text-center">Replied</th>
+                    <th class="text-center">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for email in emails|dictsortreversed:"date_sent" %}
+                <tr class="clickable-row" data-href="{% url 'admin-contact-reply' email.id %}">
+                    <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>
+                        {{ email.date_sent|date:"j M Y" }}<br>{{ email.date_sent|time:"H:i" }}
+                    </td>
+                    <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.full_name }}</td>
+                    <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.email }}</td>
+                    <td class="text-center">
+                        {% if email.have_replied %}
+                            <i class="fas fa-check-circle fa-fw fa-lg text-success"></i>
+                        {% else %}
+                            <i class="fas fa-times-circle fa-fw fa-lg text-danger"></i>
+                        {% endif %}
+                    </td>
+                    <td class="text-center">
+                        <a href="{% url 'delete_email' email.id %}" class="text-danger">
+                            <i class="fas fa-trash fa-fw"></i>
+                        </a>
+                    </td>
+                </tr>
+                {% empty %}
+                <!-- only display if no emails are found -->
+                <tr>
+                    <td colspan="4"><h3>No matching records found</h3></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </div> 
 {% endblock %}
@@ -72,11 +65,22 @@
 {% block postloadjs %}
     {{ block.super }}  
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.clickable-row').click(function () {
-                $('.hidden-row:visible').not($(this).next('.hidden-row')).hide();                
-                $(this).next('.hidden-row').toggle();
-            });
+    $(document).ready(function(){
+        $('#myTable').dataTable({
+        responsive: true,
+        order: [[0, 'desc']],
+        columnDefs: [
+            { responsivePriority: 1, targets: 0 },
+            { responsivePriority: 2, targets: 1 },
+            { responsivePriority: 3, targets: 3 }
+        ]
         });
+        jQuery(document).ready(function($) {
+            $(".clickable-row").click(function() {
+                window.location = $(this).data("href");
+            });
+        });    
+    });
+
     </script>
 {% endblock %}

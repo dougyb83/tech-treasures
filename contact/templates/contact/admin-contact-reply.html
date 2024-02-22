@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <hr>
+            <h2 class="logo-font mb-4">Admin Contact Reply</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row center-form">
+        <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <p><strong>User Message:</strong> {{ email.message }}</p>
+            <form method="post" action="{% url 'reply-email' email.id %}">
+                {% csrf_token %}
+                <label for="reply">Reply:</label>
+                <textarea name="reply" id="reply" class="form-control" rows="3"></textarea>
+                <div class="submit-button text-right mt-5 mb-2">                    
+                    <a href="{% url 'admin-contact' %}" class="btn btn-outline-black rounded-0">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="font-weight-bold">Back to Email List</span>
+                    </a>
+                    <button id="submit-button" class="btn btn-black rounded-0">
+                        <span class="font-weight-bold">Send Message</span>
+                        <span class="icon">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
+{% endblock %}
