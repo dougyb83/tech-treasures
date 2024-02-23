@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    height: calc(200vh - 164px);    
     color: #555;
     font-family: 'Share Tech Mono', monospace;
     margin: 0; /* Remove default body margin */
