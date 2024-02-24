@@ -22,6 +22,7 @@
         <table class="table table-striped" id="admin-contact-table" style="width:100%">
             <thead class="bg-head">
                 <tr>
+                    <th class="d-md-none"></th>
                     <th>Sent</th>
                     <th>Name</th>
                     <th>Email</th>
@@ -31,13 +32,15 @@
             </thead>
             <tbody>
                 {% for email in emails|dictsortreversed:"date_sent" %}
-                <tr class="clickable-row" data-href="{% url 'admin-contact-reply' email.id %}">
-                    <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>
+                
+                <tr>
+                    <td class="dtr-control d-md-none"></td>
+                    <td data-href="{% url 'admin-contact-reply' email.id %}" {% if not email.have_read %}class="table-cell font-weight-bold"{% else %}class="table-cell"{% endif %}>
                         {{ email.date_sent|date:"j M Y" }}<br>{{ email.date_sent|time:"H:i" }}
                     </td>
-                    <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.full_name }}</td>
-                    <td {% if not email.have_read %}class="font-weight-bold"{% endif %}>{{ email.email }}</td>
-                    <td class="text-center">
+                    <td data-href="{% url 'admin-contact-reply' email.id %}" {% if not email.have_read %}class="table-cell font-weight-bold"{% else %}class="table-cell"{% endif %}>{{ email.full_name }}</td>
+                    <td data-href="{% url 'admin-contact-reply' email.id %}" {% if not email.have_read %}class="table-cell font-weight-bold"{% else %}class="table-cell"{% endif %}>{{ email.email }}</td>
+                    <td data-href="{% url 'admin-contact-reply' email.id %}" class="table-cell text-center">
                         {% if email.have_replied %}
                             <i class="fas fa-check-circle fa-fw fa-lg text-success"></i>
                         {% else %}
@@ -72,11 +75,13 @@
         columnDefs: [
             { responsivePriority: 1, targets: 0 },
             { responsivePriority: 2, targets: 1 },
-            { responsivePriority: 3, targets: 3 }
-        ]
-        });
-        jQuery(document).ready(function($) {
-            $(".clickable-row").click(function() {
+            { responsivePriority: 3, targets: 2 },
+            { responsivePriority: 3, targets: 4 }
+        ],
+    });
+
+    jQuery(document).ready(function($) {
+            $(".table-cell").click(function() {
                 window.location = $(this).data("href");
             });
         });    

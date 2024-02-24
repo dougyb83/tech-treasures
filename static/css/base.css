@@ -8,6 +8,10 @@ body {
     margin: 0; /* Remove default body margin */
 }
 
+footer a:hover {
+    text-decoration: none;
+}
+
 .hero-image {
     background: url('../../media/hero-image.webp') no-repeat center center;
     background-size: cover;
@@ -130,7 +134,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-.clickable-row {
+.table-cell{
     cursor: pointer;
 }
 
