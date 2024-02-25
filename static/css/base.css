@@ -376,6 +376,10 @@ input[name='q']::placeholder {
     .hero-title h3 {
         font-size: 1.3rem;
     }
+
+    footer h1 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 425px) {
@@ -385,5 +389,9 @@ input[name='q']::placeholder {
 
     .hero-title h3 {
         font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
     }
 }
