@@ -7,14 +7,135 @@
             <div class="col"></div>
         </div>
     </div>
+        
+        
 {% endblock %}
 
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JnJIKX5J0Cc?si=ok47PWm1lYlc6xQ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="col text-center">
+                <hr>
+                <h2 class="logo-font mb-4">Tutorials</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="tutorial-title">
+                    Arduino: 
+                </h3>
+            </div>
+            <div class="col-12 col-lg-6">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/DPqiIzK97K0?si=wZmYpMcvR5GyzjoW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            <div class="col-12 col-lg-6">
+                <div class="mt-3">
+                    <p>
+                        Master the Arduino, a versatile electronics platform, through this comprehensive video course for beginners. 
+                        Learn the fundamentals, build hands-on projects, explore advanced concepts, and harness the power of input 
+                        devices to create your own electronic creations.
+                    </p>
+                    <p>
+                        Source Code: <a href="https://github.com/mathew2005/led-matrix">https://github.com/mathew2005/led-matrix</a>                        
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="col-12">
+                <hr>
+            </div>
+
+            <div class="col-12">
+                <h3 class="tutorial-title">
+                    Raspberry Pi: 
+                </h3>
+            </div>
+            <div class="col-12 col-lg-6">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/DPqiIzK97K0?si=wZmYpMcvR5GyzjoW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            <div class="col-12 col-lg-6">
+                <div class="mt-3">
+                    <p>
+                        Welcome to a series on the Raspberry Pi. The Raspberry Pi is a fully-fledged mini computer, capable of doing whatever you might do with a computer. 
+                        It comes with 4x USB, HDMI, LAN, built-in Bluetooth/WiFi support, 1GB RAM, 1.2GHz quad-core ARM CPU, 40 GPIO (General Purpose Input Output) pins, 
+                        audio and composite video output, and more. Rather than not having many choices, instead, your options are staggeringly large!
+                    </p>
+                    <p>
+                        This tutorial series will introduce you to the Raspberry Pi and some of the things you can do with it!
+                    </p>
+                    <p>
+                        Parts list: <a href="https://pythonprogramming.net/introduction-raspberry-pi-tutorials/">https://pythonprogramming.net/introduction-raspberry-pi-tutorials</a>                        
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="col-12">
+                <hr>
+            </div>
+
+            <div class="col-12">
+                <h3 class="tutorial-title">
+                    Micro:bit: 
+                </h3>
+            </div>
+            <div class="col-12 col-lg-6">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/u2u7UJSRuko?si=HiOe4X9XaXPLld9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="mt-3">
+                    <p>
+                        The BBC micro:bit is an award-winning programmable device that allows students to get hands-on with coding and digital making. 
+                        Use it to inspire your students to recognise the power of technology in the real world. These first steps will help you get 
+                        started and ready to teach with the micro:bit.
+                    </p>                   
+                </div>
+            </div>
+
+            <div class="col-12">
+                <hr>
+            </div>
+
+            <div class="col-12">
+                <h3 class="tutorial-title">
+                    Robotics: 
+                </h3>
+            </div>
+            <div class="col-12 col-lg-6">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/pwwVOpXrazs?si=cno7bDRBJ6oJMPUn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="mt-3">
+                    <p>
+                        Welcome to the world of robotics for beginners! Join us in this short video as we dive into the basics of robotics, covering key concepts
+                        like sensors, actuators, and programming. Whether you're a curious enthusiast or just starting out, let's explore the exciting foundations
+                        of robotics together. Get ready to demystify and embark on a journey into this cutting-edge field
+                    </p>
+                    <p>
+                        Source Code: <a href="https://github.com/mathew2005/led-matrix">https://github.com/mathew2005/led-matrix</a>                        
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="col-12">
+                <hr>
+            </div>
+
+            
+            
+            <div class="btt-button shadow-sm rounded-circle border border-black">
+                <a class="btt-link d-flex h-100">
+                    <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                </a>	
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}  
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
 {% endblock %}

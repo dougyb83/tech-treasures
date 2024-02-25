@@ -8,7 +8,7 @@ body {
     margin: 0; /* Remove default body margin */
 }
 
-footer a:hover {
+a:hover {
     text-decoration: none;
 }
 
@@ -83,6 +83,7 @@ footer a:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 1000;
 }
 
 .btt-link,
@@ -147,6 +148,17 @@ input[name='q']::placeholder {
 }
 
 .center-form {
+    justify-content: center;
+}
+
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.tutorial-title {
+    display: flex;
     justify-content: center;
 }
 
