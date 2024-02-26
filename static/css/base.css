@@ -118,6 +118,10 @@ a:hover {
     border: 1px solid black !important;
 }
 
+.border-white {
+    border: 1px solid white !important;
+}
+
 .bg-black {
     background: #000 !important;
 }
@@ -160,6 +164,18 @@ input[name='q']::placeholder {
 .tutorial-title {
     display: flex;
     justify-content: center;
+}
+
+.error-page {
+    height: 35vh;
+}
+
+.error-title {
+    font-size: 80px;
+}
+
+.error-message {
+    font-size: 30px;
 }
 
 /* ------------------------------- bootstrap toasts */

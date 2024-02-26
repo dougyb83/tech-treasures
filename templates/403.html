@@ -7,14 +7,22 @@
     <meta name="description" content="TECH TREASURES - 403! Request forbidden!">
 {% endblock %}
 
-{% block content %}
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>403</h1>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
         </div>
     </div>
-</div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="error-page text-center my-5">
+            <h1 class="error-title">403</h1>
+            <p class="error-message">Request forbidden!</p>
+            <a href="{% url 'home' %}" class="btn btn-black rounded-0 text-uppercase">Back to Home</a>
+        </div>       
+    </div>
 
 {% endblock %}
