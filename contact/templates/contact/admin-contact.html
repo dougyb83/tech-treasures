@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/b-1.5.2/fc-3.2.5/fh-3.1.4/r-2.2.2/sc-1.5.0/datatables.min.css"/>
+{% endblock %}
+
+{% block extra_js %}
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/b-1.5.2/fc-3.2.5/fh-3.1.4/r-2.2.2/sc-1.5.0/datatables.min.js"></script>
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -68,24 +76,21 @@
 {% block postloadjs %}
     {{ block.super }}  
     <script type="text/javascript">
-    $(document).ready(function(){
-        $('#admin-contact-table').dataTable({
-        responsive: true,
-        order: [[0, 'desc']],
-        columnDefs: [
-            { responsivePriority: 1, targets: 0 },
-            { responsivePriority: 2, targets: 1 },
-            { responsivePriority: 3, targets: 2 },
-            { responsivePriority: 3, targets: 4 }
-        ],
-    });
+        $(document).ready(function(){
+            $('#admin-contact-table').dataTable({
+            responsive: true,
+            order: [[0, 'desc']],
+            columnDefs: [
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority: 2, targets: 1 },
+                { responsivePriority: 3, targets: 2 },
+                { responsivePriority: 4, targets: 4 }
+            ],
+        });
 
-    jQuery(document).ready(function($) {
-            $(".table-cell").click(function() {
+        $(".table-cell").click(function() {
                 window.location = $(this).data("href");
             });
-        });    
-    });
-
+        });   
     </script>
 {% endblock %}
