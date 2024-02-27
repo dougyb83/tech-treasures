@@ -34,6 +34,7 @@ a:hover {
 
 .card-title {
     font-size: 2vw;
+    text-shadow: 0px 0px 3px white;
 }
 
 .category-card {
@@ -167,7 +168,7 @@ input[name='q']::placeholder {
 }
 
 .error-page {
-    height: 35vh;
+    height: 40vh;
 }
 
 .error-title {
@@ -176,6 +177,15 @@ input[name='q']::placeholder {
 
 .error-message {
     font-size: 30px;
+}
+
+.page-item.active .page-link, .active {
+    background-color: #3976b8;
+    border-color: #3976b8;
+}
+
+.hero-text {
+    text-shadow: 0px 0px 7px white;
 }
 
 /* ------------------------------- bootstrap toasts */
