@@ -3,12 +3,12 @@
         <ul class="pagination lead">
             {% if products.has_previous %}
             <!-- display pagination 'back' buttons -->
-            <li class="btn btn-outline-black rounded-0">
+            <li class="btn rounded-0">
                 <a href="?page=1{%  if get_args %}{{ get_args }}{% endif %}">
                     <i class="fas fa-angle-double-left text-black"></i>
                 </a>
             </li>
-            <li class="btn btn-outline-black rounded-0 text-black">
+            <li class="btn rounded-0 text-black">
                 <a href="?page={{ products.previous_page_number }}{%  if get_args %}{{ get_args }}{% endif %}">
                     <i class="fas fa-angle-left text-black"></i>
                 </a>
@@ -19,12 +19,12 @@
                 <!-- loop through pagination 'page' numbers -->
                 {% if products.number == num %}
                     <!-- set 'active' class but disable the 'current page -->
-                    <li class="active disabled btn btn-outline-black rounded-0">
+                    <li class="active disabled btn rounded-0">
                         <a class="text-white">{{ num }}</a>
                     </li>
                 {% elif num > products.number|add:'-3' and num < products.number|add:'3' %}
                     <!-- get the previous 2 and next 2 page numbers -->
-                    <li class="btn btn-outline-black rounded-0">
+                    <li class="btn rounded-0">
                         <a href="?page={{ num }}{%  if get_args %}{{ get_args }}{% endif %}" class="text-black">{{ num }}</a>
                     </li>
                 {% endif %}
@@ -32,12 +32,12 @@
         
             {% if products.has_next %}
             <!-- display pagination 'next' buttons -->
-            <li class="btn btn-outline-black rounded-0">
+            <li class="btn rounded-0">
                 <a href="?page={{ products.next_page_number }}{%  if get_args %}{{ get_args }}{% endif %}">
                     <i class="fas fa-angle-right text-black"></i>
                 </a>
             </li>
-            <li class="btn btn-outline-black rounded-0">
+            <li class="btn rounded-0">
                 <a href="?page={{ products.paginator.num_pages }}{%  if get_args %}{{ get_args }}{% endif %}">
                     <i class="fas fa-angle-double-right text-black"></i>
                 </a>

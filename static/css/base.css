@@ -136,6 +136,16 @@ a.category-badge > span.badge:hover {
     justify-content: center;
 }
 
+.pagination li {
+    padding:  0;
+    border: 1px solid black;
+}
+
+.pagination li a {
+    padding: 8px 11px;
+    display: block;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -388,6 +398,10 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .pagination li a {
+        padding: 4px 7px;
     }
 }
 
