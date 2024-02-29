@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    color: #555;
     font-family: 'Share Tech Mono', monospace;
     margin: 0; /* Remove default body margin */
 }
@@ -27,6 +26,10 @@ a:hover {
     justify-content: center;
 }
 
+.hero-text {
+    text-shadow: 0px 0px 7px #ffffff;
+}
+
 .card {
     border-radius: 0;
     margin: 10px;
@@ -34,7 +37,7 @@ a:hover {
 
 .card-title {
     font-size: 2vw;
-    text-shadow: 0px 0px 3px white;
+    text-shadow: 0px 0px 3px #ffffff;
 }
 
 .category-card {
@@ -94,42 +97,42 @@ a:hover {
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: #000000;
+    color: #ffffff;
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important; 
-    border: 1px solid black;
+    background: #ffffff;
+    color: #000000 !important; 
+    border: 1px solid #000000;
 }
 
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #222222;
+    color: #ffffff;
 }
 
 .text-black {
-    color: #000 !important;
+    color: #000000 !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #000000 !important;
 }
 
 .border-white {
-    border: 1px solid white !important;
+    border: 1px solid #ffffff !important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #000000 !important;
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
+    background: #197bdd !important;
+    color: #ffffff !important;
 }
 
 .pagination {
@@ -138,7 +141,7 @@ a.category-badge > span.badge:hover {
 
 .pagination li {
     padding:  0;
-    border: 1px solid black;
+    border: 1px solid #000000;
 }
 
 .pagination li a {
@@ -146,20 +149,20 @@ a.category-badge > span.badge:hover {
     display: block;
 }
 
+.btn.disabled, .btn:disabled {
+    opacity: unset;
+}
+
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: #8ba6c0;
 }
 
 .table-cell{
     cursor: pointer;
 }
 
-.hidden-row {
-    display: none;
-}
-
 .bg-head {
-    background-color: #3976b8;
+    background-color: #197bdd;
 }
 
 .center-form {
@@ -191,12 +194,8 @@ input[name='q']::placeholder {
 }
 
 .page-item.active .page-link, .active {
-    background-color: #3976b8;
-    border-color: #3976b8;
-}
-
-.hero-text {
-    text-shadow: 0px 0px 7px white;
+    background-color: #197bdd;
+    border-color: #197bdd;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -223,14 +222,6 @@ input[name='q']::placeholder {
 }
 
 /* Convenience classes - colors copied from Bootstrap */
-.arrow-primary {
-    border-bottom-color: #007bff !important;
-}
-
-.arrow-secondary {
-    border-bottom-color: #6c757d !important;
-}
-
 .arrow-success {
     border-bottom-color: #28a745 !important;
 }
@@ -247,23 +238,15 @@ input[name='q']::placeholder {
     border-bottom-color: #17a2b8 !important;
 }
 
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    color: #8BA6C0; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #000000;
     border-radius: 0;
 }
 
@@ -272,7 +255,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
+    color: #8ba6c0;
 }
 
 .allauth-form-inner-content button,
@@ -280,15 +263,15 @@ input[name='q']::placeholder {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #000000;
+    border: 1px solid #000000;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -300,12 +283,12 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+	color: #ffffff;
+    background-color: #222222;
+    border-color: #222222;
 }
 
-.allauth-form-inner-content a {
+.allauth-form-inner-content a, .tutorial a {
 	color: #17a2b8; /* text-info */
 }
 

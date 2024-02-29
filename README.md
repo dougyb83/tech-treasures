@@ -14,66 +14,23 @@ At Tech Treasures, the UX design process begins with understanding the core need
 
 ### Colour Scheme
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- `#000000` used for primary and secondary text.
+- `#FFFFFF` used for primary and secondary text.
+- `#222222` used for secondary highlights.
+- `#8BA6C0` used for placeholder text.
+- `#197BDD` used for background colours.
 
-Explain your colours and the colour scheme.
+![screenshot](documentation/colour-pallette.png)
+I used [coolors.co](https://coolors.co/197bdd-17a2b8-ffffff-8ba6c0-222222-000000) to generate my colour palette.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
-
-![screenshot](documentation/coolors.png)
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
+![screenshot](documentation/colour-pallette-bootstrap.png)
+I used [coolors.co](https://coolors.co/17a2b8-ffc107-dc3545-28a745) to show the colours used from bootstrap.
 
 ### Typography
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The 'Share Tech Mono' was choosen as I felt it's straight lines and sharp corners fit well with the theme of the site and almost looks like the tracks of a circuit board in some respects.
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono) was used for throughout the site.
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
@@ -81,35 +38,24 @@ Example:
 ### New Site Users
 
 - As a new site user, I would like to easily navigate to the main categories of products, so that I can quickly identify what the site offers.
-
 - As a new site user, I would like a responsive site layout that adjusts to my device's screen size, so that I can have a consistent experience whether on desktop, tablet, or mobile.
-
 - As a new site user, I would like to see my purchase total at all times, so that I don't overspend.
-
 - As a new site user, I would like to see social media icons prominently displayed, so that I can follow the company on my preferred platforms for updates.
-
 - As a new site user, I would like a clear and straightforward checkout process, so that I can finalize my purchase smoothly.
 
 ### Returning Site Users
 
 - As a returning site user, I would like a secure login and registration process, so that I can protect my personal information.
-
 - As a returning site user, I would like a dashboard where I can view and manage my orders, so that I can track my purchases and manage my account effectively.
-
 - As a returning site user, I would like to easily edit my personal information, so that I can update my details as needed.
-
 - As a returning site user, I would like to have access to my order history, so that I can review past purchases and track order statuses.
-
 - As a returning site user, I would like to receive email confirmation when I register, so that I can verify my account easily.
 
 ### Site Admin
 
 - As a site administrator, I should be able to add new products.
-
 - As a site administrator, I should be able to edit existing products.
-
 - As a site administrator, I should be able to remove items from sale as necessary.
-
 - As a site administrator, I should be able to easily access the sites admin pages.
 
 ## Wireframes
@@ -342,18 +288,17 @@ Using Markdown formatting to represent an example ERD table using the Product mo
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - Table: **Product**
-
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
+  | **PK** | **id** (unique) | Type         | Notes                         |
+  | ------------ | --------------------- | ------------ | ----------------------------- |
+  | **FK** | category              | ForeignKey   | FK to**Category** model |
+  |              | sku                   | CharField    |                               |
+  |              | name                  | CharField    |                               |
+  |              | description           | TextField    |                               |
+  |              | has_sizes             | BooleanField |                               |
+  |              | price                 | DecimalField |                               |
+  |              | rating                | DecimalField |                               |
+  |              | image_url             | URLField     |                               |
+  |              | image                 | ImageField   |                               |
 
 ## Testing
 
