@@ -4,23 +4,9 @@ Tech Treasures is a specialized platform tailored for tech enthusiasts, hobbyist
 
 At its core, Tech Treasures prioritizes user experience by offering a user-friendly interface, secure transactions, fast shipping, and exceptional customer support. The platform focuses on providing access to essential tech tools and resources, enabling individuals to explore, learn, innovate, and grow within their respective fields, making Tech Treasures a valuable resource for individuals passionate about technology and electronics.
 
-[View the live site here.](https://tech-treasures-7e2b33714eb6.herokuapp.com/)
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Consider adding a mockup image using the "Am I Responsive" website.
-
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://tech-treasures-7e2b33714eb6.herokuapp.com
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
 ![screenshot](documentation/mockup.png)
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+[View the live site here.](https://tech-treasures-7e2b33714eb6.herokuapp.com/)
 
 ## UX
 
