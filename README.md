@@ -144,38 +144,37 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 </details>
 
+<details>
+<summary>Order History</summary>
+
+![screenshot](documentation/wireframes/contact.png)
+
+</details>
+
+<details>
+<summary>Order History</summary>
+
+![screenshot](documentation/wireframes/admin-contact.png)
+
+</details>
+
 ## Features
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Existing Features
 
 <details>
 <summary>Navigation</summary>
 
-Clear and easy navigation all available in the page header with access to account control, shopping basket, search bar and drop down menus for fast navigation to different product categories.
+The page header serves as a central hub for users, featuring essential links to account controls, shopping basket, and a search bar. Additionally, multiple dropdown menus are strategically placed, offering efficient navigation to distinct product categories. This layout streamlines user access to key functionalities, enhancing overall usability by providing a clear and organized pathway to different sections of the site.
 
 ![screenshot](documentation/features/feature01.png)
 
 </details>
 
 <details>
-<summary>Main Category Navigation</summary>
+<summary>Feature Cards Navigation</summary>
 
-Six cards feature on the home page to give users a direct route to the main manufacturers and categories feature on the site.
+Six strategically placed cards beneath the hero image act as navigation tools, each featuring links to the three primary manufacturers and three main product categories available on the site. Serving as efficient gateways, these cards provide users with direct access to key sections, simplifying the exploration of specific manufacturers and product categories. This layout optimizes user experience by offering a visually intuitive and direct path to essential areas of interest on the platform.
 
 ![screenshot](documentation/features/feature02.png)
 
@@ -184,7 +183,7 @@ Six cards feature on the home page to give users a direct route to the main manu
 <details>
 <summary>Footer</summary>
 
-The footer can be found on all pages and offers a brief description of who the site owners are, links to their social pages and the tutorials and contact pages.
+The footer presents links to social media platforms, a tutorials section, and a contact page for user convenience. Additionally, a succinct "About Us" section offers a brief overview of the site sellers, providing visitors with insight into the platform's origins and ethos. This section aims to establish transparency and trust by sharing key information about the individuals behind the site.
 
 ![screenshot](documentation/features/feature03.png)
 
@@ -193,16 +192,16 @@ The footer can be found on all pages and offers a brief description of who the s
 <details>
 <summary>Product lists with Pagination</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+Utilizing a pagination system, the product list page displays 12 items per page, ensuring a manageable and organized browsing experience. The inclusion of a sorting feature allows users to customize their view. Each product entry showcases an image, title, price, category, and rating, facilitating quick comparisons. Clicking on a product directs users to its dedicated details page, providing comprehensive information and maintaining a seamless transition from product overview to in-depth details.
 
 ![screenshot](documentation/features/feature04.png)
 
 </details>
 
 <details>
-<summary>Product Description</summary>
+<summary>Product Details</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+The product details page offers a comprehensive view, featuring essential information such as title, price, category, rating, and a detailed product description. Users can easily adjust the quantity with intuitive increase and decrease buttons, and the "Add to Basket" option streamlines the purchasing process. For products with additional options, like different memory capacities (e.g., 4GB or 8GB), users can toggle between choices using dedicated buttons, allowing for a seamless and customizable shopping experience.
 
 ![screenshot](documentation/features/feature05.png)
 
@@ -211,7 +210,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Toast Messages</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+The site employs toast messages to deliver brief, unobtrusive notifications. These messages serve to provide users with real-time feedback on actions such as successful additions to the shopping basket, updates on order status, or alerts for any completed transactions. By discreetly conveying important information, toast messages enhance user awareness and contribute to a smooth and transparent interaction with the site.
 
 ![screenshot](documentation/features/feature06.png)
 
@@ -220,7 +219,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Shopping Basket</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+The shopping basket consolidates selected items, displaying their titles, quantities, individual prices, and a subtotal. Users can easily modify quantities, remove items, or proceed to checkout. Clear and intuitive, the shopping basket serves as a dynamic summary, allowing users to review and manage their selected products before finalizing their purchase.
 
 ![screenshot](documentation/features/feature07.png)
 
@@ -229,7 +228,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Checkout</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+The checkout process guides users through a secure and streamlined procedure to complete their purchase. It includes steps for entering shipping details, selecting payment methods, and reviewing the order summary. Users can efficiently confirm and place their order, ensuring a straightforward and secure transition from product selection to finalizing the transaction.
 
 ![screenshot](documentation/features/feature08.png)
 
@@ -238,7 +237,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Account Accesibility Depending on User Privilges</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+Accessible via a dropdown menu, the "My Account" section caters to users with varying privileges, providing tailored access to different parts of the site. This personalized navigation allows users to manage their profiles, track orders, and access exclusive features based on their account permissions. The dropdown ensures a user-centric experience by presenting relevant options and functionality, enhancing the overall usability and convenience of the site.
 
 ![screenshot](documentation/features/feature09-1.png) ![screenshot](documentation/features/feature09-2.png) ![screenshot](documentation/features/feature09-3.png)
 
@@ -247,7 +246,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Product Management</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+Exclusive to super users, the product management feature empowers administrators with the capability to add, edit, and delete products. This functionality ensures a streamlined process for maintaining the product catalog, allowing for efficient updates, additions, and removals. Tailored for advanced users, this tool enhances the overall control and customization of the site's product offerings.
 
 ![screenshot](documentation/features/feature10.png)
 
@@ -256,7 +255,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Profile Management</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+The profile page provides users with the ability to update personal details, ensuring accurate and current information. Additionally, users can conveniently access their order history, allowing them to review past purchases, track deliveries, and gain a comprehensive overview of their transactional history on the site. This feature contributes to a user-centered experience by facilitating account management and offering insights into their engagement with the platform.
 
 ![screenshot](documentation/features/feature11.png)
 
@@ -265,7 +264,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Tutorials Page</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+The tutorials page serves as a curated repository, featuring links to valuable YouTube videos relevant to the site's offerings. Each video is accompanied by a brief description, providing users with insights into the content before they click. This resourceful page is designed to enhance user learning and engagement by offering easy access to educational material while maintaining a concise and informative presentation.
 
 ![screenshot](documentation/features/feature12.png)
 
@@ -274,7 +273,7 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Contact Page</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+Exclusively featuring a contact form, our contact page streamlines user communication. This simple yet effective form allows users to submit inquiries or messages directly through the website, promoting a convenient and efficient means of contact.
 
 ![screenshot](documentation/features/feature13.png)
 
@@ -283,41 +282,13 @@ Details about this particular feature, including the value to the site, and bene
 <details>
 <summary>Admin Contact Page</summary>
 
-Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+Designed in an email client format, the admin contact page presents a tabulated view with rows containing sender details, the date sent, and an indication of whether a reply has been dispatched. Administrators have the functionality to respond to messages and the option to delete entries, providing an organized and responsive interface for managing user inquiries effectively. On smaller screens, the admin contact page optimizes space by intelligently hiding some columns, making them accessible through a dropdown that expands the row downward. This responsive design ensures a seamless user experience, allowing administrators to efficiently manage contact details even on devices with limited screen real estate.
 
 ![screenshot](documentation/features/feature14-1.png)
 
 ![screenshot](documentation/features/feature14-2.png)
 
 </details>
-
-
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-### Future Features
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-  - Any additional notes about this feature.
-- Title for future feature #2
-  - Any additional notes about this feature.
-- Title for future feature #3
-  - Any additional notes about this feature.
 
 ## Tools & Technologies Used
 
