@@ -164,28 +164,134 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 ### Existing Features
 
 <details>
-<summary>Title for feature #1</summary>
-- Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+<summary>Navigation</summary>
+
+Clear and easy navigation all available in the page header with access to account control, shopping basket, search bar and drop down menus for fast navigation to different product categories.
+
 ![screenshot](documentation/features/feature01.png)
+
 </details>
 
-- **Title for feature #1**
+<details>
+<summary>Main Category Navigation</summary>
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/features/feature01.png)
-
-- **Title for feature #2**
-
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+Six cards feature on the home page to give users a direct route to the main manufacturers and categories feature on the site.
 
 ![screenshot](documentation/features/feature02.png)
 
-- **Title for feature #3**
+</details>
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+<details>
+<summary>Footer</summary>
+
+The footer can be found on all pages and offers a brief description of who the site owners are, links to their social pages and the tutorials and contact pages.
 
 ![screenshot](documentation/features/feature03.png)
+
+</details>
+
+<details>
+<summary>Product lists with Pagination</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature04.png)
+
+</details>
+
+<details>
+<summary>Product Description</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature05.png)
+
+</details>
+
+<details>
+<summary>Toast Messages</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature06.png)
+
+</details>
+
+<details>
+<summary>Shopping Basket</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature07.png)
+
+</details>
+
+<details>
+<summary>Checkout</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature08.png)
+
+</details>
+
+<details>
+<summary>Account Accesibility Depending on User Privilges</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature09-1.png) ![screenshot](documentation/features/feature09-2.png) ![screenshot](documentation/features/feature09-3.png)
+
+</details>
+
+<details>
+<summary>Product Management</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature10.png)
+
+</details>
+
+<details>
+<summary>Profile Management</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature11.png)
+
+</details>
+
+<details>
+<summary>Tutorials Page</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature12.png)
+
+</details>
+
+<details>
+<summary>Contact Page</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature13.png)
+
+</details>
+
+<details>
+<summary>Admin Contact Page</summary>
+
+Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature14-1.png)
+
+![screenshot](documentation/features/feature14-2.png)
+
+</details>
+
+
 
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
