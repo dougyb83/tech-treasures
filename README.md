@@ -372,16 +372,6 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-**IMPORTANT:**
-
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 The live deployed application can be found deployed on [Heroku](https://tech-treasures-7e2b33714eb6.herokuapp.com).
 
 ### ElephantSQL Database
@@ -698,89 +688,44 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-### Local VS Deployment
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ## Credits
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Content
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source                                                                   | Location           | Notes                                            |
 | ------------------------------------------------------------------------ | ------------------ | ------------------------------------------------ |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder)                    | README and TESTING | tool to help generate the Markdown files         |
 | [Chris Beams](https://chris.beams.io/posts/git-commit)                      | version control    | "How to Write a Git Commit Message"              |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site        | responsive HTML/CSS/JS navbar                    |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)           | contact page       | interactive pop-up (modal)                       |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp)               | entire site        | how to use CSS :root variables                   |
 | [Flexbox Froggy](https://flexboxfroggy.com/)                                | entire site        | modern responsive layouts                        |
-| [Grid Garden](https://cssgridgarden.com)                                    | entire site        | modern responsive layouts                        |
-| [StackOverflow](https://stackoverflow.com/a/2450976)                        | quiz page          | Fisher-Yates/Knuth shuffle in JS                 |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc)                      | leaderboard        | using `localStorage()` in JS for high scores   |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y)                      | PP3 terminal       | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org)                                            | CRUD functionality | helpful tool to format date/time from string     |
 | [WhiteNoise](http://whitenoise.evans.io)                                    | entire site        | hosting static files on Heroku temporarily       |
+| [DataTables.net](https://datatables.net/)                                    | admin Contact Page        | fully responsive tables       |
+| [thePiHut](https://thepihut.com/)                                    | product description, prices        | used for all product details      |
 
 ### Media
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | Source                                                        | Location     | Type  | Notes                                        |
 | ------------------------------------------------------------- | ------------ | ----- | -------------------------------------------- |
-| [Pexels](https://www.pexels.com)                                 | entire site  | image | favicon on all pages                         |
-| [Lorem Picsum](https://picsum.photos)                            | home page    | image | hero image background                        |
-| [Unsplash](https://unsplash.com)                                 | product page | image | sample of fake products                      |
-| [Pixabay](https://pixabay.com)                                   | gallery page | image | group of photos for gallery                  |
-| [Wallhere](https://wallhere.com)                                 | footer       | image | background wallpaper image in the footer     |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images         |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects)     | game page    | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/)                                | home page    | video | background video on the hero section         |
-| [TinyPNG](https://tinypng.com)                                   | entire site  | image | tool for image compression                   |
+| [thePiHut](https://thepihut.com/) | entire site | image | all product images |
+| [Design.com](https://www.design.com/maker/logo/electronics-circuit-tech-1504603?text=Tech%20Treasures&isSearch=True) | entire site | image | favicon on all pages                         |
+| [OptaHaul](https://optahaul.com/6-benefits-of-digitising-the-dairy-supply-chain/)| home page | image | hero image background |
+| [AdobeStock](https://stock.adobe.com/uk/images/abstract-futuristic-circuit-board-high-computer-technology-blue-color-background-hi-tech-digital-technology-concept-vector-illustration/321862768) | home page | image | category card background image |
+| [AdobeStock](https://stock.adobe.com/uk/images/abstract-technology-particles-mesh-background/258646416) | home page | image | category card background image (cropped)|
+| [AdobeStock](https://stock.adobe.com/uk/images/futuristic-digital-electric-tech-circuit-board-pattern-background/655408370) | home page | image | category card background image |
+| [AdobeStock](https://stock.adobe.com/uk/images/seamless-vector-futuristic-dark-iron-techno-texture-blue-abstract-electron-energy-line-on-brushed-black-metal-background-power-vein-light-tech-pattern/111425816) | home page | image | category card background image |
+| [AdobeStock](https://stock.adobe.com/uk/images/2d-illustration-abstract-futuristic-electronic-circuit-technology-background/713458247) | home page | image | category card background image |
+| [AdobeStock](https://stock.adobe.com/uk/images/intelligence-background/661689525) | home page | image | category card background image |
+| [CleanPNG](https://www.cleanpng.com/png-computer-icons-scalable-vector-graphics-logo-porta-7094719) | home page | image | category card logo - Arduino |
+| [CleanPNG](https://www.cleanpng.com/png-line-art-circle-black-and-white-pattern-raspberry-7494755) | home page | image | category card logo - Raspberry Pi |
+| [CleanPNG](https://www.cleanpng.com/png-tool-computer-icons-clip-art-screwdriver-3603036/) | home page | image | category card logo - Tools |
+| [CleanPNG](https://www.cleanpng.com/png-robotic-arm-robotics-industrial-robot-1990485) | home page | image | category card logo - Robot |
+| [CleanPNG](https://www.cleanpng.com/png-light-bulb-png-pic-68033) | home page | image | category card logo - Inventor |
+| [icon-icons.com](https://icon-icons.com/icon/microbit-logo/248480) | home page | image | category card logo - Micr:bit |
+| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
 ### Acknowledgements
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+
