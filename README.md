@@ -312,46 +312,44 @@ Designed in an email client format, the admin contact page presents a tabulated 
 Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
 Understanding the relationships between different tables can save time later in the project.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ```python
 class Product(models.Model):
     category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    has_options = models.BooleanField(default=False, null=True, blank=True)
+    option_details = models.JSONField(null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+
+    class Meta:
+        ordering = ["sku"]
 
     def __str__(self):
         return self.name
 ```
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+```python
+class Contact(models.Model):
+    """ Contact form fields """
 
-A couple recommendations for building free ERDs:
+    full_name = models.CharField(max_length=75, blank=False, null=False)
+    email = models.EmailField(max_length=256, blank=False, null=False)
+    message = models.TextField(blank=False, null=False)
+    have_read = models.BooleanField(default=False)
+    have_replied = models.BooleanField(default=False)
+    date_sent = models.DateTimeField(auto_now_add=True, blank=False, null=False)
 
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+    def __str__(self):
+        return self.email
+```
 
 ![screenshot](documentation/erd.png)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - Table: **Product**
   | **PK** | **id** (unique) | Type         | Notes                         |
@@ -360,11 +358,12 @@ Using Markdown formatting to represent an example ERD table using the Product mo
   |              | sku                   | CharField    |                               |
   |              | name                  | CharField    |                               |
   |              | description           | TextField    |                               |
-  |              | has_sizes             | BooleanField |                               |
+  |              | has_option            | BooleanField |                               |
+  |              | option_details        | BooleanField |                               |
   |              | price                 | DecimalField |                               |
   |              | rating                | DecimalField |                               |
-  |              | image_url             | URLField     |                               |
   |              | image                 | ImageField   |                               |
+
 
 ## Testing
 
