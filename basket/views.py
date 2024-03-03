@@ -27,10 +27,11 @@ def add_to_basket(request, item_id):
         if item_id in list(basket.keys()):
             if options in basket[item_id]['items_by_options'].keys():
                 basket[item_id]['items_by_options'][options] += quantity
-                messages.success(request,
-                                 (f'Updated {options.upper()} '
-                                  f'{product.name} quantity to '
-                                  f'{basket[item_id]["items_by_options"][options]}'))
+                messages.success(
+                    request, (
+                        f'Updated {options.upper()} '
+                        f'{product.name} quantity to '
+                        f'{basket[item_id]["items_by_options"][options]}'))
             else:
                 basket[item_id]['items_by_options'][options] = quantity
                 messages.success(request,

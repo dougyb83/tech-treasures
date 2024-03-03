@@ -131,7 +131,7 @@ def reply_email(request, email_id):
             return redirect(reverse('admin-contact'))
         else:
             messages.error(request, 'Reply cannot be empty.')
-            
+
     template = 'contact/admin-contact-reply.html'
     context = {
         'email': email,

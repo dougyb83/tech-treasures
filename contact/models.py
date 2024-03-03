@@ -9,7 +9,8 @@ class Contact(models.Model):
     message = models.TextField(blank=False, null=False)
     have_read = models.BooleanField(default=False)
     have_replied = models.BooleanField(default=False)
-    date_sent = models.DateTimeField(auto_now_add=True, blank=False, null=False)
+    date_sent = models.DateTimeField(
+        auto_now_add=True, blank=False, null=False)
 
     def __str__(self):
         return self.email
