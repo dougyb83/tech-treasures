@@ -94,45 +94,47 @@ Sample Python code validation documentation below (tables are extremely helpful!
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
-
-**IMPORTANT**: Django settings.py
-
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| File | App  |  CI URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| apps.py | basket | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-basket-apps.png) | Pass: No Errors |
+| contexts.py | basket | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-basket-contexts.png) | Pass: No Errors |
+| urls.py | basket | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-basket-urls.png) | Pass: No Errors |
+| views.py | basket | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-basket-views.png) | Pass: No Errors |
+| admin.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-admin.png) | Pass: No Errors |
+| apps.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-apps.png) | Pass: No Errors |
+| forms.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-forms.png) | Pass: No Errors |
+| models.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-models.png) | Pass: No Errors |
+| signals.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-signals.png) | Pass: No Errors |
+| urls.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-urls.png) | Pass: No Errors |
+| views.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-views.png) | Pass: No Errors |
+| webhook_handler.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-checkout-blog-webhooh_handler.png) | Pass: No Errors |
+| webhooks.py | checkout | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-checkout-webhooks.png) | Pass: No Errors |
+| apps.py | contact | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-contact-apps.png) | Pass: No Errors |
+| forms.py | contact | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-contact-forms.png) | Pass: No Errors |
+| models.py | contact | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-contact-models.png) | Pass: No Errors |
+| urls.py | contact | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-contact-urls.png) | Pass: No Errors |
+| views.py | contact | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-contact-views.png) | Pass: No Errors |
+| apps.py | home | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-home-apps.png) | Pass: No Errors |
+| urls.py | home | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-home-urls.png) | Pass: No Errors |
+| views.py | home | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-home-views.png) | Pass: No Errors |
+| admin.py | products | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-products-admin.png) | Pass: No Errors |
+| apps.py | products | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-products-apps.png) | Pass: No Errors |
+| forms.py | products | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-products-forms.png) | Pass: No Errors |
+| models.py | products | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-products-models.png) | Pass: No Errors |
+| urls.py | products | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-products-urls.png) | Pass: No Errors |
+| views.py | products | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-products-views.png) | Pass: No Errors |
+| widgets.py | products | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-products-widgets.png) | Pass: No Errors |
+| apps.py | profiles | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-profiles-apps.png) | Pass: No Errors |
+| forms.py | profiles | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-profiles-forms.png) | Pass: No Errors |
+| models.py | profiles | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-profiles-models.png) | Pass: No Errors |
+| urls.py | profiles | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-profiles-urls.png) | Pass: No Errors |
+| views.py | profiles | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-profiles-views.png) | Pass: No Errors |
+| settings.py | tech-treasures | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-tech-treasures-settings.png) | Pass: No Errors |
+| urls.py | tech-treasures | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-tech-treasures-urls.png) | Pass: No Errors |
+| wsgi.py | tech-treasures | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-tech-treasures-wsgi.png) | Pass: No Errors |
+| apps.py | tutorials | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-tutorials-apps.png) | Pass: No Errors |
+| urls.py | tutorials | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-tutorials-urls.png) | Pass: No Errors |
+| views.py | tutorials | [PEP8 CI]() | ![screenshot](documentation/validation/py-validation-tutorials-views.png) | Pass: No Errors |
 
 ## Browser Compatibility
 
