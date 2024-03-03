@@ -47,95 +47,50 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 ### Python
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
 | File | App  |  CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
 | apps.py | basket | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/basket/apps.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-basket-apps.png) </details> | Pass: No Errors |
-| contexts.py | basket | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/basket/contexts.py) | ![screenshot](documentation/validation/py-validation-basket-contexts.png) | Pass: No Errors |
-| urls.py | basket | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/basket/urls.py) | ![screenshot](documentation/validation/py-validation-basket-urls.png) | Pass: No Errors |
-| views.py | basket | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/basket/views.py) | ![screenshot](documentation/validation/py-validation-basket-views.png) | Pass: No Errors |
-| admin.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/admin.py) | ![screenshot](documentation/validation/py-validation-checkout-admin.png) | Pass: No Errors |
-| apps.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/apps.py) | ![screenshot](documentation/validation/py-validation-checkout-apps.png) | Pass: No Errors |
-| forms.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/forms.py) | ![screenshot](documentation/validation/py-validation-checkout-forms.png) | Pass: No Errors |
-| models.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/models.py) | ![screenshot](documentation/validation/py-validation-checkout-models.png) | Pass: No Errors |
-| signals.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/signals.py) | ![screenshot](documentation/validation/py-validation-checkout-signals.png) | Pass: No Errors |
-| urls.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/urls.py) | ![screenshot](documentation/validation/py-validation-checkout-urls.png) | Pass: No Errors |
-| views.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/views.py) | ![screenshot](documentation/validation/py-validation-checkout-views.png) | Pass: No Errors |
-| webhook_handler.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/webhook_handler.py) | ![screenshot](documentation/validation/py-validation-checkout-webhook_handler.png) | Pass: No Errors |
-| webhooks.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/webhooks.py) | ![screenshot](documentation/validation/py-validation-checkout-webhooks.png) | Pass: No Errors |
-| apps.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/apps.py) | ![screenshot](documentation/validation/py-validation-contact-apps.png) | Pass: No Errors |
-| forms.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/forms.py) | ![screenshot](documentation/validation/py-validation-contact-forms.png) | Pass: No Errors |
-| models.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/models.py) | ![screenshot](documentation/validation/py-validation-contact-models.png) | Pass: No Errors |
-| urls.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/urls.py) | ![screenshot](documentation/validation/py-validation-contact-urls.png) | Pass: No Errors |
-| views.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/views.py) | ![screenshot](documentation/validation/py-validation-contact-views.png) | Pass: No Errors |
-| apps.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/apps.py) | ![screenshot](documentation/validation/py-validation-home-apps.png) | Pass: No Errors |
-| urls.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/urls.py) | ![screenshot](documentation/validation/py-validation-home-urls.png) | Pass: No Errors |
-| views.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/views.py) | ![screenshot](documentation/validation/py-validation-home-views.png) | Pass: No Errors |
-| admin.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/admin.py) | ![screenshot](documentation/validation/py-validation-products-admin.png) | Pass: No Errors |
-| apps.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/apps.py) | ![screenshot](documentation/validation/py-validation-products-apps.png) | Pass: No Errors |
-| forms.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/forms.py) | ![screenshot](documentation/validation/py-validation-products-forms.png) | Pass: No Errors |
-| models.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/models.py) | ![screenshot](documentation/validation/py-validation-products-models.png) | Pass: No Errors |
-| urls.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/urls.py) | ![screenshot](documentation/validation/py-validation-products-urls.png) | Pass: No Errors |
-| views.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/views.py) | ![screenshot](documentation/validation/py-validation-products-views.png) | Pass: No Errors |
-| widgets.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/widgets.py) | ![screenshot](documentation/validation/py-validation-products-widgets.png) | Pass: No Errors |
-| apps.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/apps.py) | ![screenshot](documentation/validation/py-validation-profiles-apps.png) | Pass: No Errors |
-| forms.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/forms.py) | ![screenshot](documentation/validation/py-validation-profiles-forms.png) | Pass: No Errors |
-| models.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/models.py) | ![screenshot](documentation/validation/py-validation-profiles-models.png) | Pass: No Errors |
-| urls.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/urls.py) | ![screenshot](documentation/validation/py-validation-profiles-urls.png) | Pass: No Errors |
-| views.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/views.py) | ![screenshot](documentation/validation/py-validation-profiles-views.png) | Pass: No Errors |
-| asgi.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/asgi.py) | ![screenshot](documentation/validation/py-validation-tech-treasures-asgi.png) | Pass: No Errors |
-| settings.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/settings.py) | ![screenshot](documentation/validation/py-validation-tech-treasures-settings.png) | Pass: No Errors |
-| urls.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/urls.py) | ![screenshot](documentation/validation/py-validation-tech-treasures-urls.png) | Pass: No Errors |
-| wsgi.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/wsgi.py) | ![screenshot](documentation/validation/py-validation-tech-treasures-wsgi.png) | Pass: No Errors |
-| apps.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/apps.py) | ![screenshot](documentation/validation/py-validation-tutorials-apps.png) | Pass: No Errors |
-| urls.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/urls.py) | ![screenshot](documentation/validation/py-validation-tutorials-urls.png) | Pass: No Errors |
-| views.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/views.py) | ![screenshot](documentation/validation/py-validation-tutorials-views.png) | Pass: No Errors |
+| contexts.py | basket | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/basket/contexts.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-basket-contexts.png) </details> | Pass: No Errors |
+| urls.py | basket | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/basket/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-basket-urls.png) </details> | Pass: No Errors |
+| views.py | basket | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/basket/views.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-basket-views.png) </details> | Pass: No Errors |
+| admin.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/admin.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-admin.png) </details> | Pass: No Errors |
+| apps.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/apps.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-apps.png) </details> | Pass: No Errors |
+| forms.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/forms.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-forms.png) </details> | Pass: No Errors |
+| models.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/models.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-models.png) </details> | Pass: No Errors |
+| signals.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/signals.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-signals.png) </details> | Pass: No Errors |
+| urls.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-urls.png) </details> | Pass: No Errors |
+| views.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/views.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-views.png) </details> | Pass: No Errors |
+| webhook_handler.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/webhook_handler.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-webhook_handler.png) </details> | Pass: No Errors |
+| webhooks.py | checkout | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/checkout/webhooks.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-checkout-webhooks.png) </details> | Pass: No Errors |
+| apps.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/apps.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-contact-apps.png) </details> | Pass: No Errors |
+| forms.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/forms.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-contact-forms.png) </details> | Pass: No Errors |
+| models.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/models.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-contact-models.png) </details> | Pass: No Errors |
+| urls.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-contact-urls.png) </details> | Pass: No Errors |
+| views.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/views.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-contact-views.png) </details> | Pass: No Errors |
+| apps.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/apps.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-home-apps.png) </details> | Pass: No Errors |
+| urls.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-home-urls.png) </details> | Pass: No Errors |
+| views.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/views.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-home-views.png) </details> | Pass: No Errors |
+| admin.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/admin.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-products-admin.png) </details> | Pass: No Errors |
+| apps.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/apps.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-products-apps.png) </details> | Pass: No Errors |
+| forms.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/forms.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-products-forms.png) </details> | Pass: No Errors |
+| models.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/models.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-products-models.png) </details> | Pass: No Errors |
+| urls.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-products-urls.png) </details> | Pass: No Errors |
+| views.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/views.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-products-views.png) </details> | Pass: No Errors |
+| widgets.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/widgets.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-products-widgets.png) </details> | Pass: No Errors |
+| apps.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/apps.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-profiles-apps.png) </details> | Pass: No Errors |
+| forms.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/forms.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-profiles-forms.png) </details> | Pass: No Errors |
+| models.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/models.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-profiles-models.png) </details> | Pass: No Errors |
+| urls.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-profiles-urls.png) </details> | Pass: No Errors |
+| views.py | profiles | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/profiles/views.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-profiles-views.png) </details> | Pass: No Errors |
+| asgi.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/asgi.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-tech-treasures-asgi.png) </details> | Pass: No Errors |
+| settings.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/settings.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-tech-treasures-settings.png) </details> | Pass: No Errors |
+| urls.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-tech-treasures-urls.png) </details> | Pass: No Errors |
+| wsgi.py | tech-treasures | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tech_treasures/wsgi.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-tech-treasures-wsgi.png) </details> | Pass: No Errors |
+| apps.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/apps.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-tutorials-apps.png) </details> | Pass: No Errors |
+| urls.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/urls.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-tutorials-urls.png) </details> | Pass: No Errors |
+| views.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/views.py) | <details><summary>Click to view screenshot</summary> ![screenshot](documentation/validation/py-validation-tutorials-views.png) </details> | Pass: No Errors |
 
 ## Browser Compatibility
 
