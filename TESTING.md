@@ -138,15 +138,19 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| Products | ![screenshot](documentation/lighthouse/lighthouse-products-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-products-desktop.png) | Some minor warnings |
-| Product Details | ![screenshot](documentation/lighthouse/lighthouse-product-details-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-product-details-desktop.png) | Some minor warnings |
-| Basket | ![screenshot](documentation/lighthouse/lighthouse-basket-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-basket-desktop.png) | Some minor warnings |
-| Checkout | ![screenshot](documentation/lighthouse/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-checkout-desktop.png) | Some minor warnings |
-| Contact | ![screenshot](documentation/lighthouse/lighthouse-contact-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-contact-desktop.png) | Some minor warnings |
-| Contact Admin | ![screenshot](documentation/lighthouse/lighthouse-contact-admin-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-contact-admin-desktop.png) | Some minor warnings |
-| Admin Reply | ![screenshot](documentation/lighthouse/lighthouse-admin-reply-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-admin-reply-desktop.png) | Some minor warnings |
-| Tutorials | ![screenshot](documentation/lighthouse/lighthouse-tutorials-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-tutorials-desktop.png) | Slow response time due to large images |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings on mobile |
+| Products | ![screenshot](documentation/lighthouse/lighthouse-products-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-products-desktop.png) | Some minor warnings on mobile |
+| Product Details | ![screenshot](documentation/lighthouse/lighthouse-product-details-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-product-details-desktop.png) | Some minor warnings on mobile |
+| Basket | ![screenshot](documentation/lighthouse/lighthouse-basket-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-basket-desktop.png) | Some minor warnings on mobile |
+| Checkout | ![screenshot](documentation/lighthouse/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-checkout-desktop.png) | Some minor warnings on mobile |
+| Contact | ![screenshot](documentation/lighthouse/lighthouse-contact-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-contact-desktop.png) | Some minor warnings on mobile |
+| Contact Admin | ![screenshot](documentation/lighthouse/lighthouse-admin-contact-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-admin-contact-desktop.png) | Some minor warnings on mobile |
+| Admin Reply | ![screenshot](documentation/lighthouse/lighthouse-admin-reply-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-admin-reply-desktop.png) | Some minor warnings on mobile|
+| Tutorials | ![screenshot](documentation/lighthouse/lighthouse-tutorials-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-tutorials-desktop.png) | Some minor warnings on mobile |
+| Sign In | ![screenshot](documentation/lighthouse/lighthouse-sign-in-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-sign-in-desktop.png) | Some minor warnings on mobile |
+| Sign Up | ![screenshot](documentation/lighthouse/lighthouse-sign-up-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-sign-up-desktop.png) | Some minor warnings on mobile |
+| Add Product | ![screenshot](documentation/lighthouse/lighthouse-add-product-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-add-product-desktop.png) | Some minor warnings on mobile |
+| Edit Product | ![screenshot](documentation/lighthouse/lighthouse-edit-product-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-edit-product-desktop.png) | Some minor warnings on mobile |
 
 ## Defensive Programming
 
