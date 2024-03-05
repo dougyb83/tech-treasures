@@ -4,12 +4,12 @@
             {% if products.has_previous %}
             <!-- display pagination 'back' buttons -->
             <li class="btn rounded-0">
-                <a href="?page=1{%  if get_args %}{{ get_args }}{% endif %}">
+                <a href="?page=1{%  if get_args %}{{ get_args }}{% endif %}" aria-label="first page">
                     <i class="fas fa-angle-double-left text-black"></i>
                 </a>
             </li>
             <li class="btn rounded-0 text-black">
-                <a href="?page={{ products.previous_page_number }}{%  if get_args %}{{ get_args }}{% endif %}">
+                <a href="?page={{ products.previous_page_number }}{%  if get_args %}{{ get_args }}{% endif %}" aria-label="previous page">
                     <i class="fas fa-angle-left text-black"></i>
                 </a>
             </li>
@@ -33,12 +33,12 @@
             {% if products.has_next %}
             <!-- display pagination 'next' buttons -->
             <li class="btn rounded-0">
-                <a href="?page={{ products.next_page_number }}{%  if get_args %}{{ get_args }}{% endif %}">
+                <a href="?page={{ products.next_page_number }}{%  if get_args %}{{ get_args }}{% endif %}" aria-label="next page">
                     <i class="fas fa-angle-right text-black"></i>
                 </a>
             </li>
             <li class="btn rounded-0">
-                <a href="?page={{ products.paginator.num_pages }}{%  if get_args %}{{ get_args }}{% endif %}">
+                <a href="?page={{ products.paginator.num_pages }}{%  if get_args %}{{ get_args }}{% endif %}" aria-label="last page">
                     <i class="fas fa-angle-double-right text-black"></i>
                 </a>
             </li>

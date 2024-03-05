@@ -138,10 +138,15 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
+| Products | ![screenshot](documentation/lighthouse/lighthouse-products-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-products-desktop.png) | Some minor warnings |
+| Product Details | ![screenshot](documentation/lighthouse/lighthouse-product-details-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-product-details-desktop.png) | Some minor warnings |
+| Basket | ![screenshot](documentation/lighthouse/lighthouse-basket-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-basket-desktop.png) | Some minor warnings |
+| Checkout | ![screenshot](documentation/lighthouse/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-checkout-desktop.png) | Some minor warnings |
+| Contact | ![screenshot](documentation/lighthouse/lighthouse-contact-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-contact-desktop.png) | Some minor warnings |
+| Contact Admin | ![screenshot](documentation/lighthouse/lighthouse-contact-admin-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-contact-admin-desktop.png) | Some minor warnings |
+| Admin Reply | ![screenshot](documentation/lighthouse/lighthouse-admin-reply-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-admin-reply-desktop.png) | Some minor warnings |
+| Tutorials | ![screenshot](documentation/lighthouse/lighthouse-tutorials-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-tutorials-desktop.png) | Slow response time due to large images |
 
 ## Defensive Programming
 
