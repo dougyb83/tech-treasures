@@ -104,27 +104,6 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Responsiveness
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | Products | Product Details | Contact | Tutorials | Notes |
@@ -132,7 +111,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-products.png) | ![screenshot](documentation/responsiveness/responsive-mobile-product-details.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-tutorials.png) | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-products.png) | ![screenshot](documentation/responsiveness/responsive-tablet-product-details.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-tutorials.png) | Works as expected |
 | Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-products.png) | ![screenshot](documentation/responsiveness/responsive-desktop-product-details.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-tutorials.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-products.png) | ![screenshot](documentation/responsiveness/responsive-xl-product-details.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-tutorials.png) | Scaling starts to have minor issues |
+| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-products.png) | ![screenshot](documentation/responsiveness/responsive-xl-product-details.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-tutorials.png) | Works as expected |
 | Samsung S21 Ultra | ![screenshot](documentation/responsiveness/responsive-s21-home.png) | ![screenshot](documentation/responsiveness/responsive-s21-products.png) | ![screenshot](documentation/responsiveness/responsive-s21-product-details.png) | ![screenshot](documentation/responsiveness/responsive-s21-contact.png) | ![screenshot](documentation/responsiveness/responsive-s21-tutorials.png) | Works as expected |
 
 
