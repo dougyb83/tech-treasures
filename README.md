@@ -215,8 +215,6 @@ The site employs toast messages to deliver brief, unobtrusive notifications. The
 </details>
 
 <details>
-
-<details>
 <summary>Total Cost</summary>
 
 The Basket Total feature provides users with real-time cost updates. This unobtrusive tool ensures efficient budget management and a consistent, user-friendly experience across devices.

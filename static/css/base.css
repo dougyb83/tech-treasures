@@ -149,10 +149,6 @@ a.category-badge > span.badge:hover {
     display: block;
 }
 
-.btn.disabled, .btn:disabled {
-    opacity: unset;
-}
-
 input[name='q']::placeholder {
     color: #8ba6c0;
 }
