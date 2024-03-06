@@ -50,7 +50,6 @@ The 'Share Tech Mono' was choosen as I felt it's straight lines and sharp corner
 - As a returning site user, I would like a secure login and registration process, so that I can protect my personal information.
 - As a returning site user, I would like a dashboard where I can view and manage my orders, so that I can track my purchases and manage my account effectively.
 - As a returning site user, I would like to easily edit my personal information, so that I can update my details as needed.
-- As a returning site user, I would like to have access to my order history, so that I can review past purchases and track order statuses.
 - As a returning site user, I would like to receive email confirmation when I register, so that I can verify my account easily.
 
 ### Site Admin
@@ -58,7 +57,6 @@ The 'Share Tech Mono' was choosen as I felt it's straight lines and sharp corner
 - As a site administrator, I should be able to add new products.
 - As a site administrator, I should be able to edit existing products.
 - As a site administrator, I should be able to remove items from sale as necessary.
-- As a site administrator, I should be able to easily access the sites admin pages.
 
 ## Wireframes
 
@@ -217,6 +215,18 @@ The site employs toast messages to deliver brief, unobtrusive notifications. The
 </details>
 
 <details>
+
+<details>
+<summary>Total Cost</summary>
+
+The Basket Total feature provides users with real-time cost updates. This unobtrusive tool ensures efficient budget management and a consistent, user-friendly experience across devices.
+
+![screenshot](documentation/features/feature15.png)
+
+</details>
+
+<details>
+
 <summary>Shopping Basket</summary>
 
 The shopping basket consolidates selected items, displaying their titles, quantities, individual prices, and a subtotal. Users can easily modify quantities, remove items, or proceed to checkout. Clear and intuitive, the shopping basket serves as a dynamic summary, allowing users to review and manage their selected products before finalizing their purchase.
@@ -248,7 +258,7 @@ Accessible via a dropdown menu, the "My Account" section caters to users with va
 
 Exclusive to super users, the product management feature empowers administrators with the capability to add, edit, and delete products. This functionality ensures a streamlined process for maintaining the product catalog, allowing for efficient updates, additions, and removals. Tailored for advanced users, this tool enhances the overall control and customization of the site's product offerings.
 
-![screenshot](documentation/features/feature10.png)
+![screenshot](documentation/features/feature10.png) ![screenshot](documentation/features/feature10-1.png)
 
 </details>
 

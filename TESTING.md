@@ -117,23 +117,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ## Lighthouse Audit
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
@@ -278,28 +261,32 @@ The aforementioned tests are just an example of a few different project scenario
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### New Site Users
+| User Story | Screenshot |
+| --- | --- |
+| As a new site user, I would like to easily navigate to the main categories of products, so that I can quickly identify what the site offers. | ![screenshot](documentation/features/feature02.png) |
+| As a new site user, I would like a responsive site layout that adjusts to my device's screen size, so that I can have a consistent experience whether on desktop, tablet, or mobile. | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) ![screenshot](documentation/responsiveness/responsive-tablet-home.png) ![screenshot](documentation/responsiveness/responsive-desktop-home.png)|
+| As a new site user, I would like to see my purchase total at all times, so that I don't overspend. | ![screenshot](documentation/features/feature15.png) |
+| As a new site user, I would like to see social media icons prominently displayed, so that I can follow the company on my preferred platforms for updates. | ![screenshot](documentation/features/feature03.png) |
+| As a new site user, I would like a clear and straightforward checkout process, so that I can finalize my purchase smoothly. | ![screenshot](documentation/features/feature07.png) ![screenshot](documentation/features/feature08.png) |
 
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
 
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### Returning Site Users
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a returning site user, I would like a secure login and registration process, so that I can protect my personal information. | ![screenshot](documentation/features/feature16.png) |
+| As a returning site user, I would like a dashboard where I can view and manage my orders, so that I can track my purchases and manage my account effectively. | ![screenshot](documentation/features/feature11.png) |
+| As a returning site user, I would like to easily edit my personal information, so that I can update my details as needed. | ![screenshot](documentation/features/feature11.png) |
+| As a returning site user, I would like to receive email confirmation when I register, so that I can verify my account easily. | ![screenshot](documentation/features/feature17.png) |
+
+### Site Admin
+
+| User Story | Screenshot |
+| --- | --- |
+| As a site administrator, I should be able to add new products. | ![screenshot](documentation/features/feature10.png) |
+| As a site administrator, I should be able to edit existing products. | ![screenshot](documentation/features/feature10-1.png) |
+| As a site administrator, I should be able to remove items from sale as necessary. | ![screenshot](documentation/features/feature18.png) |
 
 ## Automated Testing
 
