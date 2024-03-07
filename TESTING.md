@@ -446,87 +446,47 @@ This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- Python - `UnorderedObjectListWarning: Pagination may yeild inconsistant results`
 
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
+    ![screenshot](documentation/bugs/bug01.png)
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
+    - To fix this, I added a Meta class to the Product Class in products/models.py that ordered the products.
 
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
+- Python - Pagination not keeping category filter
+    - pagination would work correctly when viewing all product but when adding a category filter to a page pagination would default back to viewing all products without the category filters applied.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+    ![screenshot](documentation/bugs/bug02.png)
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+    - To fix this, it was necessary to get the current params from the url and concatenate it to the pagination param in order to correctly paginate through the filtered products.
 
-    ![screenshot](documentation/bug01.png)
+- Python `'TypeError'` when trying to register a new account on Heroku
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bugs/bug04-1.png) ![screenshot](documentation/bugs/bug04-2.png)
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+    - To fix this, I found a solution on slack to inlude a runtime.txt file in the root directory to specify which version of Python Heroku should use.
 
-    ![screenshot](documentation/bug02.png)
+- HTML - Product optiions not being added to the basket
+    - A bug was found when adding a second item to the basket where the second item is the same as the first item but with a different option selected (For example a 4GB and 8GB option).
+What I discovered is that although the default option was highlighted, the radio button was not checked by default. This meant that if an item was added to the basket while leaving the default option highlighed the item was added but with no value for the option supplied. When a duplicate item was added but with an option highlighted and checked it created a conflict.
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bugs/bug03-1.png) ![screenshot](documentation/bugs/bug03-2.png) ![screenshot](documentation/bugs/bug03-3.png)
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
+    - To fix this, when the radio buttons are being populated on product_details.html by the jinja for loop, I added an if statement that adds the `checked` attribute on the first iteration of that loop.
 
-    ![screenshot](documentation/bug03.png)
+- HTML - Number of product per page does not show when product list is only one page long.
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bugs/bug05-1.png) ![screenshot](documentation/bugs/bug05-2.png)
 
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
+    - To fix this, I added an else statement to the template logic that handles displaying the product count per page. The logic previously only handled lists that were greater than one page long.
 
-    ![screenshot](documentation/bug04.png)
+- HTML `Duplicate attribute id`
+    - A duplicate `id` was discovered during HTML validation. On further inspection using 'view page source' in the browser and checking the relevant code in my repository I found that I was manually dreating an `id` on the input element of the custom_clearable_file_input.html. However in that same element I am using an include for django form widgets, this include was also dynamically adding an `id` of its own; creating the duplicate.
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bugs/bug06-1.png) ![screenshot](documentation/bugs/bug06-2.png) ![screenshot](documentation/bugs/bug06-3.png) 
 
-- Python `E501 line too long` (93 > 79 characters)
+    - To fix this, I removed the `id` I had added and instead I targeted the `id` created by the include.
 
-    ![screenshot](documentation/bug04.png)
-
-    - To fix this, I _____________________.
 
 ## Unfixed Bugs
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
-
-Some examples:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/unfixed-bug02.png)
-
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 There are no remaining bugs that I am aware of.
