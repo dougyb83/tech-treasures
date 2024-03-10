@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            {% if item.product.has_options %}<p class="my-0 small">{{ item.product.option_details.option_title }}{{ item.options|upper }}{% endif %}</p>
+                            {% if item.product.has_options %}<p class="my-0 small">{{ item.options|upper }}{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                     </div>

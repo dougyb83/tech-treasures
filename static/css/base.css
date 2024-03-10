@@ -3,9 +3,18 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Share Tech Mono', monospace;
     margin: 0; /* Remove default body margin */
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
 }
 
 a:hover {
@@ -63,6 +72,17 @@ a:hover {
 .product-check-input {
     display: none;
 }
+
+input[type="radio"]:checked+label { 
+    background: #000000;
+    color: #ffffff;
+} 
+
+input[type="radio"] +label { 
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+} 
 
 /* from Bulma */
 .icon {

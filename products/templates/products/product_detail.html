@@ -54,15 +54,48 @@
                             {% with product.has_options as o %}
                             {% if o %}
                                 <div class="col-12">
-                                    <p><strong>{{ product.option_details.option_title }}</strong></p>
-                                    {% for option in product.option_details.options %}
+                                    <p><strong>{{ product.option_title }}</strong></p>
+                                    {% if product.option_1 %}
                                         <div class="form-check form-check-inline">
-                                            <input class="product-check-input" type="radio" name="product_options" id="option_{{ option }}" value="{{ option }}" {% if forloop.first %}checked{% endif %}>
-                                            <label class="product-check-label btn {% if forloop.first %}btn-black{% else %}btn-outline-black{% endif %} rounded-0" for="option_{{ option }}">
-                                                {{ option }}
+                                            <input class="product-check-input" type="radio" name="product_options" id="option_{{ product.option_1 }}" value="{{ product.option_1 }}" checked>
+                                            <label class="product-check-label btn rounded-0" for="option_{{ product.option_1 }}">
+                                                {{ product.option_1 }}
                                             </label>
                                         </div>
-                                    {% endfor %}
+                                    {% endif %}
+                                    {% if product.option_2 %}
+                                        <div class="form-check form-check-inline">
+                                            <input class="product-check-input" type="radio" name="product_options" id="option_{{ product.option_2 }}" value="{{ product.option_2 }}">
+                                            <label class="product-check-label btn rounded-0" for="option_{{ product.option_2 }}">
+                                                {{ product.option_2 }}
+                                            </label>
+                                        </div>
+                                    {% endif %}
+                                    {% if product.option_3 %}
+                                        <div class="form-check form-check-inline">
+                                            <input class="product-check-input" type="radio" name="product_options" id="option_{{ product.option_3 }}" value="{{ product.option_3 }}">
+                                            <label class="product-check-label btn rounded-0" for="option_{{ product.option_3 }}">
+                                                {{ product.option_3 }}
+                                            </label>
+                                        </div>
+                                    {% endif %}
+                                    {% if product.option_4 %}
+                                        <div class="form-check form-check-inline">
+                                            <input class="product-check-input" type="radio" name="product_options" id="option_{{ product.option_4 }}" value="{{ product.option_4 }}">
+                                            <label class="product-check-label btn rounded-0" for="option_{{ product.option_4 }}">
+                                                {{ product.option_4 }}
+                                            </label>
+                                        </div>
+                                    {% endif %}
+                                    {% if product.option_5 %}
+                                        <div class="form-check form-check-inline">
+                                            <input class="product-check-input" type="radio" name="product_options" id="option_{{ product.option_5 }}" value="{{ product.option_5 }}">
+                                            <label class="product-check-label btn rounded-0" for="option_{{ product.option_5 }}">
+                                                {{ product.option_5 }}
+                                            </label>
+                                        </div>
+                                    {% endif %}
+
                                 </div>                            
                             {% endif %}
                             <div class="col-12">
