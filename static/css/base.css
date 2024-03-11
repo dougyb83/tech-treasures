@@ -170,6 +170,10 @@ a.category-badge > span.badge:hover {
     display: block;
 }
 
+.page-link {
+    color: #000000;
+}
+
 input[name='q']::placeholder {
     color: #8ba6c0;
 }
@@ -309,7 +313,7 @@ input[name='q']::placeholder {
     border-color: #222222;
 }
 
-.allauth-form-inner-content a, .tutorial a {
+.allauth-form-inner-content a, .tutorial-link {
 	color: #17a2b8; /* text-info */
 }
 

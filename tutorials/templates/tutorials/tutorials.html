@@ -31,8 +31,9 @@
                     <small class="ml-3">
                         <a class="text-success" href="{% url 'add_tutorial' %}">Add</a> | 
                         <a href="{% url 'edit_tutorial' tutorial.id %}">Edit</a> | 
-                        <a class="text-danger" href="{% url 'delete_tutorial' tutorial.id %}">Delete</a>
+                        <a class="text-danger" data-toggle="modal" href="#modal-delete-{{ tutorial.id }}">Delete</a>
                     </small>
+                    {% include 'tutorials/includes/delete-modal.html' %}
                 {% endif %}
                 </div>
                 <div class="col-12 col-lg-6">
@@ -45,7 +46,7 @@
                         </p>
                         {% if tutorial.additional_link %}
                             <p>
-                                <a href="{{ tutorial.additional_link }}" target="_blank">{{ tutorial.additional_link }}</a>                        
+                                <a href="{{ tutorial.additional_link }}" class="tutorial-link" target="_blank">{{ tutorial.additional_link }}</a>                        
                             </p>
                         {% endif %}                  
                     </div>

@@ -44,8 +44,9 @@
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                            <a class="text-danger" data-toggle="modal" href="#modal-delete-{{ product.id }}">Delete</a>
                         </small>
+                        {% include 'products/includes/delete-modal.html' %}
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">

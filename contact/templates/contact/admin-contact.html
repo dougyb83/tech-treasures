@@ -28,7 +28,7 @@
     </div>
     <div class="row table-responsive">
         <table class="table table-striped" id="admin-contact-table" style="width:100%">
-            <thead class="bg-head">
+            <thead class="bg-black text-white">
                 <tr>
                     <th class="d-md-none"></th>
                     <th>Sent</th>
@@ -56,9 +56,11 @@
                         {% endif %}
                     </td>
                     <td class="text-center">
-                        <a href="{% url 'delete_email' email.id %}" class="text-danger">
+                        <a class="text-danger" data-toggle="modal" href="#modal-delete-{{ email.id }}">
                             <i class="fas fa-trash fa-fw"></i>
                         </a>
+                    {% include 'contact/includes/delete-modal.html' %}
+
                     </td>
                 </tr>
                 {% empty %}
