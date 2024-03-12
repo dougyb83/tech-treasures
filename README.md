@@ -63,232 +63,149 @@ The 'Share Tech Mono' was choosen as I felt it's straight lines and sharp corner
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-### Mobile Wireframes
 
-<details>
-<summary>Home</summary>
+### Home
 
 ![screenshot](documentation/wireframes/home.png)
 
-</details>
-
-<details>
-<summary>Log In</summary>
+### Log In
 
 ![screenshot](documentation/wireframes/log-in.png)
 
-</details>
-
-<details>
-<summary>Sign Up</summary>
+### Sign Up
 
 ![screenshot](documentation/wireframes/sign-up.png)
 
-</details>
-
-<details>
-<summary>Products</summary>
+### Products
 
 ![screenshot](documentation/wireframes/products.png)
 
-</details>
-
-<details>
-<summary>Product Details</summary>
+### Product Details
 
 ![screenshot](documentation/wireframes/product-details.png)
 
-</details>
-
-<details>
-<summary>Basket</summary>
+### Basket
 
 ![screenshot](documentation/wireframes/basket.png)
 
-</details>
-
-<details>
-<summary>Product Management</summary>
+### Product Management
 
 ![screenshot](documentation/wireframes/product-management.png)
 
-</details>
-
-<details>
-<summary>Checkout</summary>
+### Checkout
 
 ![screenshot](documentation/wireframes/checkout.png)
 
-</details>
-
-<details>
-<summary>Checkout Success</summary>
+### Checkout Success
 
 ![screenshot](documentation/wireframes/checkout-success.png)
 
-</details>
-
-<details>
-<summary>Profile</summary>
+### Profile
 
 ![screenshot](documentation/wireframes/profile.png)
 
-</details>
-
-<details>
-<summary>Order History</summary>
+### Order History
 
 ![screenshot](documentation/wireframes/order-history.png)
 
-</details>
-
-<details>
-<summary>Order History</summary>
+### Order History
 
 ![screenshot](documentation/wireframes/contact.png)
 
-</details>
-
-<details>
-<summary>Order History</summary>
+### Order History
 
 ![screenshot](documentation/wireframes/admin-contact.png)
-
-</details>
 
 ## Features
 
 ### Existing Features
 
-<details>
-<summary>Navigation</summary>
+
+### Navigation
 
 The page header serves as a central hub for users, featuring essential links to account controls, shopping basket, and a search bar. Additionally, multiple dropdown menus are strategically placed, offering efficient navigation to distinct product categories. This layout streamlines user access to key functionalities, enhancing overall usability by providing a clear and organized pathway to different sections of the site.
 
 ![screenshot](documentation/features/feature01.png)
 
-</details>
-
-<details>
-<summary>Feature Cards Navigation</summary>
+### Feature Cards Navigation
 
 Six strategically placed cards beneath the hero image act as navigation tools, each featuring links to the three primary manufacturers and three main product categories available on the site. Serving as efficient gateways, these cards provide users with direct access to key sections, simplifying the exploration of specific manufacturers and product categories. This layout optimizes user experience by offering a visually intuitive and direct path to essential areas of interest on the platform.
 
 ![screenshot](documentation/features/feature02.png)
 
-</details>
-
-<details>
-<summary>Footer</summary>
+### Footer
 
 The footer presents links to social media platforms, a tutorials section, and a contact page for user convenience. Additionally, a succinct "About Us" section offers a brief overview of the site sellers, providing visitors with insight into the platform's origins and ethos. This section aims to establish transparency and trust by sharing key information about the individuals behind the site.
 
 ![screenshot](documentation/features/feature03.png)
 
-</details>
-
-<details>
-<summary>Product lists with Pagination</summary>
+### Product lists with Pagination
 
 Utilizing a pagination system, the product list page displays 12 items per page, ensuring a manageable and organized browsing experience. The inclusion of a sorting feature allows users to customize their view. Each product entry showcases an image, title, price, category, and rating, facilitating quick comparisons. Clicking on a product directs users to its dedicated details page, providing comprehensive information and maintaining a seamless transition from product overview to in-depth details.
 
 ![screenshot](documentation/features/feature04.png)
 
-</details>
-
-<details>
-<summary>Product Details</summary>
+### Product Details
 
 The product details page offers a comprehensive view, featuring essential information such as title, price, category, rating, and a detailed product description. Users can easily adjust the quantity with intuitive increase and decrease buttons, and the "Add to Basket" option streamlines the purchasing process. For products with additional options, like different memory capacities (e.g., 4GB or 8GB), users can toggle between choices using dedicated buttons, allowing for a seamless and customizable shopping experience.
 
 ![screenshot](documentation/features/feature05.png)
 
-</details>
-
-<details>
-<summary>Toast Messages</summary>
+### Toast Messages
 
 The site employs toast messages to deliver brief, unobtrusive notifications. These messages serve to provide users with real-time feedback on actions such as successful additions to the shopping basket, updates on order status, or alerts for any completed transactions. By discreetly conveying important information, toast messages enhance user awareness and contribute to a smooth and transparent interaction with the site.
 
 ![screenshot](documentation/features/feature06.png)
 
-</details>
-
-<details>
-<summary>Total Cost</summary>
+### Total Cost
 
 The Basket Total feature provides users with real-time cost updates. This unobtrusive tool ensures efficient budget management and a consistent, user-friendly experience across devices.
 
 ![screenshot](documentation/features/feature15.png)
 
-</details>
-
-<details>
-
-<summary>Shopping Basket</summary>
+### Shopping Basket
 
 The shopping basket consolidates selected items, displaying their titles, quantities, individual prices, and a subtotal. Users can easily modify quantities, remove items, or proceed to checkout. Clear and intuitive, the shopping basket serves as a dynamic summary, allowing users to review and manage their selected products before finalizing their purchase.
 
 ![screenshot](documentation/features/feature07.png)
 
-</details>
-
-<details>
-<summary>Checkout</summary>
+### Checkout
 
 The checkout process guides users through a secure and streamlined procedure to complete their purchase. It includes steps for entering shipping details, selecting payment methods, and reviewing the order summary. Users can efficiently confirm and place their order, ensuring a straightforward and secure transition from product selection to finalizing the transaction.
 
 ![screenshot](documentation/features/feature08.png)
 
-</details>
-
-<details>
-<summary>Account Accesibility Depending on User Privilges</summary>
+### Account Accesibility Depending on User Privilges
 
 Accessible via a dropdown menu, the "My Account" section caters to users with varying privileges, providing tailored access to different parts of the site. This personalized navigation allows users to manage their profiles, track orders, and access exclusive features based on their account permissions. The dropdown ensures a user-centric experience by presenting relevant options and functionality, enhancing the overall usability and convenience of the site.
 
 ![screenshot](documentation/features/feature09-1.png) ![screenshot](documentation/features/feature09-2.png) ![screenshot](documentation/features/feature09-3.png)
 
-</details>
-
-<details>
-<summary>Product Management</summary>
+### Product Management
 
 Exclusive to super users, the product management feature empowers administrators with the capability to add, edit, and delete products. This functionality ensures a streamlined process for maintaining the product catalog, allowing for efficient updates, additions, and removals. Tailored for advanced users, this tool enhances the overall control and customization of the site's product offerings.
 
 ![screenshot](documentation/features/feature10.png) ![screenshot](documentation/features/feature10-1.png)
 
-</details>
-
-<details>
-<summary>Profile Management</summary>
+### Profile Management
 
 The profile page provides users with the ability to update personal details, ensuring accurate and current information. Additionally, users can conveniently access their order history, allowing them to review past purchases, track deliveries, and gain a comprehensive overview of their transactional history on the site. This feature contributes to a user-centered experience by facilitating account management and offering insights into their engagement with the platform.
 
 ![screenshot](documentation/features/feature11.png)
 
-</details>
+### Tutorials Page
 
-<details>
-<summary>Tutorials Page</summary>
-
-The tutorials page serves as a curated repository, featuring links to valuable YouTube videos relevant to the site's offerings. Each video is accompanied by a brief description, providing users with insights into the content before they click. This resourceful page is designed to enhance user learning and engagement by offering easy access to educational material while maintaining a concise and informative presentation.
+The tutorials page serves as an education tool, featuring links to valuable YouTube videos relevant to the site's offerings. Each video is accompanied by a brief description, providing users with insights into the content before they click. This resourceful page is designed to enhance user learning and engagement by offering easy access to educational material while maintaining a concise and informative presentation.
 
 ![screenshot](documentation/features/feature12.png)
 
-</details>
-
-<details>
-<summary>Contact Page</summary>
+### Contact Page
 
 Exclusively featuring a contact form, our contact page streamlines user communication. This simple yet effective form allows users to submit inquiries or messages directly through the website, promoting a convenient and efficient means of contact.
 
 ![screenshot](documentation/features/feature13.png)
 
-</details>
-
-<details>
-<summary>Admin Contact Page</summary>
+### Admin Contact Page
 
 Designed in an email client format, the admin contact page presents a tabulated view with rows containing sender details, the date sent, and an indication of whether a reply has been dispatched. Administrators have the functionality to respond to messages and the option to delete entries, providing an organized and responsive interface for managing user inquiries effectively. On smaller screens, the admin contact page optimizes space by intelligently hiding some columns, making them accessible through a dropdown that expands the row downward. This responsive design ensures a seamless user experience, allowing administrators to efficiently manage contact details even on devices with limited screen real estate.
 
@@ -296,7 +213,11 @@ Designed in an email client format, the admin contact page presents a tabulated 
 
 ![screenshot](documentation/features/feature14-2.png)
 
-</details>
+### Delete Modal
+
+The Delete Modal is a tool that helps users safely remove data and helps prevent accidental deletes. Its simple design offers an easy-to-use interface for confirming or canceling deletions, improving user experience and ensuring data integrity.
+
+![screenshot](documentation/features/feature19.png)
 
 ## Tools & Technologies Used
 
@@ -401,7 +322,7 @@ This project uses [AWS](https://aws.amazon.com) to store media and static files 
 Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
 Make sure you're on the **AWS Management Console** page.
 
-#### S3 Bucket
+### #S3 Bucket
 
 - Search for **S3**.
 - Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
@@ -461,7 +382,7 @@ Make sure you're on the **AWS Management Console** page.
 
   - If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
 
-#### IAM
+### #IAM
 
 Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
 Once on the IAM page, follow these steps:
@@ -512,7 +433,7 @@ Once on the IAM page, follow these steps:
   - `AWS_ACCESS_KEY_ID` = **Access key ID**
   - `AWS_SECRET_ACCESS_KEY` = **Secret access key**
 
-#### Final AWS Setup
+### #Final AWS Setup
 
 - If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
 - Back within **S3**, create a new folder called: `media`.
@@ -666,7 +587,7 @@ If you'd like to backup your database models, use the following command for each
 - `python3 manage.py dumpdata your-model > your-model.json`
 - *repeat this action for each model you wish to backup*
 
-#### Cloning
+### #Cloning
 
 You can clone the repository by following these steps:
 
@@ -686,7 +607,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
-#### Forking
+### #Forking
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
