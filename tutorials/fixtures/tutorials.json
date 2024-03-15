@@ -5,7 +5,8 @@
         "fields": {
             "title": "Arduino",
             "description": "Master the Arduino, a versatile electronics platform, through this comprehensive video course for beginners. Learn the fundamentals, build hands-on projects, explore advanced concepts, and harness the power of input devices to create your own electronic creations.",
-            "youtube_url": "https://www.youtube.com/embed/DPqiIzK97K0?si=wZmYpMcvR5GyzjoW",
+            "youtube_url": "https://www.youtube.com/watch?v=DPqiIzK97K0",
+            "youtube_embed_url": "https://www.youtube.com/embed/DPqiIzK97K0?si=wZmYpMcvR5GyzjoW",
             "additional_link": "https://github.com/mathew2005/led-matrix" 
         }
     },
@@ -15,7 +16,8 @@
         "fields": {
             "title": "Raspberry Pi",
             "description": "Welcome to a series on the Raspberry Pi. The Raspberry Pi is a fully-fledged mini computer, capable of doing whatever you might do with a computer. It comes with 4x USB, HDMI, LAN, built-in Bluetooth/WiFi support, 1GB RAM, 1.2GHz quad-core ARM CPU, 40 GPIO (General Purpose Input Output) pins, audio and composite video output, and more. Rather than not having many choices, instead, your options are staggeringly large! This tutorial series will introduce you to the Raspberry Pi and some of the things you can do with it!",
-            "youtube_url": "https://www.youtube.com/embed/DPqiIzK97K0?si=wZmYpMcvR5GyzjoW",
+            "youtube_url": "https://www.youtube.com/watch?v=RpseX2ylEuw",
+            "youtube_embed_url": "https://www.youtube.com/embed/RpseX2ylEuw?si=GrKjk5mv2O3rlQR9",
             "additional_link": "https://pythonprogramming.net/introduction-raspberry-pi-tutorials/"
         }
     },
@@ -25,7 +27,8 @@
         "fields": {
             "title": "Micro:bit",
             "description": "The BBC micro:bit is an award-winning programmable device that allows students to get hands-on with coding and digital making. Use it to inspire your students to recognise the power of technology in the real world. These first steps will help you get started and ready to teach with the micro:bit.",
-            "youtube_url": "https://www.youtube.com/embed/u2u7UJSRuko?si=HiOe4X9XaXPLld9Y",
+            "youtube_url": "https://www.youtube.com/watch?v=u2u7UJSRuko",
+            "youtube_embed_url": "https://www.youtube.com/embed/u2u7UJSRuko?si=HiOe4X9XaXPLld9Y",
             "additional_link": ""
         }
     },
@@ -35,7 +38,8 @@
         "fields": {
             "title": "Robotics",
             "description": "Welcome to the world of robotics for beginners! Join us in this short video as we dive into the basics of robotics, covering key concepts like sensors, actuators, and programming. Whether you're a curious enthusiast or just starting out, let's explore the exciting foundations of robotics together. Get ready to demystify and embark on a journey into this cutting-edge field",
-            "youtube_url": "https://www.youtube.com/embed/pwwVOpXrazs?si=cno7bDRBJ6oJMPUn",
+            "youtube_url": "https://www.youtube.com/watch?v=pwwVOpXrazs",
+            "youtube_embed_url": "https://www.youtube.com/embed/pwwVOpXrazs?si=cno7bDRBJ6oJMPUn",
             "additional_link": ""
         }
     }

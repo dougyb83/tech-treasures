@@ -49,5 +49,45 @@
             var file = $('#id_image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
+        
+        $('label[for="id_has_options"]').text("Check this box if the product has more than one size/version/length etc!");
+        $('label[for="id_option_title"]').text("Option title*");
+        $('label[for="id_option_1"]').text("Option 1*");
+        $('label[for="id_option_2"]').text("Option 2*");
+        
+        $(document).ready(function(){
+            $('#id_has_options').change(function() {
+                if(this.checked) {
+                    $('label[for="id_option_title"]').show();
+                    $('label[for="id_option_1"]').show();
+                    $('label[for="id_option_2"]').show();
+                    $('label[for="id_option_3"]').show();
+                    $('label[for="id_option_4"]').show();
+                    $('label[for="id_option_5"]').show();
+                    $("#id_option_title").attr("required", true).show();
+                    $("#id_option_1").attr("required", true).show();
+                    $("#id_option_2").attr("required", true).show();
+                    $("#id_option_3").show();
+                    $("#id_option_4").show();
+                    $("#id_option_5").show();
+                } else {
+                    $('label[for="id_option_title"]').hide();
+                    $('label[for="id_option_1"]').hide().text;
+                    $('label[for="id_option_2"]').hide().text;
+                    $('label[for="id_option_3"]').hide();
+                    $('label[for="id_option_4"]').hide();
+                    $('label[for="id_option_5"]').hide();
+                    $("#id_option_title").removeAttr("required", true).hide();
+                    $("#id_option_1").removeAttr("required", true).hide();
+                    $("#id_option_2").removeAttr("required", true).hide();
+                    $("#id_option_3").hide();
+                    $("#id_option_4").hide();
+                    $("#id_option_5").hide();
+                }
+            });
+
+            $('#id_has_options').change();
+        });   
+        
     </script>
 {% endblock %}
