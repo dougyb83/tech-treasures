@@ -138,127 +138,100 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature06.png) |
+| Page Header | | | | | |
+| | when the user enters a search term into the search bar and clicks the search icon (or presses enter on the keyboard) it is expected to load a product list of results relevant to the search term when matches are found | Tested the feature by entering a known search term and clicking the search icon and again by pressing enter | The feature behaved as expected, and loaded results relevant to the search term | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog01-1.png) ![screenshot](documentation/defensive-programming/def-prog01-1.png) |
+| | The search bar is expected to load the products page with no results displayed when the user types a search term that has no matches and clicks the search icon or presses enter on the keyboard | Tested the feature by entering a search term that has no matches and clicking the search icon and again by pressing enter | The feature behaved as expected, and loaded the products page with zero results | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog02-1.png) ![screenshot](documentation/defensive-programming/def-prog02-2.png) |
+| | The basket icon is expected to open the shopping basket page when the user clicks it, if items have been added to the basket a list of those items are expected to be displayed | Tested the feature by clicking the icon while items have been previously added | The feature behaved as expected, and it opened the shopping basket page and displayed a list of items added | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog03.png) |
+| | The Tutorials link is expected to open the tutorials page when the user clicks it and display a list of tutorials from the database | Tested the feature by clicking the link | The feature behaved as expected, and it opened the tutorials page and displayed a list of tutorials | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog04.png) |
+| | When clicking a sorting option from the 'All Products' dropdown menu the products page is expected to load a list of all products that has been sorted accordingly | Tested the feature by clicking each of the sorting options in the 'All Products' dropdown | The feature behaved as expected, and opened the products page displaying all products sorted in the order expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog05.png) |
+| | When clicking a category from the remainig dropdown menus the products page is expected to load with a product list specific to the category selected | Tested the feature by clicking each of the categories in the dropdowns | The feature behaved as expected, and opened the products page and displayed a category specific list of products | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog06.png) |
+| | When a standard (logged in) user or super user clicks 'My Profile' from the my account dropdown, the 'My Profile' page is expected to load. If the user has entered any delivery information or has made previous orders it is expected for this information to be displayed | Tested the feature by clicking the 'My Profile' link as a standard user and super user | The feature behaved as expected, and loaded the 'My Profile' page and displayed the users details and order history | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog07-1.png) ![screenshot](documentation/defensive-programming/def-prog07-2.png) |
+| | When a super user clicks 'Product Management' from the My account dropdown, the 'Product Management' page is expected to load. | Tested the feature by clicking the 'Product Management' link | The feature behaved as expected, and loaded the 'Product Management' page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog08-1.png) ![screenshot](documentation/defensive-programming/def-prog08-2.png) |
+| | When a super user clicks 'Admin Messages' from the My account dropdown, the 'Admin Contact Page' is expected to load and display a list of messages accessed from the database. | Tested the feature by clicking the 'Admin Messages' link | The feature behaved as expected, and loaded the 'Admin Contact Page' accessing the database to display a list of messages | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog08-1.png) ![screenshot](documentation/defensive-programming/def-prog09.png) |
+
+| Footer | | | | | |
+| | Social links are expected to open the relevant site in a new tab when the user clicks the link | Tested the feature by clicking on each social link | The feature behaved as expected, and loaded the site in a new tab | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog10.png) |
+| | The Tutorials link is expected to open the tutorials page when the user clicks it | Tested the feature by clicking the link | The feature behaved as expected, and it opened the tutorials page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog04.png) |
+| | The Contact Us link is expected to open the contact page when the user clicks it | Tested the feature by clicking the link | The feature behaved as expected, and it opened the contact page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog11.png) |
+
+| Profile | | | | | |
+| | When a guest user attempts to access the 'My Profile' page by typing the URL into the browser, it is expected for them to be redirected to the sign in page. | Tested the feature by entering `https://tech-treasures-7e2b33714eb6.herokuapp.com/profile/` into the browser | The feature behaved as expected, and redirected the user to the sign in page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog12.png) |
+| | When a standard user or super user adds or edits the delivery information and clicks 'Update Information' it is expected for that information to be saved and a toast message to be displayed confirming the successful update. | Tested the feature by entering data into the deliver information fields and clicking 'Update Information' | The feature behaved as expected, the data was saved and a toast message was displayed | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog13.png) |
+| | When a standard user or super user clicks on an order number the order details are shown. | Tested the feature by clicking on an order number | The feature behaved as expected, and displayed the order details | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog14.png) |
+
+| Products | | | | | |
+| | When viewing the products page as a super user extra options should be available (eg edit/delete) | Tested by viewing the page as a super user | The page behaved as expected, and displayed the super user options | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog15.png) |
+| | When viewing the products page as a guest or standard user, no super user options should be available (eg edit/delete) | Tested by viewing the page as a guest and standard user | The page behaved as expected, and did not display super user options | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog16.png) |
+| | The product details page is expected to load when the user clicks on a product image | Tested the feature by clicking a product image | The feature behaved as expected and loaded the product details page for the specific product | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog17.png) |
+| | When a super user clicks the edit link on a product it is expected that the edit product page will load for that specific product| Tested the feature by clicking edit on a product | The feature behaved as expected and loaded the edit product page for the specific product | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog18.png) |
+| | When a super user clicks the delete link on a product it is expected that a delete confirmation modal is dispalyed | Tested the feature by clicking delete on a product | The feature behaved as expected and a delete confirmation modal was displayed | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog19-1.png) |
+| | When a super user clicks Yes on the delete confirmation modal it is expected that the product is removed from the database and a toast message is displayed confirming the delete| Tested the feature by clicking Yes on the delete confirmation modal | The feature behaved as expected and deleted the product from the database and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog19-2.png) |
+
+| Product Details | | | | | |
+| | When viewing the product details page as a super user extra options should be available (eg edit/delete) | Tested by viewing the page as a super user | The page behaved as expected, and displayed the super user options | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog20.png) |
+| | When viewing the product details page as a guest or standard user, no super user options should be available (eg edit/delete) | Tested by viewing the page as a guest and standard user | The page behaved as expected, and did not display super user options | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog17.png) |
+| | When a super user clicks the edit link on a product it is expected that the edit product page is loaded for that specific product| Tested the feature by clicking edit on a product | The feature behaved as expected and loaded the edit product page for the specific product | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog18.png) |
+| | When a super user clicks the delete link on a product it is expected that a delete confirmation modal is dispalyed | Tested the feature by clicking delete on a product | The feature behaved as expected and a delete confirmation modal was displayed | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog21.png) |
+| | When a super user clicks Yes on the delete confirmation modal it is expected that the product is removed from the database and a toast message is displayed confirming the delete| Tested the feature by clicking Yes on the delete confirmation modal | The feature behaved as expected and deleted the product from the database and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog19-1.png) |
+| | When any user clicks the Add to Basket button it is expected for the item to be added to the basket with the selected quantity and a toast message to be displayed confirming the item and quantity has been added| Tested the feature clicking the Add to Basket button | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog22.png) |
+
+| Add Product | | | | | |
+| | While logged in as a super user, and a valid form is submitted, the feature is expected to add a new product entry into the database, redirect the user to the new products details page and display a confirmation toast message | Tested the feature by entering data into the fields and clicking on "Add Product" | The feature behaved as expected, and added the new item to the database, redirected to the new product details page and displayed a confirmation message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog23.png) |
+| | If a guest user attempts to access the "Add Products" page it is expected that the user will be directed to the "Sign In" page | Tested the feature by attempting to access the "Add Product" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/products/add/`  | The feature behaved as expected, and redirected the user to the "Sign In" page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog24.png) |
+| | If a standard user attempts to access the "Add Products" page it is expected that the user will be directed to the "Home" page and an "Access denied" message will be displayed | Tested the feature by attempting to access the "Add Product" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/products/add/`  | The feature behaved as expected, and redirected the user to the "Home" page and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog25.png) |
+
+
+| Edit Product | | | | | |
+| | While logged in as a super user the feature is expected to make changes to an existing product and save them to the database, redirecting the user to the products details page and displaying a confirmation toast message when the user submits a valid form | Tested the feature by editing data in the fields and clicking on "Update Product" | The feature behaved as expected, and edited the item in the database, redirected to the products details page and displayed a confirmation message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog28.png) |
+| | If a guest user attempts to access the "Edit Products" page it is expected that the user will be directed to the "Sign In" page | Tested the feature by attempting to access the "Edit Product" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/products/edit/1/`  | The feature behaved as expected, and redirected the user to the "Sign In" page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog27.png) |
+| | If a standard user attempts to access the "Edit Products" page it is expected that the user will be directed to the "Home" page and an "Access denied" message will be displayed | Tested the feature by attempting to access the "Edit Products" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/products/edit/1/`  | The feature behaved as expected, and redirected the user to the "Home" page and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog26.png) |
+
+| Tutorials | | | | | |
+| | When viewing the Tutorials page as a super user extra options should be available (eg add/edit/delete) | Tested by viewing the page as a super user | The page behaved as expected, and displayed the super user options | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog29.png) |
+| | When viewing the Tutorials page as a guest or standard user, no super user options should be available (eg add/edit/delete) | Tested by viewing the page as a guest and standard user | The page behaved as expected, and did not display super user options | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog30.png) |
+| | When a super user clicks the "Add" link it is expected that the "Add a New Tutorial" page is loaded | Tested the feature by clicking the "Add" link | The feature behaved as expected and loaded the "Add a New Tutorial" page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog31.png) |
+| | When a super user clicks the "Edit" link on a specific tutorial it is expected that the "Edit a Tutorial" page is loaded displaying details for that specific tutorial | Tested the feature by clicking "Edit" | The feature behaved as expected and loaded the "Edit a Tutorial" page and displayed details for the specific tutorial | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog32.png) |
+| | When a super user clicks the "Delete" link on a tutorial it is expected that a delete confirmation modal is dispalyed | Tested the feature by clicking "Delete" on a tutorial | The feature behaved as expected and a delete confirmation modal was displayed | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog33.png) |
+| | When a super user clicks Yes on the delete confirmation modal it is expected that the tutorial is removed from the database and a toast message is displayed confirming the delete| Tested the feature by clicking Yes on the delete confirmation modal | The feature behaved as expected and deleted the tutorial from the database and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog34.png) |
+
+| Add Tutorial | | | | | |
+| | While logged in as a super user the feature is expected to add a new tutorial entry into the database, redirect the user back to the "Tutorials" page and display a confirmation toast message when the user submits a valid form | Tested the feature by entering data into the fields and clicking on "Add Tutorial" | The feature behaved as expected, and added the new tutorial to the database, redirected to the tutorial page and displayed a confirmation message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | If a guest user attempts to access the "Add Tutorials" page it is expected that the user will be directed to the "Sign In" page | Tested the feature by attempting to access the "Add Tutorial" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/tutorials/add_tutorial/`  | The feature behaved as expected, and redirected the user to the "Sign In" page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | If a standard user attempts to access the "Add Tutorials" page it is expected that the user will be directed to the "Home" page and an "Access denied" message will be displayed | Tested the feature by attempting to access the "Add Tutorial" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/tutorials/add_tutorial/`  | The feature behaved as expected, and redirected the user to the "Home" page and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+
+| Edit Tutorial | | | | | |
+| | While logged in as a super user the feature is expected to add a new tutorial entry into the database, redirect the user back to the "Tutorials" page and display a confirmation toast message when the user submits a valid form | Tested the feature by entering data into the fields and clicking on "Add Tutorial" | The feature behaved as expected, and added the new tutorial to the database, redirected to the tutorial page and displayed a confirmation message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | If a guest user attempts to access the "Edit Tutorials" page it is expected that the user will be directed to the "Sign In" page | Tested the feature by attempting to access the "Edit Tutorial" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/tutorials/edit_tutorial/1/`  | The feature behaved as expected, and redirected the user to the "Sign In" page | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | If a standard user attempts to access the "Edit Tutorials" page it is expected that the user will be directed to the "Home" page and an "Access denied" message will be displayed | Tested the feature by attempting to access the "Edit Tutorial" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/tutorials/edit_tutorial/1/`  | The feature behaved as expected, and redirected the user to the "Home" page and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+
 | Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
+| | Feature is expected to save the users message/contact details in the database for admin to reply handle. A confirmation email will be sent to the user and a notification email will be sent to admin. | Tested the feature by submitting a valid form | The feature behaved as expected, where confirmation and notification emails were sent to the user and admin respectively and a new database entry was made as can be seen in the admins message handling service. | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Admin Contact | | | | | |
+| | When logged in as a super user and an unread message is clicked, the feature is expected to open that message for the user to reply to if they choose. This will set the message as read in the database and when the user returns to the message list the text will no longer be bold. Indicating it 'read' status.  | Tested the feature clicking an unread message and returning back to the message list | The feature behaved as expected, and marked the message as read | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | When logged in as a super user a message is expected to be given the 'have replied' status when the user clicks a message and submits a reply | Tested the feature by clicking a message that has not yet been replied to and sending a reply to the customer | The feature behaved as expected, and it marked the message as being replied to | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | When logged in as a super user the delete button is expected to delete the message from the database when the user clicks on delete and clicks yes to confirm | Tested the feature by clicking on delete and confirming the delete | The feature behaved as expected, and the message was removed from the database | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | If a guest user attempts to access the "Admin Contact" page it is expected that the user will be directed to the "Home" page and an "Access Denied" toast message is displayed. | Tested the feature by attempting to access the "Admin Contact" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/contact/admin-contact/`  | The feature behaved as expected, and redirected the user to the "Home" page and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | If a standard user attempts to access the "Admin Contact" page it is expected that the user will be directed to the "Home" page and an "Access denied" message will be displayed | Tested the feature by attempting to access the "Admin Contact" page via the following url `https://tech-treasures-7e2b33714eb6.herokuapp.com/contact/admin-contact/`  | The feature behaved as expected, and redirected the user to the "Home" page and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
 
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
+| Basket | | | | | |
+| | When there are items in the basket, the quantity and total price are expected to update and a confirmtion toast message is to be displayed when the user adjusts the quantity and clicks the "Update" link  | Tested the feature changing the quantity and clicking "Update" | The feature behaved as expected. The quantity and price were updated and a toast message was displayed | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | When there are items in the basket, the "Remove" link is expected to remove an item from the basket when it is clicked | Tested the feature by clicking remove | The feature behaved as expected and removed the item from the basket | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
 
-When in doubt, use the above method instead, and delete the table below.
+| Checkout | | | | | |
+| | When submitting a valid form and payment method, stripe payment is expected to be processed. The "Checkout Success page is displayed and the order is added to the database | Tested the feature by submitting a valid form and payment method | The feature behaved as expected, payment was processed, "Checkout Success" was loaded and the order was saved to the database | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
+| | If the user attempts to access the checkout page without any items in the basket it is expected that they will be redirected to the "Products" page and an "Error" toast message to be displayed | Tested the feature by entering the folling URL into the browser `https://tech-treasures-7e2b33714eb6.herokuapp.com/checkout/` | The feature behaved as expected and redirected the user to the "Products" page and displayed a toast message | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Sign Up | | | | | |
+| | When the user submits a valid form it is expected that the user will be added to the database, a verification email will be sent and a toast message will display | Tested the feature by submitting a valid form | The feature behaved as expected, and the user was added to the database, a verification email was sent and a toast message was displayed | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
 
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
+| Sign In | | | | | |
+| | When the user submits a valid form it is expected that the user will be directed to the "Home" page and a toast message will be displayed | Tested the feature by submitting a valid form | The feature behaved as expected, and The user was directed to the "Home" page and a toast message was displayed | Test concluded and passed | ![screenshot](documentation/defensive-programming/def-prog.png) |
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## User Story Testing
 

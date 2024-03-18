@@ -37,3 +37,13 @@
         </div>
     </div>
 {% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script>   
+        $(document).ready(function(){
+            $('label[for="id_youtube_url"]').text("YouTube URL*");
+            $('#id_youtube_url').attr("required", true).attr("pattern", "^http(?:s?):\/\/(?:www\.)?youtu(?:be(\.com|\.co.uk)\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?[\w\?=]*)?");
+        });
+    </script>
+{% endblock %}

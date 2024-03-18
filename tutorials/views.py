@@ -21,13 +21,18 @@ def view_tutorials(request):
 def add_tutorial(request):
     """ Add a new tutorial """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Access denied. Invalid permissions.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = TutorialForm(request.POST)
         if form.is_valid():
-            form.save()
+            # create instance of form and modify YouTube url for the embed link
+            tutorial_form = form.save(commit=False)
+            youtube_url = tutorial_form.youtube_url
+            tutorial_form.youtube_embed_url = youtube_url.replace(
+                "watch?v=", "embed/")
+            tutorial_form.save()
             messages.success(request, 'Successfully added tutorial!')
             return redirect(reverse('view_tutorials'))
         else:
@@ -50,14 +55,19 @@ def add_tutorial(request):
 def edit_tutorial(request, tutorial_id):
     """ edits a tutorial """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Access denied. Invalid permissions.')
         return redirect(reverse('home'))
 
     tutorial = get_object_or_404(Tutorials, pk=tutorial_id)
     if request.method == 'POST':
         form = TutorialForm(request.POST, instance=tutorial)
         if form.is_valid():
-            form.save()
+            # create instance of form and modify YouTube url for the embed link
+            tutorial_form = form.save(commit=False)
+            youtube_url = tutorial_form.youtube_url
+            tutorial_form.youtube_embed_url = youtube_url.replace(
+                "watch?v=", "embed/")
+            tutorial_form.save()
             messages.success(request, 'Successfully updated tutorial!')
             return redirect(reverse('view_tutorials'))
         else:
@@ -83,7 +93,7 @@ def edit_tutorial(request, tutorial_id):
 def delete_tutorial(request, tutorial_id):
     """ Delete a tutorial """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Access denied. Invalid permissions.')
         return redirect(reverse('home'))
 
     tutorial = get_object_or_404(Tutorials, pk=tutorial_id)
