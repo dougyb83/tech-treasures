@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.core.mail import send_mail, send_mass_mail
 from django.template.loader import render_to_string
@@ -60,6 +61,7 @@ def contact(request):
     return render(request, template, context)
 
 
+@login_required
 def admin_contact_page(request, email_id=None):
     """ returns the admin contact page """
     if not request.user.is_superuser:
@@ -78,6 +80,7 @@ def admin_contact_page(request, email_id=None):
     return render(request, template, context)
 
 
+@login_required
 def admin_contact_reply(request, email_id=None):
     """ returns the admin contact page """
     if not request.user.is_superuser:
@@ -99,6 +102,7 @@ def admin_contact_reply(request, email_id=None):
     return render(request, template, context)
 
 
+@login_required
 def reply_email(request, email_id):
     """Handles replying to an email."""
     if request.method == 'POST':
@@ -140,6 +144,7 @@ def reply_email(request, email_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_email(request, email_id):
     email = get_object_or_404(Contact, id=email_id)
     email.delete()
