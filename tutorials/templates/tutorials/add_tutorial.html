@@ -42,8 +42,8 @@
     {{ block.super }}
     <script>   
         $(document).ready(function(){
-            $('label[for="id_youtube_url"]').text("YouTube URL*");
-            $('#id_youtube_url').attr("required", true).attr("pattern", "^http(?:s?):\/\/(?:www\.)?youtu(?:be(\.com|\.co.uk)\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?[\w\?=]*)?");
+            $('label[for="id_youtube_url"]').html("YouTube Video URL* (Always get the YouTube video URL from the <strong>Share</strong> button)");
+            $('#id_youtube_url').attr("required", true).attr("pattern", "^http(?:s?)://youtu\.be/.+$");  
         });
     </script>
 {% endblock %}

@@ -30,8 +30,9 @@ def add_tutorial(request):
             # create instance of form and modify YouTube url for the embed link
             tutorial_form = form.save(commit=False)
             youtube_url = tutorial_form.youtube_url
-            tutorial_form.youtube_embed_url = youtube_url.replace(
-                "watch?v=", "embed/")
+            tutorial_form.youtube_embed_url = (
+                "https://www.youtube.com/embed/" + youtube_url.split(
+                    "youtu.be/")[1])
             tutorial_form.save()
             messages.success(request, 'Successfully added tutorial!')
             return redirect(reverse('view_tutorials'))
@@ -65,8 +66,9 @@ def edit_tutorial(request, tutorial_id):
             # create instance of form and modify YouTube url for the embed link
             tutorial_form = form.save(commit=False)
             youtube_url = tutorial_form.youtube_url
-            tutorial_form.youtube_embed_url = youtube_url.replace(
-                "watch?v=", "embed/")
+            tutorial_form.youtube_embed_url = (
+                "https://www.youtube.com/embed/" + youtube_url.split(
+                    "youtu.be/")[1])
             tutorial_form.save()
             messages.success(request, 'Successfully updated tutorial!')
             return redirect(reverse('view_tutorials'))
