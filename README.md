@@ -462,28 +462,27 @@ As a backup, in case users prematurely close the purchase-order page during paym
 - You'll have a new key here:
   - `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
 
-### Hotmail/Outlook API
+### Gmail API
 
-This project uses [Hotmail/Outlook](https:/outlook.com) to handle sending emails to users for account verification and purchase order confirmations.
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
 
-Once you've created a Hotmail/Outlook account and logged-in, follow these series of steps to get your project connected.
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
 
-- Click on the **Profile Icon** in the top-right corner of Hotmail/Outlook.
-- Click on **Security** in the navigation pane on the left.
-- Click on the **Advance Security Options** card.
-- Scroll down to **Additional Security**.
-- Select **2-Step Verification** to turn it on.
-- On the following screen, select **Next**.
-- Make a note of your recovery code, select **Next**.
-- Follow the Windows Phone 8 insstructions if relevant, select **Next**.
-- Select **Finish**.
-- Scroll down to **App Passwords**.
-- Select **Create a new app password**
-- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page and select **2-Step Verification**. Then select **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Type a name for you App password.
+	- Any custom name, such as "Django" or "tech-treasures"
 - You'll be provided with a 16-character password (API key).
-  - Save this somewhere locally, as you cannot access this key again later!
-  - `EMAIL_HOST_PASS` = user's 16-character API key
-  - `EMAIL_HOST_USER` = user's own personal Hotmail/Outlook email address
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 ### Heroku Deployment
 
