@@ -69,9 +69,13 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | models.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/models.py) | ![screenshot](documentation/validation/py-validation-contact-models.png) | Pass: No Errors |
 | urls.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/urls.py) | ![screenshot](documentation/validation/py-validation-contact-urls.png) | Pass: No Errors |
 | views.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/views.py) | ![screenshot](documentation/validation/py-validation-contact-views.png) | Pass: No Errors |
+| test_forms.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/test_forms.py) | ![screenshot](documentation/validation/py-validation-contact-test-forms.png) | Pass: No Errors |
+| test_models.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/test_models.py) | ![screenshot](documentation/validation/py-validation-contact-test-models.png) | Pass: No Errors |
+| test_views.py | contact | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/contact/test_views.py) | ![screenshot](documentation/validation/py-validation-contact-test-views.png) | Pass: No Errors |
 | apps.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/apps.py) | ![screenshot](documentation/validation/py-validation-home-apps.png) | Pass: No Errors |
 | urls.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/urls.py) | ![screenshot](documentation/validation/py-validation-home-urls.png) | Pass: No Errors |
 | views.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/views.py) | ![screenshot](documentation/validation/py-validation-home-views.png) | Pass: No Errors |
+| test_views.py | home | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/home/test_views.py) | ![screenshot](documentation/validation/py-validation-home-test-views.png) | Pass: No Errors |
 | admin.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/admin.py) | ![screenshot](documentation/validation/py-validation-products-admin.png) | Pass: No Errors |
 | apps.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/apps.py) | ![screenshot](documentation/validation/py-validation-products-apps.png) | Pass: No Errors |
 | forms.py | products | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/products/forms.py) | ![screenshot](documentation/validation/py-validation-products-forms.png) | Pass: No Errors |
@@ -93,6 +97,10 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | views.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/views.py) | ![screenshot](documentation/validation/py-validation-tutorials-views.png) | Pass: No Errors |
 | forms.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/forms.py) | ![screenshot](documentation/validation/py-validation-tutorials-forms.png) | Pass: No Errors |
 | models.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/models.py) | ![screenshot](documentation/validation/py-validation-tutorials-models.png) | Pass: No Errors |
+| test_views.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/test_views.py) | ![screenshot](documentation/validation/py-validation-tutorials-test-views.png) | Pass: No Errors |
+| test_forms.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/test_forms.py) | ![screenshot](documentation/validation/py-validation-tutorials-test-forms.png) | Pass: No Errors |
+| test_models.py | tutorials | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dougyb83/tech-treasures/main/tutorials/test_models.py) | ![screenshot](documentation/validation/py-validation-tutorials-test-models.png) | Pass: No Errors |
+
 ## Browser Compatibility
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.

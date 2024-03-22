@@ -16,7 +16,8 @@ class TestModels(TestCase):
         self.assertEqual(tutorial.title, 'tutorial title')
         self.assertEqual(tutorial.description, 'a tutorial description')
         self.assertEqual(tutorial.youtube_url, 'https://www.youtube.com/')
-        self.assertEqual(tutorial.youtube_embed_url, 'https://www.youtube.com/embed/')
+        self.assertEqual
+        (tutorial.youtube_embed_url, 'https://www.youtube.com/embed/')
         self.assertEqual(tutorial.additional_link, 'link to resource')
 
     def test_str_representation(self):
