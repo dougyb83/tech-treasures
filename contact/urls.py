@@ -8,5 +8,5 @@ urlpatterns = [
          views.admin_contact_reply, name='admin-contact-reply'),
     path('reply-email/<int:email_id>/', views.reply_email, name='reply-email'),
     path('delete-email/<int:email_id>/',
-         views.delete_email, name='delete_email'),
+         views.delete_email, name='delete-email'),
 ]

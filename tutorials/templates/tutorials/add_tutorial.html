@@ -43,7 +43,7 @@
     <script>   
         $(document).ready(function(){
             $('label[for="id_youtube_url"]').html("YouTube Video URL* (Always get the YouTube video URL from the <strong>Share</strong> button)");
-            $('#id_youtube_url').attr("required", true).attr("pattern", "^http(?:s?)://youtu\.be/.+$");  
+            $('#id_youtube_url').attr("pattern", "^http(?:s?)://youtu\.be/.+$");  
         });
     </script>
 {% endblock %}
