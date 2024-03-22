@@ -43,7 +43,9 @@ class TestViews(TestCase):
         )
         self.client.login(username='admin', password='adminpassword')
         response = self.client.post(
-            reverse('reply-email', kwargs={'email_id': 1}), {'reply': 'Test reply'})
+            reverse(
+                'reply-email', kwargs={'email_id': 1}), {
+                    'reply': 'Test reply'})
         self.assertEqual(response.status_code, 302)
 
         email.refresh_from_db()

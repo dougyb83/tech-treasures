@@ -276,36 +276,13 @@ Below are the results from the various apps on my application that I've tested:
 
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
-| Contact | test_forms.py | 100% | ![screenshot](documentation/py-test/py-test-contact-forms.png) |
-| Contact | test_models.py | 100% | ![screenshot](documentation/py-test/py-test-contact-models.png) |
-| Contact | test_views.py | 74% | ![screenshot](documentation/py-test/py-test-contact-views.png) |
-
-| Tutorials | test_forms.py | 100% | ![screenshot](documentation/py-test/py-test-tutorials-forms.png) |
-| Tutorials | test_models.py | 100% | ![screenshot](documentation/py-test/py-test-tutorials-models.png) |
-| Tutorials | test_views.py | 71% | ![screenshot](documentation/py-test/py-test-tutorials-views.png) |
-
-| Home | test_views.py | 100% | ![screenshot](documentation/py-test/py-test-home-views.png) |
-
-| Products | test_forms.py | 99% | ![screenshot](documentation/py-test/py-test-products-forms.png) |
-| Products | test_models.py | 89% | ![screenshot](documentation/py-test/py-test-products-models.png) |
-| Products | test_urls.py | 100% | ![screenshot](documentation/py-test/py-test-products-urls.png) |
-| Products | test_views.py | 71% | ![screenshot](documentation/py-test/py-test-products-views.png) |
-| Profiles | test_forms.py | 99% | ![screenshot](documentation/py-test/py-test-profiles-forms.png) |
-| Profiles | test_models.py | 89% | ![screenshot](documentation/py-test/py-test-profiles-models.png) |
-| Profiles | test_urls.py | 100% | ![screenshot](documentation/py-test/py-test-profiles-urls.png) |
-| Profiles | test_views.py | 71% | ![screenshot](documentation/py-test/py-test-profiles-views.png) |
-| x | x | x | repeat for all remaining tested apps/files |
-
-#### Unit Test Issues
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this section to list any known issues you ran into while writing your unit tests.
-Remember to include screenshots (where possible), and a solution to the issue (if known).
-
-This can be used for both "fixed" and "unresolved" issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Contact | test_forms.py | 100% | ![screenshot](documentation/py-test/py-test-contact.png) |
+| Contact | test_models.py | 100% | - |
+| Contact | test_views.py | 74% | - |
+| Tutorials | test_forms.py | 100% | ![screenshot](documentation/py-test/py-test-tutorials.png) |
+| Tutorials | test_models.py | 100% | - |
+| Tutorials | test_views.py | 71% | - |
+| Home | test_views.py | 100% | ![screenshot](documentation/py-test/py-test-home.png) |
 
 ## Bugs
 

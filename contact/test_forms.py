@@ -14,7 +14,8 @@ class TestForms(TestCase):
         form = ContactForm({'full_name': ''})
         self.assertFalse(form.is_valid())
         self.assertIn('full_name', form.errors.keys())
-        self.assertEqual(form.errors['full_name'][0], 'This field is required.')
+        self.assertEqual(
+            form.errors['full_name'][0], 'This field is required.')
 
     def test_email_is_required(self):
         form = ContactForm({'email': ''})
