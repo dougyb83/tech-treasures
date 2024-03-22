@@ -285,11 +285,11 @@ Below are the results from the various apps on my application that I've tested:
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
 | Contact | test_forms.py | 100% | ![screenshot](documentation/py-test/py-test-contact.png) |
-| Contact | test_models.py | 100% | - |
-| Contact | test_views.py | 74% | - |
+| Contact | test_models.py | 100% | as above |
+| Contact | test_views.py | 74% | as above |
 | Tutorials | test_forms.py | 100% | ![screenshot](documentation/py-test/py-test-tutorials.png) |
-| Tutorials | test_models.py | 100% | - |
-| Tutorials | test_views.py | 71% | - |
+| Tutorials | test_models.py | 100% | as above |
+| Tutorials | test_views.py | 71% | as above |
 | Home | test_views.py | 100% | ![screenshot](documentation/py-test/py-test-home.png) |
 
 ## Bugs
