@@ -322,7 +322,7 @@ This project uses [AWS](https://aws.amazon.com) to store media and static files 
 Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
 Make sure you're on the **AWS Management Console** page.
 
-### #S3 Bucket
+#### S3 Bucket
 
 - Search for **S3**.
 - Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
@@ -382,7 +382,7 @@ Make sure you're on the **AWS Management Console** page.
 
   - If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
 
-### #IAM
+#### IAM
 
 Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
 Once on the IAM page, follow these steps:
@@ -433,7 +433,7 @@ Once on the IAM page, follow these steps:
   - `AWS_ACCESS_KEY_ID` = **Access key ID**
   - `AWS_SECRET_ACCESS_KEY` = **Secret access key**
 
-### #Final AWS Setup
+#### Final AWS Setup
 
 - If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
 - Back within **S3**, create a new folder called: `media`.
@@ -586,7 +586,7 @@ If you'd like to backup your database models, use the following command for each
 - `python3 manage.py dumpdata your-model > your-model.json`
 - *repeat this action for each model you wish to backup*
 
-### #Cloning
+#### Cloning
 
 You can clone the repository by following these steps:
 
@@ -606,7 +606,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
-### #Forking
+#### Forking
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
