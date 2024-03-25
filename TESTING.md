@@ -334,6 +334,13 @@ What I discovered is that although the default option was highlighted, the radio
 
     - To fix this, I removed the `id` I had added and instead I targeted the `id` created by the include.
 
+- HTML `Bad value on attribute names`
+    - Attribute names were being generated from the product 'option' names. This caused a validation error as some 'option' names included a space.
+
+    ![screenshot](documentation/bugs/bug07-1.png) ![screenshot](documentation/bugs/bug07-2.png) ![screenshot](documentation/bugs/bug07-3.png) 
+
+    - To fix this, I created fixed `id`s for each product option in the product.html file.
+
 
 ## Unfixed Bugs
 
