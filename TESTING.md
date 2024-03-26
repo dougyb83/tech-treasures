@@ -347,4 +347,11 @@ What I discovered is that although the default option was highlighted, the radio
 
 ## Unfixed Bugs
 
-There are no remaining bugs that I am aware of.
+- Security Issue 
+    - User information on the checkout success page is accessible to anyone who has access to an order number. If a user has access to, or is able to guess another users order number it is possible that the other users personal information can be viewed. This is done by navigating to the following address and appending the order number at the end `https://tech-treasures-7e2b33714eb6.herokuapp.com/checkout/checkout_success/`
+
+- Possible future fixes 
+    - Order Access Control: Implement access control mechanisms to restrict access to order details based on user authentication. Only authenticated users who are associated with a particular order should be able to view its details.
+    - Session Management: Ensure proper session management to associate orders with the correct user session. This prevents unauthorized users from accessing order details by manipulating URLs or order identifiers.
+    - Authorization Checks: Perform authorization checks on each request to access order information. Verify that the authenticated user has the necessary permissions to view the requested order details.
+
