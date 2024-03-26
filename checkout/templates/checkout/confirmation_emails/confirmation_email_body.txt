@@ -16,6 +16,7 @@ Delivery Address.
 
 {{ order.street_address1 }}
 {{ order.town_or_city }}
+{{ order.postcode }}
 {{ order.country }}
 
 Your contact number - {{ order.phone_number }}.
