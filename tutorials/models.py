@@ -2,6 +2,11 @@ from django.db import models
 
 
 class Tutorials(models.Model):
+    """ Tutorial form fields """
+
+    class Meta:
+        verbose_name_plural = 'Tutorials'
+
     title = models.CharField(max_length=254)
     description = models.TextField()
     youtube_url = models.CharField(max_length=500)
