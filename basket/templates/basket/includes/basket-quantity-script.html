@@ -1,7 +1,6 @@
 <script>
-
-        // force qty_input to only be 0-99
-        $(".qty_input").keyup(function() {
+    // force qty_input to only be 0-99
+    $(".qty_input").keyup(function() {
         let inputVal = $(this).val();
         if (inputVal < 1 || inputVal > 99 || inputVal.length > 2) {
             $(this).val($(this).attr("min"));

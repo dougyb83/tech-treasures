@@ -23,10 +23,10 @@
                     </span>
                 </button>
             </div>
-            {% if item.product.has_options %}
-                <input type="hidden" name="product_options" value="{{ item.options }}">
-            {% endif %}
         </div>
+        {% if item.product.has_options %}
+            <input type="hidden" name="product_options" value="{{ item.options }}">
+        {% endif %}
     </div>
 </form>
 <a class="update-link text-info"><small>Update</small></a>
