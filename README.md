@@ -219,6 +219,14 @@ The Delete Modal is a tool that helps users safely remove data and helps prevent
 
 ![screenshot](documentation/features/feature19.png)
 
+### Error Pages
+
+These pages are displayed when the user encouters an error.
+404 - Not Found
+500 - Internal Server Error
+
+![screenshot](documentation/features/feature20-1.png) ![screenshot](documentation/features/feature20-2.png)
+
 ## Tools & Technologies Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
